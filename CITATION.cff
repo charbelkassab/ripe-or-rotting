@@ -1,7 +1,8 @@
 cff-version: 1.2.0
-message: "If you use this work, please cite it as below."
-title: "Ripe or rotting: hunger, yeast and distance decide which banana a simulated fruit fly chooses"
-type: report
+message: "If you use this work, please cite the paper below."
+title: "Ripe or rotting"
+abstract: "Paper, simulation code and results: a connectome-constrained simulation of fruit fly foraging on ripe and rotting banana."
+type: software
 authors:
   - family-names: Kassab
     given-names: Charbel
@@ -9,7 +10,8 @@ authors:
 date-released: 2026-09-14
 version: "1.0"
 repository-code: "https://github.com/charbelkassab/ripe-or-rotting"
-license: CC-BY-4.0
+url: "https://charbelk.com/ripe-or-rotting/"
+license: MIT
 keywords:
   - Drosophila melanogaster
   - connectome
@@ -19,3 +21,15 @@ keywords:
   - odour plume
   - fermentation
   - computational neuroscience
+preferred-citation:
+  type: report
+  title: "Ripe or rotting: hunger, yeast and distance decide which banana a simulated fruit fly chooses"
+  authors:
+    - family-names: Kassab
+      given-names: Charbel
+      email: charbel@kassab.org
+  year: 2026
+  month: 9
+  status: preprint
+  url: "https://charbelk.com/ripe-or-rotting/paper/"
+  repository-code: "https://github.com/charbelkassab/ripe-or-rotting"
