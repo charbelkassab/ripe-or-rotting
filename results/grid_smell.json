@@ -1,0 +1,2786 @@
+[
+ {
+  "food": "ripe (day 0)",
+  "distance_m": 0.01,
+  "state": "fed",
+  "orn_total_hz": 7252.746104275714,
+  "brain_active": 3588.666666666667,
+  "pn_total": 3955.666666666666,
+  "valence_estimate": -0.564342199855813,
+  "top_orn": {
+   "DM3": 290,
+   "VC3": 290,
+   "VM5d": 290,
+   "VM2": 289,
+   "VM5v": 289
+  },
+  "ppm": {
+   "isoamyl_acetate": 38.4,
+   "isobutyl_acetate": 13.1,
+   "butyl_acetate": 4.77,
+   "ethyl_acetate": 4.91,
+   "hexanal": 6.57,
+   "2-heptanone": 0.471,
+   "isoamyl_alcohol": 0.851,
+   "ethanol": 255.0
+  },
+  "co2_excess_ppm": 982.437920320342
+ },
+ {
+  "food": "ripe (day 0)",
+  "distance_m": 0.01,
+  "state": "starved_24h",
+  "orn_total_hz": 7300.226242774549,
+  "brain_active": 3613.333333333333,
+  "pn_total": 3843.0,
+  "valence_estimate": -0.3372141372139269,
+  "top_orn": {
+   "DM2": 375,
+   "DM1": 337,
+   "DM3": 290,
+   "VC3": 290,
+   "VM5d": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 38.4,
+   "isobutyl_acetate": 13.1,
+   "butyl_acetate": 4.77,
+   "ethyl_acetate": 4.91,
+   "hexanal": 6.57,
+   "2-heptanone": 0.471,
+   "isoamyl_alcohol": 0.851,
+   "ethanol": 255.0
+  },
+  "co2_excess_ppm": 982.437920320342
+ },
+ {
+  "food": "ripe (day 0)",
+  "distance_m": 0.01,
+  "state": "protein_deprived",
+  "orn_total_hz": 7252.746104275714,
+  "brain_active": 3692.0,
+  "pn_total": 3983.6666666666674,
+  "valence_estimate": -0.5737627279181339,
+  "top_orn": {
+   "DM3": 290,
+   "VC3": 290,
+   "VM5d": 290,
+   "VM2": 289,
+   "VM5v": 289
+  },
+  "ppm": {
+   "isoamyl_acetate": 38.4,
+   "isobutyl_acetate": 13.1,
+   "butyl_acetate": 4.77,
+   "ethyl_acetate": 4.91,
+   "hexanal": 6.57,
+   "2-heptanone": 0.471,
+   "isoamyl_alcohol": 0.851,
+   "ethanol": 255.0
+  },
+  "co2_excess_ppm": 982.437920320342
+ },
+ {
+  "food": "ripe (day 0)",
+  "distance_m": 0.01,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 7300.226242774549,
+  "brain_active": 3655.6666666666665,
+  "pn_total": 3855.6666666666665,
+  "valence_estimate": -0.33004115226317066,
+  "top_orn": {
+   "DM2": 375,
+   "DM1": 337,
+   "DM3": 290,
+   "VC3": 290,
+   "VM5d": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 38.4,
+   "isobutyl_acetate": 13.1,
+   "butyl_acetate": 4.77,
+   "ethyl_acetate": 4.91,
+   "hexanal": 6.57,
+   "2-heptanone": 0.471,
+   "isoamyl_alcohol": 0.851,
+   "ethanol": 255.0
+  },
+  "co2_excess_ppm": 982.437920320342
+ },
+ {
+  "food": "ripe (day 0)",
+  "distance_m": 0.1,
+  "state": "fed",
+  "orn_total_hz": 6127.6201451259185,
+  "brain_active": 3317.0000000000005,
+  "pn_total": 3421.0000000000005,
+  "valence_estimate": -0.531231049120196,
+  "top_orn": {
+   "DM3": 289,
+   "VC3": 288,
+   "VM5d": 287,
+   "VM5v": 287,
+   "VM2": 286
+  },
+  "ppm": {
+   "isoamyl_acetate": 6.15,
+   "isobutyl_acetate": 2.1,
+   "butyl_acetate": 0.763,
+   "ethyl_acetate": 0.786,
+   "hexanal": 1.05,
+   "2-heptanone": 0.0754,
+   "isoamyl_alcohol": 0.136,
+   "ethanol": 40.9
+  },
+  "co2_excess_ppm": 157.19006725125465
+ },
+ {
+  "food": "ripe (day 0)",
+  "distance_m": 0.1,
+  "state": "starved_24h",
+  "orn_total_hz": 6157.042300426077,
+  "brain_active": 3135.333333333333,
+  "pn_total": 3370.6666666666674,
+  "valence_estimate": -0.2863849765255976,
+  "top_orn": {
+   "DM2": 369,
+   "DM3": 289,
+   "VC3": 288,
+   "VM5d": 287,
+   "VM5v": 287
+  },
+  "ppm": {
+   "isoamyl_acetate": 6.15,
+   "isobutyl_acetate": 2.1,
+   "butyl_acetate": 0.763,
+   "ethyl_acetate": 0.786,
+   "hexanal": 1.05,
+   "2-heptanone": 0.0754,
+   "isoamyl_alcohol": 0.136,
+   "ethanol": 40.9
+  },
+  "co2_excess_ppm": 157.19006725125465
+ },
+ {
+  "food": "ripe (day 0)",
+  "distance_m": 0.1,
+  "state": "protein_deprived",
+  "orn_total_hz": 6127.6201451259185,
+  "brain_active": 3164.9999999999995,
+  "pn_total": 3422.0,
+  "valence_estimate": -0.5529124733145292,
+  "top_orn": {
+   "DM3": 289,
+   "VC3": 288,
+   "VM5d": 287,
+   "VM5v": 287,
+   "VM2": 286
+  },
+  "ppm": {
+   "isoamyl_acetate": 6.15,
+   "isobutyl_acetate": 2.1,
+   "butyl_acetate": 0.763,
+   "ethyl_acetate": 0.786,
+   "hexanal": 1.05,
+   "2-heptanone": 0.0754,
+   "isoamyl_alcohol": 0.136,
+   "ethanol": 40.9
+  },
+  "co2_excess_ppm": 157.19006725125465
+ },
+ {
+  "food": "ripe (day 0)",
+  "distance_m": 0.1,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 6157.042300426077,
+  "brain_active": 3148.0,
+  "pn_total": 3361.3333333333326,
+  "valence_estimate": -0.29199372056491996,
+  "top_orn": {
+   "DM2": 369,
+   "DM3": 289,
+   "VC3": 288,
+   "VM5d": 287,
+   "VM5v": 287
+  },
+  "ppm": {
+   "isoamyl_acetate": 6.15,
+   "isobutyl_acetate": 2.1,
+   "butyl_acetate": 0.763,
+   "ethyl_acetate": 0.786,
+   "hexanal": 1.05,
+   "2-heptanone": 0.0754,
+   "isoamyl_alcohol": 0.136,
+   "ethanol": 40.9
+  },
+  "co2_excess_ppm": 157.19006725125465
+ },
+ {
+  "food": "ripe (day 0)",
+  "distance_m": 1.0,
+  "state": "fed",
+  "orn_total_hz": 1931.4759337077758,
+  "brain_active": 2336.333333333333,
+  "pn_total": 1164.6666666666667,
+  "valence_estimate": -0.19210526315713633,
+  "top_orn": {
+   "DM3": 172,
+   "VM5v": 156,
+   "DM2": 131,
+   "VM2": 131,
+   "VM5d": 127
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.125,
+   "isobutyl_acetate": 0.0428,
+   "butyl_acetate": 0.0156,
+   "ethyl_acetate": 0.016,
+   "hexanal": 0.0214,
+   "2-heptanone": 0.00154,
+   "isoamyl_alcohol": 0.00278,
+   "ethanol": 0.834
+  },
+  "co2_excess_ppm": 3.2079605561480546
+ },
+ {
+  "food": "ripe (day 0)",
+  "distance_m": 1.0,
+  "state": "starved_24h",
+  "orn_total_hz": 1956.6754491062434,
+  "brain_active": 2285.0,
+  "pn_total": 1183.6666666666665,
+  "valence_estimate": 0.07926829268268508,
+  "top_orn": {
+   "DM3": 172,
+   "DM2": 170,
+   "VM5v": 156,
+   "VM5d": 127,
+   "VM2": 104
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.125,
+   "isobutyl_acetate": 0.0428,
+   "butyl_acetate": 0.0156,
+   "ethyl_acetate": 0.016,
+   "hexanal": 0.0214,
+   "2-heptanone": 0.00154,
+   "isoamyl_alcohol": 0.00278,
+   "ethanol": 0.834
+  },
+  "co2_excess_ppm": 3.2079605561480546
+ },
+ {
+  "food": "ripe (day 0)",
+  "distance_m": 1.0,
+  "state": "protein_deprived",
+  "orn_total_hz": 1931.4759337077758,
+  "brain_active": 2385.0,
+  "pn_total": 1215.6666666666667,
+  "valence_estimate": -0.20356234096614415,
+  "top_orn": {
+   "DM3": 172,
+   "VM5v": 156,
+   "DM2": 131,
+   "VM2": 131,
+   "VM5d": 127
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.125,
+   "isobutyl_acetate": 0.0428,
+   "butyl_acetate": 0.0156,
+   "ethyl_acetate": 0.016,
+   "hexanal": 0.0214,
+   "2-heptanone": 0.00154,
+   "isoamyl_alcohol": 0.00278,
+   "ethanol": 0.834
+  },
+  "co2_excess_ppm": 3.2079605561480546
+ },
+ {
+  "food": "ripe (day 0)",
+  "distance_m": 1.0,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 1956.6754491062434,
+  "brain_active": 2275.3333333333335,
+  "pn_total": 1183.6666666666667,
+  "valence_estimate": 0.07050645481607597,
+  "top_orn": {
+   "DM3": 172,
+   "DM2": 170,
+   "VM5v": 156,
+   "VM5d": 127,
+   "VM2": 104
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.125,
+   "isobutyl_acetate": 0.0428,
+   "butyl_acetate": 0.0156,
+   "ethyl_acetate": 0.016,
+   "hexanal": 0.0214,
+   "2-heptanone": 0.00154,
+   "isoamyl_alcohol": 0.00278,
+   "ethanol": 0.834
+  },
+  "co2_excess_ppm": 3.2079605561480546
+ },
+ {
+  "food": "ripe (day 0)",
+  "distance_m": 10.0,
+  "state": "fed",
+  "orn_total_hz": 79.25531880039883,
+  "brain_active": 827.6666666666667,
+  "pn_total": 77.33333333333333,
+  "valence_estimate": 5.5511151227292735e-17,
+  "top_orn": {
+   "DM3": 8,
+   "VM5v": 7,
+   "DM2": 6,
+   "VM2": 5,
+   "VM5d": 5
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.00137,
+   "isobutyl_acetate": 0.000467,
+   "butyl_acetate": 0.00017,
+   "ethyl_acetate": 0.000175,
+   "hexanal": 0.000234,
+   "2-heptanone": 1.68e-05,
+   "isoamyl_alcohol": 3.03e-05,
+   "ethanol": 0.0091
+  },
+  "co2_excess_ppm": 0.035016722488584257
+ },
+ {
+  "food": "ripe (day 0)",
+  "distance_m": 10.0,
+  "state": "starved_24h",
+  "orn_total_hz": 80.5639543684003,
+  "brain_active": 932.3333333333335,
+  "pn_total": 115.66666666666669,
+  "valence_estimate": 0.13207547169063727,
+  "top_orn": {
+   "DM3": 8,
+   "DM2": 7,
+   "VM5v": 7,
+   "VM5d": 5,
+   "VM2": 4
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.00137,
+   "isobutyl_acetate": 0.000467,
+   "butyl_acetate": 0.00017,
+   "ethyl_acetate": 0.000175,
+   "hexanal": 0.000234,
+   "2-heptanone": 1.68e-05,
+   "isoamyl_alcohol": 3.03e-05,
+   "ethanol": 0.0091
+  },
+  "co2_excess_ppm": 0.035016722488584257
+ },
+ {
+  "food": "ripe (day 0)",
+  "distance_m": 10.0,
+  "state": "protein_deprived",
+  "orn_total_hz": 79.25531880039883,
+  "brain_active": 912.0,
+  "pn_total": 108.66666666666666,
+  "valence_estimate": -0.23636363635074384,
+  "top_orn": {
+   "DM3": 8,
+   "VM5v": 7,
+   "DM2": 6,
+   "VM2": 5,
+   "VM5d": 5
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.00137,
+   "isobutyl_acetate": 0.000467,
+   "butyl_acetate": 0.00017,
+   "ethyl_acetate": 0.000175,
+   "hexanal": 0.000234,
+   "2-heptanone": 1.68e-05,
+   "isoamyl_alcohol": 3.03e-05,
+   "ethanol": 0.0091
+  },
+  "co2_excess_ppm": 0.035016722488584257
+ },
+ {
+  "food": "ripe (day 0)",
+  "distance_m": 10.0,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 80.5639543684003,
+  "brain_active": 887.0,
+  "pn_total": 91.0,
+  "valence_estimate": -0.014925373133660064,
+  "top_orn": {
+   "DM3": 8,
+   "DM2": 7,
+   "VM5v": 7,
+   "VM5d": 5,
+   "VM2": 4
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.00137,
+   "isobutyl_acetate": 0.000467,
+   "butyl_acetate": 0.00017,
+   "ethyl_acetate": 0.000175,
+   "hexanal": 0.000234,
+   "2-heptanone": 1.68e-05,
+   "isoamyl_alcohol": 3.03e-05,
+   "ethanol": 0.0091
+  },
+  "co2_excess_ppm": 0.035016722488584257
+ },
+ {
+  "food": "overripe (day 5)",
+  "distance_m": 0.01,
+  "state": "fed",
+  "orn_total_hz": 7485.119946690091,
+  "brain_active": 3694.0,
+  "pn_total": 4104.333333333334,
+  "valence_estimate": -0.5298913043474662,
+  "top_orn": {
+   "DM3": 290,
+   "VC3": 290,
+   "VM5d": 290,
+   "VM2": 290,
+   "VM5v": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 61.4,
+   "isobutyl_acetate": 18.8,
+   "butyl_acetate": 7.31,
+   "ethyl_acetate": 18.8,
+   "hexanal": 2.52,
+   "2-heptanone": 1.35,
+   "isoamyl_alcohol": 1.63,
+   "ethanol": 489.0
+  },
+  "co2_excess_ppm": 982.437920320342
+ },
+ {
+  "food": "overripe (day 5)",
+  "distance_m": 0.01,
+  "state": "starved_24h",
+  "orn_total_hz": 7546.468732548414,
+  "brain_active": 3767.666666666667,
+  "pn_total": 3924.3333333333335,
+  "valence_estimate": -0.3269699431354628,
+  "top_orn": {
+   "DM1": 385,
+   "DM2": 375,
+   "DM4": 312,
+   "DM3": 290,
+   "VC3": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 61.4,
+   "isobutyl_acetate": 18.8,
+   "butyl_acetate": 7.31,
+   "ethyl_acetate": 18.8,
+   "hexanal": 2.52,
+   "2-heptanone": 1.35,
+   "isoamyl_alcohol": 1.63,
+   "ethanol": 489.0
+  },
+  "co2_excess_ppm": 982.437920320342
+ },
+ {
+  "food": "overripe (day 5)",
+  "distance_m": 0.01,
+  "state": "protein_deprived",
+  "orn_total_hz": 7485.119946690091,
+  "brain_active": 3624.0,
+  "pn_total": 4060.3333333333326,
+  "valence_estimate": -0.533424283764984,
+  "top_orn": {
+   "DM3": 290,
+   "VC3": 290,
+   "VM5d": 290,
+   "VM2": 290,
+   "VM5v": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 61.4,
+   "isobutyl_acetate": 18.8,
+   "butyl_acetate": 7.31,
+   "ethyl_acetate": 18.8,
+   "hexanal": 2.52,
+   "2-heptanone": 1.35,
+   "isoamyl_alcohol": 1.63,
+   "ethanol": 489.0
+  },
+  "co2_excess_ppm": 982.437920320342
+ },
+ {
+  "food": "overripe (day 5)",
+  "distance_m": 0.01,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 7546.468732548414,
+  "brain_active": 3615.0,
+  "pn_total": 3903.3333333333344,
+  "valence_estimate": -0.3169230769228819,
+  "top_orn": {
+   "DM1": 385,
+   "DM2": 375,
+   "DM4": 312,
+   "DM3": 290,
+   "VC3": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 61.4,
+   "isobutyl_acetate": 18.8,
+   "butyl_acetate": 7.31,
+   "ethyl_acetate": 18.8,
+   "hexanal": 2.52,
+   "2-heptanone": 1.35,
+   "isoamyl_alcohol": 1.63,
+   "ethanol": 489.0
+  },
+  "co2_excess_ppm": 982.437920320342
+ },
+ {
+  "food": "overripe (day 5)",
+  "distance_m": 0.1,
+  "state": "fed",
+  "orn_total_hz": 6623.2600907037695,
+  "brain_active": 3469.666666666666,
+  "pn_total": 3719.6666666666665,
+  "valence_estimate": -0.5525164113781024,
+  "top_orn": {
+   "DM3": 290,
+   "VC3": 289,
+   "VM5v": 288,
+   "VM2": 288,
+   "VM5d": 288
+  },
+  "ppm": {
+   "isoamyl_acetate": 9.82,
+   "isobutyl_acetate": 3.01,
+   "butyl_acetate": 1.17,
+   "ethyl_acetate": 3.01,
+   "hexanal": 0.403,
+   "2-heptanone": 0.217,
+   "isoamyl_alcohol": 0.261,
+   "ethanol": 78.3
+  },
+  "co2_excess_ppm": 157.19006725125465
+ },
+ {
+  "food": "overripe (day 5)",
+  "distance_m": 0.1,
+  "state": "starved_24h",
+  "orn_total_hz": 6675.814715971425,
+  "brain_active": 3574.333333333334,
+  "pn_total": 3586.0000000000014,
+  "valence_estimate": -0.24572243345990083,
+  "top_orn": {
+   "DM2": 372,
+   "DM1": 309,
+   "DM3": 290,
+   "VC3": 289,
+   "VM5v": 288
+  },
+  "ppm": {
+   "isoamyl_acetate": 9.82,
+   "isobutyl_acetate": 3.01,
+   "butyl_acetate": 1.17,
+   "ethyl_acetate": 3.01,
+   "hexanal": 0.403,
+   "2-heptanone": 0.217,
+   "isoamyl_alcohol": 0.261,
+   "ethanol": 78.3
+  },
+  "co2_excess_ppm": 157.19006725125465
+ },
+ {
+  "food": "overripe (day 5)",
+  "distance_m": 0.1,
+  "state": "protein_deprived",
+  "orn_total_hz": 6623.2600907037695,
+  "brain_active": 3512.0,
+  "pn_total": 3718.0,
+  "valence_estimate": -0.5288645690830132,
+  "top_orn": {
+   "DM3": 290,
+   "VC3": 289,
+   "VM5v": 288,
+   "VM2": 288,
+   "VM5d": 288
+  },
+  "ppm": {
+   "isoamyl_acetate": 9.82,
+   "isobutyl_acetate": 3.01,
+   "butyl_acetate": 1.17,
+   "ethyl_acetate": 3.01,
+   "hexanal": 0.403,
+   "2-heptanone": 0.217,
+   "isoamyl_alcohol": 0.261,
+   "ethanol": 78.3
+  },
+  "co2_excess_ppm": 157.19006725125465
+ },
+ {
+  "food": "overripe (day 5)",
+  "distance_m": 0.1,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 6675.814715971425,
+  "brain_active": 3435.666666666667,
+  "pn_total": 3596.6666666666665,
+  "valence_estimate": -0.25478011472257067,
+  "top_orn": {
+   "DM2": 372,
+   "DM1": 309,
+   "DM3": 290,
+   "VC3": 289,
+   "VM5v": 288
+  },
+  "ppm": {
+   "isoamyl_acetate": 9.82,
+   "isobutyl_acetate": 3.01,
+   "butyl_acetate": 1.17,
+   "ethyl_acetate": 3.01,
+   "hexanal": 0.403,
+   "2-heptanone": 0.217,
+   "isoamyl_alcohol": 0.261,
+   "ethanol": 78.3
+  },
+  "co2_excess_ppm": 157.19006725125465
+ },
+ {
+  "food": "overripe (day 5)",
+  "distance_m": 1.0,
+  "state": "fed",
+  "orn_total_hz": 2397.038778100504,
+  "brain_active": 2494.0,
+  "pn_total": 1432.3333333333335,
+  "valence_estimate": -0.18644067796554417,
+  "top_orn": {
+   "DM3": 208,
+   "VM5v": 188,
+   "VM2": 161,
+   "DM2": 157,
+   "VM5d": 145
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.2,
+   "isobutyl_acetate": 0.0615,
+   "butyl_acetate": 0.0239,
+   "ethyl_acetate": 0.0615,
+   "hexanal": 0.00822,
+   "2-heptanone": 0.00442,
+   "isoamyl_alcohol": 0.00532,
+   "ethanol": 1.6
+  },
+  "co2_excess_ppm": 3.2079605561480546
+ },
+ {
+  "food": "overripe (day 5)",
+  "distance_m": 1.0,
+  "state": "starved_24h",
+  "orn_total_hz": 2429.401130190436,
+  "brain_active": 2472.6666666666665,
+  "pn_total": 1413.3333333333335,
+  "valence_estimate": 0.09735973597335645,
+  "top_orn": {
+   "DM3": 208,
+   "DM2": 204,
+   "VM5v": 188,
+   "VM5d": 145,
+   "VM3": 129
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.2,
+   "isobutyl_acetate": 0.0615,
+   "butyl_acetate": 0.0239,
+   "ethyl_acetate": 0.0615,
+   "hexanal": 0.00822,
+   "2-heptanone": 0.00442,
+   "isoamyl_alcohol": 0.00532,
+   "ethanol": 1.6
+  },
+  "co2_excess_ppm": 3.2079605561480546
+ },
+ {
+  "food": "overripe (day 5)",
+  "distance_m": 1.0,
+  "state": "protein_deprived",
+  "orn_total_hz": 2397.038778100504,
+  "brain_active": 2518.0,
+  "pn_total": 1395.6666666666665,
+  "valence_estimate": -0.20550847457561797,
+  "top_orn": {
+   "DM3": 208,
+   "VM5v": 188,
+   "VM2": 161,
+   "DM2": 157,
+   "VM5d": 145
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.2,
+   "isobutyl_acetate": 0.0615,
+   "butyl_acetate": 0.0239,
+   "ethyl_acetate": 0.0615,
+   "hexanal": 0.00822,
+   "2-heptanone": 0.00442,
+   "isoamyl_alcohol": 0.00532,
+   "ethanol": 1.6
+  },
+  "co2_excess_ppm": 3.2079605561480546
+ },
+ {
+  "food": "overripe (day 5)",
+  "distance_m": 1.0,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 2429.401130190436,
+  "brain_active": 2405.0,
+  "pn_total": 1441.6666666666665,
+  "valence_estimate": 0.07974481658673103,
+  "top_orn": {
+   "DM3": 208,
+   "DM2": 204,
+   "VM5v": 188,
+   "VM5d": 145,
+   "VM3": 129
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.2,
+   "isobutyl_acetate": 0.0615,
+   "butyl_acetate": 0.0239,
+   "ethyl_acetate": 0.0615,
+   "hexanal": 0.00822,
+   "2-heptanone": 0.00442,
+   "isoamyl_alcohol": 0.00532,
+   "ethanol": 1.6
+  },
+  "co2_excess_ppm": 3.2079605561480546
+ },
+ {
+  "food": "overripe (day 5)",
+  "distance_m": 10.0,
+  "state": "fed",
+  "orn_total_hz": 112.60039952526112,
+  "brain_active": 994.6666666666667,
+  "pn_total": 110.66666666666667,
+  "valence_estimate": -0.08474576270755531,
+  "top_orn": {
+   "DM3": 12,
+   "VM5v": 10,
+   "DM2": 8,
+   "VM2": 8,
+   "VM5d": 7
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.00219,
+   "isobutyl_acetate": 0.000671,
+   "butyl_acetate": 0.00026,
+   "ethyl_acetate": 0.000671,
+   "hexanal": 8.97e-05,
+   "2-heptanone": 4.83e-05,
+   "isoamyl_alcohol": 5.81e-05,
+   "ethanol": 0.0174
+  },
+  "co2_excess_ppm": 0.035016722488584257
+ },
+ {
+  "food": "overripe (day 5)",
+  "distance_m": 10.0,
+  "state": "starved_24h",
+  "orn_total_hz": 114.57215068456324,
+  "brain_active": 992.6666666666666,
+  "pn_total": 110.0,
+  "valence_estimate": 0.0825688073371769,
+  "top_orn": {
+   "DM3": 12,
+   "DM2": 10,
+   "VM5v": 10,
+   "VM5d": 7,
+   "VM2": 6
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.00219,
+   "isobutyl_acetate": 0.000671,
+   "butyl_acetate": 0.00026,
+   "ethyl_acetate": 0.000671,
+   "hexanal": 8.97e-05,
+   "2-heptanone": 4.83e-05,
+   "isoamyl_alcohol": 5.81e-05,
+   "ethanol": 0.0174
+  },
+  "co2_excess_ppm": 0.035016722488584257
+ },
+ {
+  "food": "overripe (day 5)",
+  "distance_m": 10.0,
+  "state": "protein_deprived",
+  "orn_total_hz": 112.60039952526112,
+  "brain_active": 1072.3333333333333,
+  "pn_total": 116.66666666666669,
+  "valence_estimate": 0.2105263157728531,
+  "top_orn": {
+   "DM3": 12,
+   "VM5v": 10,
+   "DM2": 8,
+   "VM2": 8,
+   "VM5d": 7
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.00219,
+   "isobutyl_acetate": 0.000671,
+   "butyl_acetate": 0.00026,
+   "ethyl_acetate": 0.000671,
+   "hexanal": 8.97e-05,
+   "2-heptanone": 4.83e-05,
+   "isoamyl_alcohol": 5.81e-05,
+   "ethanol": 0.0174
+  },
+  "co2_excess_ppm": 0.035016722488584257
+ },
+ {
+  "food": "overripe (day 5)",
+  "distance_m": 10.0,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 114.57215068456324,
+  "brain_active": 1073.6666666666665,
+  "pn_total": 117.99999999999999,
+  "valence_estimate": 0.2682926829170137,
+  "top_orn": {
+   "DM3": 12,
+   "DM2": 10,
+   "VM5v": 10,
+   "VM5d": 7,
+   "VM2": 6
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.00219,
+   "isobutyl_acetate": 0.000671,
+   "butyl_acetate": 0.00026,
+   "ethyl_acetate": 0.000671,
+   "hexanal": 8.97e-05,
+   "2-heptanone": 4.83e-05,
+   "isoamyl_alcohol": 5.81e-05,
+   "ethanol": 0.0174
+  },
+  "co2_excess_ppm": 0.035016722488584257
+ },
+ {
+  "food": "rotting day 2",
+  "distance_m": 0.01,
+  "state": "fed",
+  "orn_total_hz": 8104.99680863089,
+  "brain_active": 3815.0,
+  "pn_total": 4293.333333333334,
+  "valence_estimate": -0.5718862635158759,
+  "top_orn": {
+   "VC3": 290,
+   "DM3": 290,
+   "VM2": 290,
+   "VM5d": 290,
+   "VM5v": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 47.8,
+   "isobutyl_acetate": 15.5,
+   "butyl_acetate": 5.81,
+   "ethyl_acetate": 348.0,
+   "hexanal": 4.91,
+   "2-heptanone": 0.833,
+   "isoamyl_alcohol": 40.1,
+   "ethanol": 7660.0,
+   "acetoin": 6.29,
+   "2-phenylethanol": 0.215,
+   "acetic_acid": 0.0427
+  },
+  "co2_excess_ppm": 1964.6184362358165
+ },
+ {
+  "food": "rotting day 2",
+  "distance_m": 0.01,
+  "state": "starved_24h",
+  "orn_total_hz": 8162.666786990795,
+  "brain_active": 3903.3333333333335,
+  "pn_total": 4054.0,
+  "valence_estimate": -0.39477052477579366,
+  "top_orn": {
+   "DM1": 418,
+   "DM2": 376,
+   "DM4": 326,
+   "VC3": 290,
+   "DM3": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 47.8,
+   "isobutyl_acetate": 15.5,
+   "butyl_acetate": 5.81,
+   "ethyl_acetate": 348.0,
+   "hexanal": 4.91,
+   "2-heptanone": 0.833,
+   "isoamyl_alcohol": 40.1,
+   "ethanol": 7660.0,
+   "acetoin": 6.29,
+   "2-phenylethanol": 0.215,
+   "acetic_acid": 0.0427
+  },
+  "co2_excess_ppm": 1964.6184362358165
+ },
+ {
+  "food": "rotting day 2",
+  "distance_m": 0.01,
+  "state": "protein_deprived",
+  "orn_total_hz": 8104.99680863089,
+  "brain_active": 3979.666666666667,
+  "pn_total": 4295.0,
+  "valence_estimate": -0.5788844621510485,
+  "top_orn": {
+   "VC3": 290,
+   "DM3": 290,
+   "VM2": 290,
+   "VM5d": 290,
+   "VM5v": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 47.8,
+   "isobutyl_acetate": 15.5,
+   "butyl_acetate": 5.81,
+   "ethyl_acetate": 348.0,
+   "hexanal": 4.91,
+   "2-heptanone": 0.833,
+   "isoamyl_alcohol": 40.1,
+   "ethanol": 7660.0,
+   "acetoin": 6.29,
+   "2-phenylethanol": 0.215,
+   "acetic_acid": 0.0427
+  },
+  "co2_excess_ppm": 1964.6184362358165
+ },
+ {
+  "food": "rotting day 2",
+  "distance_m": 0.01,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 8162.666786990795,
+  "brain_active": 3901.666666666667,
+  "pn_total": 4098.0,
+  "valence_estimate": -0.39340101522821247,
+  "top_orn": {
+   "DM1": 418,
+   "DM2": 376,
+   "DM4": 326,
+   "VC3": 290,
+   "DM3": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 47.8,
+   "isobutyl_acetate": 15.5,
+   "butyl_acetate": 5.81,
+   "ethyl_acetate": 348.0,
+   "hexanal": 4.91,
+   "2-heptanone": 0.833,
+   "isoamyl_alcohol": 40.1,
+   "ethanol": 7660.0,
+   "acetoin": 6.29,
+   "2-phenylethanol": 0.215,
+   "acetic_acid": 0.0427
+  },
+  "co2_excess_ppm": 1964.6184362358165
+ },
+ {
+  "food": "rotting day 2",
+  "distance_m": 0.1,
+  "state": "fed",
+  "orn_total_hz": 7522.112931155039,
+  "brain_active": 4086.666666666666,
+  "pn_total": 4057.3333333333326,
+  "valence_estimate": -0.5413080895005112,
+  "top_orn": {
+   "VC3": 290,
+   "DM3": 290,
+   "VM2": 289,
+   "VM5d": 288,
+   "VM5v": 288
+  },
+  "ppm": {
+   "isoamyl_acetate": 7.65,
+   "isobutyl_acetate": 2.47,
+   "butyl_acetate": 0.93,
+   "ethyl_acetate": 55.7,
+   "hexanal": 0.785,
+   "2-heptanone": 0.133,
+   "isoamyl_alcohol": 6.42,
+   "ethanol": 1230.0,
+   "acetoin": 1.01,
+   "2-phenylethanol": 0.0344,
+   "acetic_acid": 0.00683
+  },
+  "co2_excess_ppm": 314.33894979773055
+ },
+ {
+  "food": "rotting day 2",
+  "distance_m": 0.1,
+  "state": "starved_24h",
+  "orn_total_hz": 7581.5001604702275,
+  "brain_active": 3747.666666666667,
+  "pn_total": 3883.6666666666665,
+  "valence_estimate": -0.36040216550636484,
+  "top_orn": {
+   "DM1": 403,
+   "DM2": 374,
+   "DM4": 311,
+   "VC3": 290,
+   "DM3": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 7.65,
+   "isobutyl_acetate": 2.47,
+   "butyl_acetate": 0.93,
+   "ethyl_acetate": 55.7,
+   "hexanal": 0.785,
+   "2-heptanone": 0.133,
+   "isoamyl_alcohol": 6.42,
+   "ethanol": 1230.0,
+   "acetoin": 1.01,
+   "2-phenylethanol": 0.0344,
+   "acetic_acid": 0.00683
+  },
+  "co2_excess_ppm": 314.33894979773055
+ },
+ {
+  "food": "rotting day 2",
+  "distance_m": 0.1,
+  "state": "protein_deprived",
+  "orn_total_hz": 7522.112931155039,
+  "brain_active": 3680.333333333333,
+  "pn_total": 4065.3333333333335,
+  "valence_estimate": -0.5325833156438976,
+  "top_orn": {
+   "VC3": 290,
+   "DM3": 290,
+   "VM2": 289,
+   "VM5d": 288,
+   "VM5v": 288
+  },
+  "ppm": {
+   "isoamyl_acetate": 7.65,
+   "isobutyl_acetate": 2.47,
+   "butyl_acetate": 0.93,
+   "ethyl_acetate": 55.7,
+   "hexanal": 0.785,
+   "2-heptanone": 0.133,
+   "isoamyl_alcohol": 6.42,
+   "ethanol": 1230.0,
+   "acetoin": 1.01,
+   "2-phenylethanol": 0.0344,
+   "acetic_acid": 0.00683
+  },
+  "co2_excess_ppm": 314.33894979773055
+ },
+ {
+  "food": "rotting day 2",
+  "distance_m": 0.1,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 7581.5001604702275,
+  "brain_active": 3737.0,
+  "pn_total": 3873.6666666666665,
+  "valence_estimate": -0.3571987480436089,
+  "top_orn": {
+   "DM1": 403,
+   "DM2": 374,
+   "DM4": 311,
+   "VC3": 290,
+   "DM3": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 7.65,
+   "isobutyl_acetate": 2.47,
+   "butyl_acetate": 0.93,
+   "ethyl_acetate": 55.7,
+   "hexanal": 0.785,
+   "2-heptanone": 0.133,
+   "isoamyl_alcohol": 6.42,
+   "ethanol": 1230.0,
+   "acetoin": 1.01,
+   "2-phenylethanol": 0.0344,
+   "acetic_acid": 0.00683
+  },
+  "co2_excess_ppm": 314.33894979773055
+ },
+ {
+  "food": "rotting day 2",
+  "distance_m": 1.0,
+  "state": "fed",
+  "orn_total_hz": 3854.5218756255654,
+  "brain_active": 2588.0,
+  "pn_total": 2031.6666666666665,
+  "valence_estimate": -0.24608043626398207,
+  "top_orn": {
+   "VC3": 270,
+   "DM3": 235,
+   "VM2": 212,
+   "VA3": 203,
+   "DM2": 200
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.156,
+   "isobutyl_acetate": 0.0505,
+   "butyl_acetate": 0.019,
+   "ethyl_acetate": 1.14,
+   "hexanal": 0.016,
+   "2-heptanone": 0.00272,
+   "isoamyl_alcohol": 0.131,
+   "ethanol": 25.0,
+   "acetoin": 0.0205,
+   "2-phenylethanol": 0.000701,
+   "acetic_acid": 0.000139
+  },
+  "co2_excess_ppm": 6.415080608116951
+ },
+ {
+  "food": "rotting day 2",
+  "distance_m": 1.0,
+  "state": "starved_24h",
+  "orn_total_hz": 3879.6281943707268,
+  "brain_active": 2642.0,
+  "pn_total": 2004.6666666666667,
+  "valence_estimate": 0.14480741101880323,
+  "top_orn": {
+   "VC3": 270,
+   "DM2": 260,
+   "DM3": 235,
+   "DM1": 194,
+   "VM5v": 183
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.156,
+   "isobutyl_acetate": 0.0505,
+   "butyl_acetate": 0.019,
+   "ethyl_acetate": 1.14,
+   "hexanal": 0.016,
+   "2-heptanone": 0.00272,
+   "isoamyl_alcohol": 0.131,
+   "ethanol": 25.0,
+   "acetoin": 0.0205,
+   "2-phenylethanol": 0.000701,
+   "acetic_acid": 0.000139
+  },
+  "co2_excess_ppm": 6.415080608116951
+ },
+ {
+  "food": "rotting day 2",
+  "distance_m": 1.0,
+  "state": "protein_deprived",
+  "orn_total_hz": 3854.5218756255654,
+  "brain_active": 2574.333333333333,
+  "pn_total": 2054.6666666666665,
+  "valence_estimate": -0.22357723577190333,
+  "top_orn": {
+   "VC3": 270,
+   "DM3": 235,
+   "VM2": 212,
+   "VA3": 203,
+   "DM2": 200
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.156,
+   "isobutyl_acetate": 0.0505,
+   "butyl_acetate": 0.019,
+   "ethyl_acetate": 1.14,
+   "hexanal": 0.016,
+   "2-heptanone": 0.00272,
+   "isoamyl_alcohol": 0.131,
+   "ethanol": 25.0,
+   "acetoin": 0.0205,
+   "2-phenylethanol": 0.000701,
+   "acetic_acid": 0.000139
+  },
+  "co2_excess_ppm": 6.415080608116951
+ },
+ {
+  "food": "rotting day 2",
+  "distance_m": 1.0,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 3879.6281943707268,
+  "brain_active": 2640.6666666666665,
+  "pn_total": 1983.3333333333333,
+  "valence_estimate": 0.14763779527537255,
+  "top_orn": {
+   "VC3": 270,
+   "DM2": 260,
+   "DM3": 235,
+   "DM1": 194,
+   "VM5v": 183
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.156,
+   "isobutyl_acetate": 0.0505,
+   "butyl_acetate": 0.019,
+   "ethyl_acetate": 1.14,
+   "hexanal": 0.016,
+   "2-heptanone": 0.00272,
+   "isoamyl_alcohol": 0.131,
+   "ethanol": 25.0,
+   "acetoin": 0.0205,
+   "2-phenylethanol": 0.000701,
+   "acetic_acid": 0.000139
+  },
+  "co2_excess_ppm": 6.415080608116951
+ },
+ {
+  "food": "rotting day 2",
+  "distance_m": 10.0,
+  "state": "fed",
+  "orn_total_hz": 213.87902006176344,
+  "brain_active": 1284.0,
+  "pn_total": 156.99999999999994,
+  "valence_estimate": -0.2151898734095497,
+  "top_orn": {
+   "VC3": 27,
+   "DM3": 15,
+   "VA3": 13,
+   "VM2": 12,
+   "DM2": 12
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.0017,
+   "isobutyl_acetate": 0.000551,
+   "butyl_acetate": 0.000207,
+   "ethyl_acetate": 0.0124,
+   "hexanal": 0.000175,
+   "2-heptanone": 2.97e-05,
+   "isoamyl_alcohol": 0.00143,
+   "ethanol": 0.273,
+   "acetoin": 0.000224,
+   "2-phenylethanol": 7.65e-06,
+   "acetic_acid": 1.52e-06
+  },
+  "co2_excess_ppm": 0.07002427039379165
+ },
+ {
+  "food": "rotting day 2",
+  "distance_m": 10.0,
+  "state": "starved_24h",
+  "orn_total_hz": 214.22724809369518,
+  "brain_active": 1346.3333333333333,
+  "pn_total": 161.99999999999997,
+  "valence_estimate": 0.3255813953374797,
+  "top_orn": {
+   "VC3": 27,
+   "DM2": 15,
+   "DM3": 15,
+   "VM3": 10,
+   "VA3": 10
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.0017,
+   "isobutyl_acetate": 0.000551,
+   "butyl_acetate": 0.000207,
+   "ethyl_acetate": 0.0124,
+   "hexanal": 0.000175,
+   "2-heptanone": 2.97e-05,
+   "isoamyl_alcohol": 0.00143,
+   "ethanol": 0.273,
+   "acetoin": 0.000224,
+   "2-phenylethanol": 7.65e-06,
+   "acetic_acid": 1.52e-06
+  },
+  "co2_excess_ppm": 0.07002427039379165
+ },
+ {
+  "food": "rotting day 2",
+  "distance_m": 10.0,
+  "state": "protein_deprived",
+  "orn_total_hz": 213.87902006176344,
+  "brain_active": 1277.0,
+  "pn_total": 154.33333333333334,
+  "valence_estimate": -0.0958904109549634,
+  "top_orn": {
+   "VC3": 27,
+   "DM3": 15,
+   "VA3": 13,
+   "VM2": 12,
+   "DM2": 12
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.0017,
+   "isobutyl_acetate": 0.000551,
+   "butyl_acetate": 0.000207,
+   "ethyl_acetate": 0.0124,
+   "hexanal": 0.000175,
+   "2-heptanone": 2.97e-05,
+   "isoamyl_alcohol": 0.00143,
+   "ethanol": 0.273,
+   "acetoin": 0.000224,
+   "2-phenylethanol": 7.65e-06,
+   "acetic_acid": 1.52e-06
+  },
+  "co2_excess_ppm": 0.07002427039379165
+ },
+ {
+  "food": "rotting day 2",
+  "distance_m": 10.0,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 214.22724809369518,
+  "brain_active": 1270.3333333333335,
+  "pn_total": 149.99999999999997,
+  "valence_estimate": 0.3673469387642649,
+  "top_orn": {
+   "VC3": 27,
+   "DM2": 15,
+   "DM3": 15,
+   "VM3": 10,
+   "VA3": 10
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.0017,
+   "isobutyl_acetate": 0.000551,
+   "butyl_acetate": 0.000207,
+   "ethyl_acetate": 0.0124,
+   "hexanal": 0.000175,
+   "2-heptanone": 2.97e-05,
+   "isoamyl_alcohol": 0.00143,
+   "ethanol": 0.273,
+   "acetoin": 0.000224,
+   "2-phenylethanol": 7.65e-06,
+   "acetic_acid": 1.52e-06
+  },
+  "co2_excess_ppm": 0.07002427039379165
+ },
+ {
+  "food": "rotting day 4",
+  "distance_m": 0.01,
+  "state": "fed",
+  "orn_total_hz": 8611.580411181929,
+  "brain_active": 4234.0,
+  "pn_total": 4338.666666666667,
+  "valence_estimate": -0.5784181009472568,
+  "top_orn": {
+   "VC3": 290,
+   "DM3": 290,
+   "VM2": 290,
+   "VM5d": 290,
+   "VM5v": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 56.9,
+   "isobutyl_acetate": 17.7,
+   "butyl_acetate": 6.82,
+   "ethyl_acetate": 578.0,
+   "hexanal": 3.3,
+   "2-heptanone": 1.18,
+   "isoamyl_alcohol": 66.4,
+   "ethanol": 12300.0,
+   "acetoin": 7.74,
+   "2-phenylethanol": 0.357,
+   "acetic_acid": 4.05
+  },
+  "co2_excess_ppm": 1668.515690680406
+ },
+ {
+  "food": "rotting day 4",
+  "distance_m": 0.01,
+  "state": "starved_24h",
+  "orn_total_hz": 8669.895309702388,
+  "brain_active": 4067.666666666666,
+  "pn_total": 4162.666666666666,
+  "valence_estimate": -0.4110756123533488,
+  "top_orn": {
+   "DM1": 420,
+   "DM2": 376,
+   "DM4": 330,
+   "VC3": 290,
+   "DM3": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 56.9,
+   "isobutyl_acetate": 17.7,
+   "butyl_acetate": 6.82,
+   "ethyl_acetate": 578.0,
+   "hexanal": 3.3,
+   "2-heptanone": 1.18,
+   "isoamyl_alcohol": 66.4,
+   "ethanol": 12300.0,
+   "acetoin": 7.74,
+   "2-phenylethanol": 0.357,
+   "acetic_acid": 4.05
+  },
+  "co2_excess_ppm": 1668.515690680406
+ },
+ {
+  "food": "rotting day 4",
+  "distance_m": 0.01,
+  "state": "protein_deprived",
+  "orn_total_hz": 8611.580411181929,
+  "brain_active": 4530.333333333334,
+  "pn_total": 4392.333333333333,
+  "valence_estimate": -0.5825688073391155,
+  "top_orn": {
+   "VC3": 290,
+   "DM3": 290,
+   "VM2": 290,
+   "VM5d": 290,
+   "VM5v": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 56.9,
+   "isobutyl_acetate": 17.7,
+   "butyl_acetate": 6.82,
+   "ethyl_acetate": 578.0,
+   "hexanal": 3.3,
+   "2-heptanone": 1.18,
+   "isoamyl_alcohol": 66.4,
+   "ethanol": 12300.0,
+   "acetoin": 7.74,
+   "2-phenylethanol": 0.357,
+   "acetic_acid": 4.05
+  },
+  "co2_excess_ppm": 1668.515690680406
+ },
+ {
+  "food": "rotting day 4",
+  "distance_m": 0.01,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 8669.895309702388,
+  "brain_active": 4071.333333333334,
+  "pn_total": 4205.000000000001,
+  "valence_estimate": -0.4033658104515129,
+  "top_orn": {
+   "DM1": 420,
+   "DM2": 376,
+   "DM4": 330,
+   "VC3": 290,
+   "DM3": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 56.9,
+   "isobutyl_acetate": 17.7,
+   "butyl_acetate": 6.82,
+   "ethyl_acetate": 578.0,
+   "hexanal": 3.3,
+   "2-heptanone": 1.18,
+   "isoamyl_alcohol": 66.4,
+   "ethanol": 12300.0,
+   "acetoin": 7.74,
+   "2-phenylethanol": 0.357,
+   "acetic_acid": 4.05
+  },
+  "co2_excess_ppm": 1668.515690680406
+ },
+ {
+  "food": "rotting day 4",
+  "distance_m": 0.1,
+  "state": "fed",
+  "orn_total_hz": 7831.33377126236,
+  "brain_active": 4117.666666666667,
+  "pn_total": 4121.333333333334,
+  "valence_estimate": -0.557411273486081,
+  "top_orn": {
+   "VC3": 290,
+   "DM3": 290,
+   "VM2": 289,
+   "VM5v": 289,
+   "VM5d": 288
+  },
+  "ppm": {
+   "isoamyl_acetate": 9.11,
+   "isobutyl_acetate": 2.84,
+   "butyl_acetate": 1.09,
+   "ethyl_acetate": 92.5,
+   "hexanal": 0.528,
+   "2-heptanone": 0.189,
+   "isoamyl_alcohol": 10.6,
+   "ethanol": 1960.0,
+   "acetoin": 1.24,
+   "2-phenylethanol": 0.0572,
+   "acetic_acid": 0.648
+  },
+  "co2_excess_ppm": 266.96251050886485
+ },
+ {
+  "food": "rotting day 4",
+  "distance_m": 0.1,
+  "state": "starved_24h",
+  "orn_total_hz": 7891.7584711582895,
+  "brain_active": 3852.333333333333,
+  "pn_total": 3898.666666666667,
+  "valence_estimate": -0.369973190348313,
+  "top_orn": {
+   "DM1": 409,
+   "DM2": 374,
+   "DM4": 316,
+   "VC3": 290,
+   "DM3": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 9.11,
+   "isobutyl_acetate": 2.84,
+   "butyl_acetate": 1.09,
+   "ethyl_acetate": 92.5,
+   "hexanal": 0.528,
+   "2-heptanone": 0.189,
+   "isoamyl_alcohol": 10.6,
+   "ethanol": 1960.0,
+   "acetoin": 1.24,
+   "2-phenylethanol": 0.0572,
+   "acetic_acid": 0.648
+  },
+  "co2_excess_ppm": 266.96251050886485
+ },
+ {
+  "food": "rotting day 4",
+  "distance_m": 0.1,
+  "state": "protein_deprived",
+  "orn_total_hz": 7831.33377126236,
+  "brain_active": 4008.666666666667,
+  "pn_total": 4164.666666666666,
+  "valence_estimate": -0.5530657975144309,
+  "top_orn": {
+   "VC3": 290,
+   "DM3": 290,
+   "VM2": 289,
+   "VM5v": 289,
+   "VM5d": 288
+  },
+  "ppm": {
+   "isoamyl_acetate": 9.11,
+   "isobutyl_acetate": 2.84,
+   "butyl_acetate": 1.09,
+   "ethyl_acetate": 92.5,
+   "hexanal": 0.528,
+   "2-heptanone": 0.189,
+   "isoamyl_alcohol": 10.6,
+   "ethanol": 1960.0,
+   "acetoin": 1.24,
+   "2-phenylethanol": 0.0572,
+   "acetic_acid": 0.648
+  },
+  "co2_excess_ppm": 266.96251050886485
+ },
+ {
+  "food": "rotting day 4",
+  "distance_m": 0.1,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 7891.7584711582895,
+  "brain_active": 3944.0,
+  "pn_total": 3929.6666666666674,
+  "valence_estimate": -0.36946564885475025,
+  "top_orn": {
+   "DM1": 409,
+   "DM2": 374,
+   "DM4": 316,
+   "VC3": 290,
+   "DM3": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 9.11,
+   "isobutyl_acetate": 2.84,
+   "butyl_acetate": 1.09,
+   "ethyl_acetate": 92.5,
+   "hexanal": 0.528,
+   "2-heptanone": 0.189,
+   "isoamyl_alcohol": 10.6,
+   "ethanol": 1960.0,
+   "acetoin": 1.24,
+   "2-phenylethanol": 0.0572,
+   "acetic_acid": 0.648
+  },
+  "co2_excess_ppm": 266.96251050886485
+ },
+ {
+  "food": "rotting day 4",
+  "distance_m": 1.0,
+  "state": "fed",
+  "orn_total_hz": 4328.9204086932095,
+  "brain_active": 2720.3333333333335,
+  "pn_total": 2252.0,
+  "valence_estimate": -0.2719999999995337,
+  "top_orn": {
+   "VC3": 277,
+   "DM3": 249,
+   "VM2": 229,
+   "VA3": 226,
+   "DM2": 216
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.186,
+   "isobutyl_acetate": 0.0579,
+   "butyl_acetate": 0.0223,
+   "ethyl_acetate": 1.89,
+   "hexanal": 0.0108,
+   "2-heptanone": 0.00386,
+   "isoamyl_alcohol": 0.217,
+   "ethanol": 40.1,
+   "acetoin": 0.0253,
+   "2-phenylethanol": 0.00117,
+   "acetic_acid": 0.0132
+  },
+  "co2_excess_ppm": 5.448214500180915
+ },
+ {
+  "food": "rotting day 4",
+  "distance_m": 1.0,
+  "state": "starved_24h",
+  "orn_total_hz": 4360.310618670906,
+  "brain_active": 2772.0,
+  "pn_total": 2174.0,
+  "valence_estimate": 0.1298756965279085,
+  "top_orn": {
+   "DM2": 280,
+   "VC3": 277,
+   "DM3": 249,
+   "DM1": 233,
+   "VM3": 198
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.186,
+   "isobutyl_acetate": 0.0579,
+   "butyl_acetate": 0.0223,
+   "ethyl_acetate": 1.89,
+   "hexanal": 0.0108,
+   "2-heptanone": 0.00386,
+   "isoamyl_alcohol": 0.217,
+   "ethanol": 40.1,
+   "acetoin": 0.0253,
+   "2-phenylethanol": 0.00117,
+   "acetic_acid": 0.0132
+  },
+  "co2_excess_ppm": 5.448214500180915
+ },
+ {
+  "food": "rotting day 4",
+  "distance_m": 1.0,
+  "state": "protein_deprived",
+  "orn_total_hz": 4328.9204086932095,
+  "brain_active": 2687.3333333333335,
+  "pn_total": 2311.666666666667,
+  "valence_estimate": -0.262135922329648,
+  "top_orn": {
+   "VC3": 277,
+   "DM3": 249,
+   "VM2": 229,
+   "VA3": 226,
+   "DM2": 216
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.186,
+   "isobutyl_acetate": 0.0579,
+   "butyl_acetate": 0.0223,
+   "ethyl_acetate": 1.89,
+   "hexanal": 0.0108,
+   "2-heptanone": 0.00386,
+   "isoamyl_alcohol": 0.217,
+   "ethanol": 40.1,
+   "acetoin": 0.0253,
+   "2-phenylethanol": 0.00117,
+   "acetic_acid": 0.0132
+  },
+  "co2_excess_ppm": 5.448214500180915
+ },
+ {
+  "food": "rotting day 4",
+  "distance_m": 1.0,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 4360.310618670906,
+  "brain_active": 2777.3333333333335,
+  "pn_total": 2230.9999999999995,
+  "valence_estimate": 0.10333048676331769,
+  "top_orn": {
+   "DM2": 280,
+   "VC3": 277,
+   "DM3": 249,
+   "DM1": 233,
+   "VM3": 198
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.186,
+   "isobutyl_acetate": 0.0579,
+   "butyl_acetate": 0.0223,
+   "ethyl_acetate": 1.89,
+   "hexanal": 0.0108,
+   "2-heptanone": 0.00386,
+   "isoamyl_alcohol": 0.217,
+   "ethanol": 40.1,
+   "acetoin": 0.0253,
+   "2-phenylethanol": 0.00117,
+   "acetic_acid": 0.0132
+  },
+  "co2_excess_ppm": 5.448214500180915
+ },
+ {
+  "food": "rotting day 4",
+  "distance_m": 10.0,
+  "state": "fed",
+  "orn_total_hz": 285.8781777315262,
+  "brain_active": 1390.3333333333333,
+  "pn_total": 194.33333333333331,
+  "valence_estimate": -0.1081081081037254,
+  "top_orn": {
+   "VC3": 38,
+   "DM3": 18,
+   "VA3": 18,
+   "VM2": 16,
+   "DM2": 15
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.00203,
+   "isobutyl_acetate": 0.000632,
+   "butyl_acetate": 0.000243,
+   "ethyl_acetate": 0.0206,
+   "hexanal": 0.000118,
+   "2-heptanone": 4.22e-05,
+   "isoamyl_alcohol": 0.00237,
+   "ethanol": 0.437,
+   "acetoin": 0.000276,
+   "2-phenylethanol": 1.27e-05,
+   "acetic_acid": 0.000144
+  },
+  "co2_excess_ppm": 0.059470374361520376
+ },
+ {
+  "food": "rotting day 4",
+  "distance_m": 10.0,
+  "state": "starved_24h",
+  "orn_total_hz": 285.91162670787855,
+  "brain_active": 1466.6666666666665,
+  "pn_total": 188.33333333333337,
+  "valence_estimate": 0.3829787233920327,
+  "top_orn": {
+   "VC3": 38,
+   "DM2": 19,
+   "DM3": 18,
+   "VA3": 14,
+   "VM3": 14
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.00203,
+   "isobutyl_acetate": 0.000632,
+   "butyl_acetate": 0.000243,
+   "ethyl_acetate": 0.0206,
+   "hexanal": 0.000118,
+   "2-heptanone": 4.22e-05,
+   "isoamyl_alcohol": 0.00237,
+   "ethanol": 0.437,
+   "acetoin": 0.000276,
+   "2-phenylethanol": 1.27e-05,
+   "acetic_acid": 0.000144
+  },
+  "co2_excess_ppm": 0.059470374361520376
+ },
+ {
+  "food": "rotting day 4",
+  "distance_m": 10.0,
+  "state": "protein_deprived",
+  "orn_total_hz": 285.8781777315262,
+  "brain_active": 1416.3333333333335,
+  "pn_total": 206.3333333333333,
+  "valence_estimate": -0.3414634146216538,
+  "top_orn": {
+   "VC3": 38,
+   "DM3": 18,
+   "VA3": 18,
+   "VM2": 16,
+   "DM2": 15
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.00203,
+   "isobutyl_acetate": 0.000632,
+   "butyl_acetate": 0.000243,
+   "ethyl_acetate": 0.0206,
+   "hexanal": 0.000118,
+   "2-heptanone": 4.22e-05,
+   "isoamyl_alcohol": 0.00237,
+   "ethanol": 0.437,
+   "acetoin": 0.000276,
+   "2-phenylethanol": 1.27e-05,
+   "acetic_acid": 0.000144
+  },
+  "co2_excess_ppm": 0.059470374361520376
+ },
+ {
+  "food": "rotting day 4",
+  "distance_m": 10.0,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 285.91162670787855,
+  "brain_active": 1383.6666666666667,
+  "pn_total": 191.0,
+  "valence_estimate": 0.10948905109249298,
+  "top_orn": {
+   "VC3": 38,
+   "DM2": 19,
+   "DM3": 18,
+   "VA3": 14,
+   "VM3": 14
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.00203,
+   "isobutyl_acetate": 0.000632,
+   "butyl_acetate": 0.000243,
+   "ethyl_acetate": 0.0206,
+   "hexanal": 0.000118,
+   "2-heptanone": 4.22e-05,
+   "isoamyl_alcohol": 0.00237,
+   "ethanol": 0.437,
+   "acetoin": 0.000276,
+   "2-phenylethanol": 1.27e-05,
+   "acetic_acid": 0.000144
+  },
+  "co2_excess_ppm": 0.059470374361520376
+ },
+ {
+  "food": "rotting day 7",
+  "distance_m": 0.01,
+  "state": "fed",
+  "orn_total_hz": 8835.592719929358,
+  "brain_active": 4310.0,
+  "pn_total": 4436.666666666666,
+  "valence_estimate": -0.5897138437738264,
+  "top_orn": {
+   "VC3": 290,
+   "DM3": 290,
+   "VM2": 290,
+   "VM5d": 290,
+   "VM5v": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 61.4,
+   "isobutyl_acetate": 18.8,
+   "butyl_acetate": 7.31,
+   "ethyl_acetate": 886.0,
+   "hexanal": 2.52,
+   "2-heptanone": 1.35,
+   "isoamyl_alcohol": 102.0,
+   "ethanol": 16400.0,
+   "acetoin": 8.5,
+   "2-phenylethanol": 0.552,
+   "acetic_acid": 52.2
+  },
+  "co2_excess_ppm": 1627.7637648788022
+ },
+ {
+  "food": "rotting day 7",
+  "distance_m": 0.01,
+  "state": "starved_24h",
+  "orn_total_hz": 8894.397961511051,
+  "brain_active": 4093.0,
+  "pn_total": 4218.333333333333,
+  "valence_estimate": -0.3960743077460238,
+  "top_orn": {
+   "DM1": 421,
+   "DM2": 376,
+   "DM4": 333,
+   "VC3": 290,
+   "DM3": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 61.4,
+   "isobutyl_acetate": 18.8,
+   "butyl_acetate": 7.31,
+   "ethyl_acetate": 886.0,
+   "hexanal": 2.52,
+   "2-heptanone": 1.35,
+   "isoamyl_alcohol": 102.0,
+   "ethanol": 16400.0,
+   "acetoin": 8.5,
+   "2-phenylethanol": 0.552,
+   "acetic_acid": 52.2
+  },
+  "co2_excess_ppm": 1627.7637648788022
+ },
+ {
+  "food": "rotting day 7",
+  "distance_m": 0.01,
+  "state": "protein_deprived",
+  "orn_total_hz": 8835.592719929358,
+  "brain_active": 4253.0,
+  "pn_total": 4408.333333333333,
+  "valence_estimate": -0.5857555341671304,
+  "top_orn": {
+   "VC3": 290,
+   "DM3": 290,
+   "VM2": 290,
+   "VM5d": 290,
+   "VM5v": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 61.4,
+   "isobutyl_acetate": 18.8,
+   "butyl_acetate": 7.31,
+   "ethyl_acetate": 886.0,
+   "hexanal": 2.52,
+   "2-heptanone": 1.35,
+   "isoamyl_alcohol": 102.0,
+   "ethanol": 16400.0,
+   "acetoin": 8.5,
+   "2-phenylethanol": 0.552,
+   "acetic_acid": 52.2
+  },
+  "co2_excess_ppm": 1627.7637648788022
+ },
+ {
+  "food": "rotting day 7",
+  "distance_m": 0.01,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 8894.397961511051,
+  "brain_active": 4097.333333333333,
+  "pn_total": 4239.000000000001,
+  "valence_estimate": -0.4025157232702293,
+  "top_orn": {
+   "DM1": 421,
+   "DM2": 376,
+   "DM4": 333,
+   "VC3": 290,
+   "DM3": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 61.4,
+   "isobutyl_acetate": 18.8,
+   "butyl_acetate": 7.31,
+   "ethyl_acetate": 886.0,
+   "hexanal": 2.52,
+   "2-heptanone": 1.35,
+   "isoamyl_alcohol": 102.0,
+   "ethanol": 16400.0,
+   "acetoin": 8.5,
+   "2-phenylethanol": 0.552,
+   "acetic_acid": 52.2
+  },
+  "co2_excess_ppm": 1627.7637648788022
+ },
+ {
+  "food": "rotting day 7",
+  "distance_m": 0.1,
+  "state": "fed",
+  "orn_total_hz": 8245.364389532164,
+  "brain_active": 4240.0,
+  "pn_total": 4215.0,
+  "valence_estimate": -0.5711088504574338,
+  "top_orn": {
+   "VC3": 290,
+   "DM3": 290,
+   "VM2": 289,
+   "VM5v": 289,
+   "VA3": 288
+  },
+  "ppm": {
+   "isoamyl_acetate": 9.82,
+   "isobutyl_acetate": 3.01,
+   "butyl_acetate": 1.17,
+   "ethyl_acetate": 142.0,
+   "hexanal": 0.403,
+   "2-heptanone": 0.217,
+   "isoamyl_alcohol": 16.3,
+   "ethanol": 2620.0,
+   "acetoin": 1.36,
+   "2-phenylethanol": 0.0883,
+   "acetic_acid": 8.35
+  },
+  "co2_excess_ppm": 260.44220238060825
+ },
+ {
+  "food": "rotting day 7",
+  "distance_m": 0.1,
+  "state": "starved_24h",
+  "orn_total_hz": 8306.95231569866,
+  "brain_active": 4057.333333333333,
+  "pn_total": 3990.0000000000005,
+  "valence_estimate": -0.38185808339408456,
+  "top_orn": {
+   "DM1": 412,
+   "DM2": 375,
+   "DM4": 322,
+   "VC3": 290,
+   "DM3": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 9.82,
+   "isobutyl_acetate": 3.01,
+   "butyl_acetate": 1.17,
+   "ethyl_acetate": 142.0,
+   "hexanal": 0.403,
+   "2-heptanone": 0.217,
+   "isoamyl_alcohol": 16.3,
+   "ethanol": 2620.0,
+   "acetoin": 1.36,
+   "2-phenylethanol": 0.0883,
+   "acetic_acid": 8.35
+  },
+  "co2_excess_ppm": 260.44220238060825
+ },
+ {
+  "food": "rotting day 7",
+  "distance_m": 0.1,
+  "state": "protein_deprived",
+  "orn_total_hz": 8245.364389532164,
+  "brain_active": 4327.333333333333,
+  "pn_total": 4204.0,
+  "valence_estimate": -0.5638603696095089,
+  "top_orn": {
+   "VC3": 290,
+   "DM3": 290,
+   "VM2": 289,
+   "VM5v": 289,
+   "VA3": 288
+  },
+  "ppm": {
+   "isoamyl_acetate": 9.82,
+   "isobutyl_acetate": 3.01,
+   "butyl_acetate": 1.17,
+   "ethyl_acetate": 142.0,
+   "hexanal": 0.403,
+   "2-heptanone": 0.217,
+   "isoamyl_alcohol": 16.3,
+   "ethanol": 2620.0,
+   "acetoin": 1.36,
+   "2-phenylethanol": 0.0883,
+   "acetic_acid": 8.35
+  },
+  "co2_excess_ppm": 260.44220238060825
+ },
+ {
+  "food": "rotting day 7",
+  "distance_m": 0.1,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 8306.95231569866,
+  "brain_active": 4077.666666666667,
+  "pn_total": 4022.6666666666674,
+  "valence_estimate": -0.38133234366280494,
+  "top_orn": {
+   "DM1": 412,
+   "DM2": 375,
+   "DM4": 322,
+   "VC3": 290,
+   "DM3": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 9.82,
+   "isobutyl_acetate": 3.01,
+   "butyl_acetate": 1.17,
+   "ethyl_acetate": 142.0,
+   "hexanal": 0.403,
+   "2-heptanone": 0.217,
+   "isoamyl_alcohol": 16.3,
+   "ethanol": 2620.0,
+   "acetoin": 1.36,
+   "2-phenylethanol": 0.0883,
+   "acetic_acid": 8.35
+  },
+  "co2_excess_ppm": 260.44220238060825
+ },
+ {
+  "food": "rotting day 7",
+  "distance_m": 1.0,
+  "state": "fed",
+  "orn_total_hz": 4762.769906959557,
+  "brain_active": 3034.666666666667,
+  "pn_total": 2454.3333333333335,
+  "valence_estimate": -0.34186818397296087,
+  "top_orn": {
+   "VC3": 282,
+   "DM3": 257,
+   "VA3": 243,
+   "VM2": 239,
+   "DM2": 226
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.2,
+   "isobutyl_acetate": 0.0615,
+   "butyl_acetate": 0.0239,
+   "ethyl_acetate": 2.89,
+   "hexanal": 0.00822,
+   "2-heptanone": 0.00442,
+   "isoamyl_alcohol": 0.332,
+   "ethanol": 53.4,
+   "acetoin": 0.0278,
+   "2-phenylethanol": 0.0018,
+   "acetic_acid": 0.17
+  },
+  "co2_excess_ppm": 5.315146987359353
+ },
+ {
+  "food": "rotting day 7",
+  "distance_m": 1.0,
+  "state": "starved_24h",
+  "orn_total_hz": 4800.117177526808,
+  "brain_active": 2957.333333333333,
+  "pn_total": 2368.666666666667,
+  "valence_estimate": 0.013828238719053315,
+  "top_orn": {
+   "DM2": 293,
+   "VC3": 282,
+   "DM1": 263,
+   "DM3": 257,
+   "VM3": 209
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.2,
+   "isobutyl_acetate": 0.0615,
+   "butyl_acetate": 0.0239,
+   "ethyl_acetate": 2.89,
+   "hexanal": 0.00822,
+   "2-heptanone": 0.00442,
+   "isoamyl_alcohol": 0.332,
+   "ethanol": 53.4,
+   "acetoin": 0.0278,
+   "2-phenylethanol": 0.0018,
+   "acetic_acid": 0.17
+  },
+  "co2_excess_ppm": 5.315146987359353
+ },
+ {
+  "food": "rotting day 7",
+  "distance_m": 1.0,
+  "state": "protein_deprived",
+  "orn_total_hz": 4762.769906959557,
+  "brain_active": 3064.3333333333335,
+  "pn_total": 2462.3333333333335,
+  "valence_estimate": -0.32721121314597307,
+  "top_orn": {
+   "VC3": 282,
+   "DM3": 257,
+   "VA3": 243,
+   "VM2": 239,
+   "DM2": 226
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.2,
+   "isobutyl_acetate": 0.0615,
+   "butyl_acetate": 0.0239,
+   "ethyl_acetate": 2.89,
+   "hexanal": 0.00822,
+   "2-heptanone": 0.00442,
+   "isoamyl_alcohol": 0.332,
+   "ethanol": 53.4,
+   "acetoin": 0.0278,
+   "2-phenylethanol": 0.0018,
+   "acetic_acid": 0.17
+  },
+  "co2_excess_ppm": 5.315146987359353
+ },
+ {
+  "food": "rotting day 7",
+  "distance_m": 1.0,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 4800.117177526808,
+  "brain_active": 2993.6666666666665,
+  "pn_total": 2335.333333333333,
+  "valence_estimate": 0.0284005979072925,
+  "top_orn": {
+   "DM2": 293,
+   "VC3": 282,
+   "DM1": 263,
+   "DM3": 257,
+   "VM3": 209
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.2,
+   "isobutyl_acetate": 0.0615,
+   "butyl_acetate": 0.0239,
+   "ethyl_acetate": 2.89,
+   "hexanal": 0.00822,
+   "2-heptanone": 0.00442,
+   "isoamyl_alcohol": 0.332,
+   "ethanol": 53.4,
+   "acetoin": 0.0278,
+   "2-phenylethanol": 0.0018,
+   "acetic_acid": 0.17
+  },
+  "co2_excess_ppm": 5.315146987359353
+ },
+ {
+  "food": "rotting day 7",
+  "distance_m": 10.0,
+  "state": "fed",
+  "orn_total_hz": 365.8752720480038,
+  "brain_active": 1573.0,
+  "pn_total": 240.66666666666669,
+  "valence_estimate": -0.48979591835235325,
+  "top_orn": {
+   "VC3": 52,
+   "VA3": 24,
+   "DM3": 22,
+   "VM2": 20,
+   "DM2": 18
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.00219,
+   "isobutyl_acetate": 0.000671,
+   "butyl_acetate": 0.00026,
+   "ethyl_acetate": 0.0316,
+   "hexanal": 8.97e-05,
+   "2-heptanone": 4.83e-05,
+   "isoamyl_alcohol": 0.00363,
+   "ethanol": 0.583,
+   "acetoin": 0.000303,
+   "2-phenylethanol": 1.97e-05,
+   "acetic_acid": 0.00186
+  },
+  "co2_excess_ppm": 0.058017866424728975
+ },
+ {
+  "food": "rotting day 7",
+  "distance_m": 10.0,
+  "state": "starved_24h",
+  "orn_total_hz": 365.45554145435483,
+  "brain_active": 1673.3333333333335,
+  "pn_total": 225.99999999999997,
+  "valence_estimate": -0.006535947712290191,
+  "top_orn": {
+   "VC3": 52,
+   "DM2": 24,
+   "DM3": 22,
+   "VA3": 19,
+   "VM3": 17
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.00219,
+   "isobutyl_acetate": 0.000671,
+   "butyl_acetate": 0.00026,
+   "ethyl_acetate": 0.0316,
+   "hexanal": 8.97e-05,
+   "2-heptanone": 4.83e-05,
+   "isoamyl_alcohol": 0.00363,
+   "ethanol": 0.583,
+   "acetoin": 0.000303,
+   "2-phenylethanol": 1.97e-05,
+   "acetic_acid": 0.00186
+  },
+  "co2_excess_ppm": 0.058017866424728975
+ },
+ {
+  "food": "rotting day 7",
+  "distance_m": 10.0,
+  "state": "protein_deprived",
+  "orn_total_hz": 365.8752720480038,
+  "brain_active": 1594.0,
+  "pn_total": 232.33333333333337,
+  "valence_estimate": -0.3333333333257576,
+  "top_orn": {
+   "VC3": 52,
+   "VA3": 24,
+   "DM3": 22,
+   "VM2": 20,
+   "DM2": 18
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.00219,
+   "isobutyl_acetate": 0.000671,
+   "butyl_acetate": 0.00026,
+   "ethyl_acetate": 0.0316,
+   "hexanal": 8.97e-05,
+   "2-heptanone": 4.83e-05,
+   "isoamyl_alcohol": 0.00363,
+   "ethanol": 0.583,
+   "acetoin": 0.000303,
+   "2-phenylethanol": 1.97e-05,
+   "acetic_acid": 0.00186
+  },
+  "co2_excess_ppm": 0.058017866424728975
+ },
+ {
+  "food": "rotting day 7",
+  "distance_m": 10.0,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 365.45554145435483,
+  "brain_active": 1538.6666666666667,
+  "pn_total": 228.33333333333331,
+  "valence_estimate": -0.024096385541733135,
+  "top_orn": {
+   "VC3": 52,
+   "DM2": 24,
+   "DM3": 22,
+   "VA3": 19,
+   "VM3": 17
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.00219,
+   "isobutyl_acetate": 0.000671,
+   "butyl_acetate": 0.00026,
+   "ethyl_acetate": 0.0316,
+   "hexanal": 8.97e-05,
+   "2-heptanone": 4.83e-05,
+   "isoamyl_alcohol": 0.00363,
+   "ethanol": 0.583,
+   "acetoin": 0.000303,
+   "2-phenylethanol": 1.97e-05,
+   "acetic_acid": 0.00186
+  },
+  "co2_excess_ppm": 0.058017866424728975
+ },
+ {
+  "food": "rotting day 14",
+  "distance_m": 0.01,
+  "state": "fed",
+  "orn_total_hz": 8867.706973531424,
+  "brain_active": 4243.666666666667,
+  "pn_total": 4493.666666666667,
+  "valence_estimate": -0.5824427480912696,
+  "top_orn": {
+   "VC3": 290,
+   "DM3": 290,
+   "VM2": 290,
+   "VM5d": 290,
+   "VM5v": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 61.4,
+   "isobutyl_acetate": 18.8,
+   "butyl_acetate": 7.31,
+   "ethyl_acetate": 1550.0,
+   "hexanal": 2.52,
+   "2-heptanone": 1.35,
+   "isoamyl_alcohol": 178.0,
+   "ethanol": 24100.0,
+   "acetoin": 8.37,
+   "2-phenylethanol": 0.971,
+   "acetic_acid": 201.0
+  },
+  "co2_excess_ppm": 1551.9079761520677
+ },
+ {
+  "food": "rotting day 14",
+  "distance_m": 0.01,
+  "state": "starved_24h",
+  "orn_total_hz": 8926.639020778019,
+  "brain_active": 4153.666666666667,
+  "pn_total": 4225.0,
+  "valence_estimate": -0.41016238868496063,
+  "top_orn": {
+   "DM1": 421,
+   "DM2": 376,
+   "DM4": 333,
+   "VC3": 290,
+   "DM3": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 61.4,
+   "isobutyl_acetate": 18.8,
+   "butyl_acetate": 7.31,
+   "ethyl_acetate": 1550.0,
+   "hexanal": 2.52,
+   "2-heptanone": 1.35,
+   "isoamyl_alcohol": 178.0,
+   "ethanol": 24100.0,
+   "acetoin": 8.37,
+   "2-phenylethanol": 0.971,
+   "acetic_acid": 201.0
+  },
+  "co2_excess_ppm": 1551.9079761520677
+ },
+ {
+  "food": "rotting day 14",
+  "distance_m": 0.01,
+  "state": "protein_deprived",
+  "orn_total_hz": 8867.706973531424,
+  "brain_active": 4291.0,
+  "pn_total": 4427.333333333334,
+  "valence_estimate": -0.5793696275068313,
+  "top_orn": {
+   "VC3": 290,
+   "DM3": 290,
+   "VM2": 290,
+   "VM5d": 290,
+   "VM5v": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 61.4,
+   "isobutyl_acetate": 18.8,
+   "butyl_acetate": 7.31,
+   "ethyl_acetate": 1550.0,
+   "hexanal": 2.52,
+   "2-heptanone": 1.35,
+   "isoamyl_alcohol": 178.0,
+   "ethanol": 24100.0,
+   "acetoin": 8.37,
+   "2-phenylethanol": 0.971,
+   "acetic_acid": 201.0
+  },
+  "co2_excess_ppm": 1551.9079761520677
+ },
+ {
+  "food": "rotting day 14",
+  "distance_m": 0.01,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 8926.639020778019,
+  "brain_active": 4120.666666666667,
+  "pn_total": 4290.999999999999,
+  "valence_estimate": -0.4026648209030613,
+  "top_orn": {
+   "DM1": 421,
+   "DM2": 376,
+   "DM4": 333,
+   "VC3": 290,
+   "DM3": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 61.4,
+   "isobutyl_acetate": 18.8,
+   "butyl_acetate": 7.31,
+   "ethyl_acetate": 1550.0,
+   "hexanal": 2.52,
+   "2-heptanone": 1.35,
+   "isoamyl_alcohol": 178.0,
+   "ethanol": 24100.0,
+   "acetoin": 8.37,
+   "2-phenylethanol": 0.971,
+   "acetic_acid": 201.0
+  },
+  "co2_excess_ppm": 1551.9079761520677
+ },
+ {
+  "food": "rotting day 14",
+  "distance_m": 0.1,
+  "state": "fed",
+  "orn_total_hz": 8371.645179383722,
+  "brain_active": 4277.0,
+  "pn_total": 4234.666666666667,
+  "valence_estimate": -0.5556008146636117,
+  "top_orn": {
+   "VC3": 290,
+   "DM3": 290,
+   "VM2": 289,
+   "VM5v": 289,
+   "VA3": 289
+  },
+  "ppm": {
+   "isoamyl_acetate": 9.82,
+   "isobutyl_acetate": 3.01,
+   "butyl_acetate": 1.17,
+   "ethyl_acetate": 247.0,
+   "hexanal": 0.403,
+   "2-heptanone": 0.217,
+   "isoamyl_alcohol": 28.5,
+   "ethanol": 3850.0,
+   "acetoin": 1.34,
+   "2-phenylethanol": 0.155,
+   "acetic_acid": 32.2
+  },
+  "co2_excess_ppm": 248.30527618433075
+ },
+ {
+  "food": "rotting day 14",
+  "distance_m": 0.1,
+  "state": "starved_24h",
+  "orn_total_hz": 8433.735521618626,
+  "brain_active": 4066.0,
+  "pn_total": 4097.0,
+  "valence_estimate": -0.3819978046101086,
+  "top_orn": {
+   "DM1": 414,
+   "DM2": 375,
+   "DM4": 324,
+   "VC3": 290,
+   "DM3": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 9.82,
+   "isobutyl_acetate": 3.01,
+   "butyl_acetate": 1.17,
+   "ethyl_acetate": 247.0,
+   "hexanal": 0.403,
+   "2-heptanone": 0.217,
+   "isoamyl_alcohol": 28.5,
+   "ethanol": 3850.0,
+   "acetoin": 1.34,
+   "2-phenylethanol": 0.155,
+   "acetic_acid": 32.2
+  },
+  "co2_excess_ppm": 248.30527618433075
+ },
+ {
+  "food": "rotting day 14",
+  "distance_m": 0.1,
+  "state": "protein_deprived",
+  "orn_total_hz": 8371.645179383722,
+  "brain_active": 4205.0,
+  "pn_total": 4257.0,
+  "valence_estimate": -0.5584045584042174,
+  "top_orn": {
+   "VC3": 290,
+   "DM3": 290,
+   "VM2": 289,
+   "VM5v": 289,
+   "VA3": 289
+  },
+  "ppm": {
+   "isoamyl_acetate": 9.82,
+   "isobutyl_acetate": 3.01,
+   "butyl_acetate": 1.17,
+   "ethyl_acetate": 247.0,
+   "hexanal": 0.403,
+   "2-heptanone": 0.217,
+   "isoamyl_alcohol": 28.5,
+   "ethanol": 3850.0,
+   "acetoin": 1.34,
+   "2-phenylethanol": 0.155,
+   "acetic_acid": 32.2
+  },
+  "co2_excess_ppm": 248.30527618433075
+ },
+ {
+  "food": "rotting day 14",
+  "distance_m": 0.1,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 8433.735521618626,
+  "brain_active": 4087.333333333333,
+  "pn_total": 4063.666666666666,
+  "valence_estimate": -0.3638554216865446,
+  "top_orn": {
+   "DM1": 414,
+   "DM2": 375,
+   "DM4": 324,
+   "VC3": 290,
+   "DM3": 290
+  },
+  "ppm": {
+   "isoamyl_acetate": 9.82,
+   "isobutyl_acetate": 3.01,
+   "butyl_acetate": 1.17,
+   "ethyl_acetate": 247.0,
+   "hexanal": 0.403,
+   "2-heptanone": 0.217,
+   "isoamyl_alcohol": 28.5,
+   "ethanol": 3850.0,
+   "acetoin": 1.34,
+   "2-phenylethanol": 0.155,
+   "acetic_acid": 32.2
+  },
+  "co2_excess_ppm": 248.30527618433075
+ },
+ {
+  "food": "rotting day 14",
+  "distance_m": 1.0,
+  "state": "fed",
+  "orn_total_hz": 5263.638822936235,
+  "brain_active": 3236.0,
+  "pn_total": 2599.666666666666,
+  "valence_estimate": -0.3581973581969407,
+  "top_orn": {
+   "VC3": 285,
+   "DM3": 262,
+   "VA3": 258,
+   "VM2": 248,
+   "DM2": 235
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.2,
+   "isobutyl_acetate": 0.0615,
+   "butyl_acetate": 0.0239,
+   "ethyl_acetate": 5.05,
+   "hexanal": 0.00822,
+   "2-heptanone": 0.00442,
+   "isoamyl_alcohol": 0.581,
+   "ethanol": 78.6,
+   "acetoin": 0.0273,
+   "2-phenylethanol": 0.00317,
+   "acetic_acid": 0.658
+  },
+  "co2_excess_ppm": 5.06745461600675
+ },
+ {
+  "food": "rotting day 14",
+  "distance_m": 1.0,
+  "state": "starved_24h",
+  "orn_total_hz": 5307.632381293433,
+  "brain_active": 3216.333333333334,
+  "pn_total": 2498.0,
+  "valence_estimate": -0.0626999360204133,
+  "top_orn": {
+   "DM2": 305,
+   "DM1": 298,
+   "VC3": 285,
+   "DM3": 262,
+   "VM3": 219
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.2,
+   "isobutyl_acetate": 0.0615,
+   "butyl_acetate": 0.0239,
+   "ethyl_acetate": 5.05,
+   "hexanal": 0.00822,
+   "2-heptanone": 0.00442,
+   "isoamyl_alcohol": 0.581,
+   "ethanol": 78.6,
+   "acetoin": 0.0273,
+   "2-phenylethanol": 0.00317,
+   "acetic_acid": 0.658
+  },
+  "co2_excess_ppm": 5.06745461600675
+ },
+ {
+  "food": "rotting day 14",
+  "distance_m": 1.0,
+  "state": "protein_deprived",
+  "orn_total_hz": 5263.638822936235,
+  "brain_active": 3162.666666666666,
+  "pn_total": 2603.6666666666665,
+  "valence_estimate": -0.3650920736584887,
+  "top_orn": {
+   "VC3": 285,
+   "DM3": 262,
+   "VA3": 258,
+   "VM2": 248,
+   "DM2": 235
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.2,
+   "isobutyl_acetate": 0.0615,
+   "butyl_acetate": 0.0239,
+   "ethyl_acetate": 5.05,
+   "hexanal": 0.00822,
+   "2-heptanone": 0.00442,
+   "isoamyl_alcohol": 0.581,
+   "ethanol": 78.6,
+   "acetoin": 0.0273,
+   "2-phenylethanol": 0.00317,
+   "acetic_acid": 0.658
+  },
+  "co2_excess_ppm": 5.06745461600675
+ },
+ {
+  "food": "rotting day 14",
+  "distance_m": 1.0,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 5307.632381293433,
+  "brain_active": 3173.0,
+  "pn_total": 2477.3333333333335,
+  "valence_estimate": -0.06301012079654301,
+  "top_orn": {
+   "DM2": 305,
+   "DM1": 298,
+   "VC3": 285,
+   "DM3": 262,
+   "VM3": 219
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.2,
+   "isobutyl_acetate": 0.0615,
+   "butyl_acetate": 0.0239,
+   "ethyl_acetate": 5.05,
+   "hexanal": 0.00822,
+   "2-heptanone": 0.00442,
+   "isoamyl_alcohol": 0.581,
+   "ethanol": 78.6,
+   "acetoin": 0.0273,
+   "2-phenylethanol": 0.00317,
+   "acetic_acid": 0.658
+  },
+  "co2_excess_ppm": 5.06745461600675
+ },
+ {
+  "food": "rotting day 14",
+  "distance_m": 10.0,
+  "state": "fed",
+  "orn_total_hz": 504.5696811780714,
+  "brain_active": 1797.3333333333335,
+  "pn_total": 289.66666666666663,
+  "valence_estimate": -0.3694581280733578,
+  "top_orn": {
+   "VC3": 76,
+   "VA3": 36,
+   "DM3": 28,
+   "VM2": 27,
+   "D": 24
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.00219,
+   "isobutyl_acetate": 0.000671,
+   "butyl_acetate": 0.00026,
+   "ethyl_acetate": 0.0551,
+   "hexanal": 8.97e-05,
+   "2-heptanone": 4.83e-05,
+   "isoamyl_alcohol": 0.00634,
+   "ethanol": 0.858,
+   "acetoin": 0.000298,
+   "2-phenylethanol": 3.46e-05,
+   "acetic_acid": 0.00718
+  },
+  "co2_excess_ppm": 0.05531416266079992
+ },
+ {
+  "food": "rotting day 14",
+  "distance_m": 10.0,
+  "state": "starved_24h",
+  "orn_total_hz": 503.1998600149559,
+  "brain_active": 1734.3333333333335,
+  "pn_total": 268.00000000000006,
+  "valence_estimate": -0.012987012986844368,
+  "top_orn": {
+   "VC3": 76,
+   "DM2": 31,
+   "VA3": 29,
+   "DM3": 28,
+   "D": 24
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.00219,
+   "isobutyl_acetate": 0.000671,
+   "butyl_acetate": 0.00026,
+   "ethyl_acetate": 0.0551,
+   "hexanal": 8.97e-05,
+   "2-heptanone": 4.83e-05,
+   "isoamyl_alcohol": 0.00634,
+   "ethanol": 0.858,
+   "acetoin": 0.000298,
+   "2-phenylethanol": 3.46e-05,
+   "acetic_acid": 0.00718
+  },
+  "co2_excess_ppm": 0.05531416266079992
+ },
+ {
+  "food": "rotting day 14",
+  "distance_m": 10.0,
+  "state": "protein_deprived",
+  "orn_total_hz": 504.5696811780714,
+  "brain_active": 1697.0,
+  "pn_total": 298.0,
+  "valence_estimate": -0.4842105263081441,
+  "top_orn": {
+   "VC3": 76,
+   "VA3": 36,
+   "DM3": 28,
+   "VM2": 27,
+   "D": 24
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.00219,
+   "isobutyl_acetate": 0.000671,
+   "butyl_acetate": 0.00026,
+   "ethyl_acetate": 0.0551,
+   "hexanal": 8.97e-05,
+   "2-heptanone": 4.83e-05,
+   "isoamyl_alcohol": 0.00634,
+   "ethanol": 0.858,
+   "acetoin": 0.000298,
+   "2-phenylethanol": 3.46e-05,
+   "acetic_acid": 0.00718
+  },
+  "co2_excess_ppm": 0.05531416266079992
+ },
+ {
+  "food": "rotting day 14",
+  "distance_m": 10.0,
+  "state": "starved_and_protein_deprived",
+  "orn_total_hz": 503.1998600149559,
+  "brain_active": 1582.333333333333,
+  "pn_total": 278.0,
+  "valence_estimate": 0.2789115646201583,
+  "top_orn": {
+   "VC3": 76,
+   "DM2": 31,
+   "VA3": 29,
+   "DM3": 28,
+   "D": 24
+  },
+  "ppm": {
+   "isoamyl_acetate": 0.00219,
+   "isobutyl_acetate": 0.000671,
+   "butyl_acetate": 0.00026,
+   "ethyl_acetate": 0.0551,
+   "hexanal": 8.97e-05,
+   "2-heptanone": 4.83e-05,
+   "isoamyl_alcohol": 0.00634,
+   "ethanol": 0.858,
+   "acetoin": 0.000298,
+   "2-phenylethanol": 3.46e-05,
+   "acetic_acid": 0.00718
+  },
+  "co2_excess_ppm": 0.05531416266079992
+ }
+]

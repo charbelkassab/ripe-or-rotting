@@ -1,0 +1,45 @@
+{
+  "sucrose_dose_response": {
+    "0": {
+      "accept": 0.0,
+      "aversion": 0.0,
+      "score": 0.0
+    },
+    "10": {
+      "accept": 1.67,
+      "aversion": 0.0,
+      "score": 1.67
+    },
+    "30": {
+      "accept": 4.0,
+      "aversion": 0.0,
+      "score": 4.0
+    },
+    "100": {
+      "accept": 8.17,
+      "aversion": 0.0,
+      "score": 8.17
+    },
+    "300": {
+      "accept": 9.67,
+      "aversion": 0.0,
+      "score": 9.67
+    },
+    "1000": {
+      "accept": 10.5,
+      "aversion": 0.0,
+      "score": 10.5
+    }
+  },
+  "test1_monotonic_rise": true,
+  "sucrose100_plus_bitter": {
+    "without": 7.5,
+    "with": 1.83
+  },
+  "test2_bitter_suppresses": true,
+  "sucrose30_fed_vs_starved": {
+    "fed": 4.0,
+    "starved": 5.83
+  },
+  "test3_starvation_increases": true
+}

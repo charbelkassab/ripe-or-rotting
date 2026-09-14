@@ -1,0 +1,13 @@
+.venv
+.venv/
+data
+data/
+ref/
+__pycache__/
+*.pyc
+.DS_Store
+results/*.mp4
+results/*.gif
+results/log_*.txt
+results/valence_features.npz
+results/odor_probe.npz

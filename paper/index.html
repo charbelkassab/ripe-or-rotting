@@ -1,0 +1,411 @@
+<title>Ripe or Rotting</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --ground: #f5f8f6;
+    --plate: #fbfcfc;
+    --ink: #13201b;
+    --ink-2: #4b5853;
+    --ink-3: #6f7c77;
+    --rule: #d6dfdb;
+    --tint: #e9f0ed;
+    --accent: #9c2a24;
+    --pass: #1d7a45;
+    --pass-bg: #dcefe3;
+    --fail: #a33a2c;
+    --fail-bg: #f6e0dc;
+    --part: #8a5a00;
+    --part-bg: #f5ead2;
+    --serif: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+    --sans: "IBM Plex Sans Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #0e1412; --plate: #fbfcfc; --ink: #e1e9e5; --ink-2: #a3b1ab; --ink-3: #7f8d88;
+      --rule: #26312d; --tint: #16201c; --accent: #e27066;
+      --pass: #7fd3a0; --pass-bg: #173524; --fail: #f0998c; --fail-bg: #3a1d19; --part: #e9c06c; --part-bg: #33280f;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #0e1412; --plate: #fbfcfc; --ink: #e1e9e5; --ink-2: #a3b1ab; --ink-3: #7f8d88;
+    --rule: #26312d; --tint: #16201c; --accent: #e27066;
+    --pass: #7fd3a0; --pass-bg: #173524; --fail: #f0998c; --fail-bg: #3a1d19; --part: #e9c06c; --part-bg: #33280f;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 1.62;
+    padding-inline: 20px;
+    padding-block: 0 96px;
+  }
+  .page { max-width: 1060px; margin: 0 auto; }
+  .col { max-width: 68ch; margin-inline: auto; }
+
+  header.masthead {
+    padding-block: 56px 28px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 36px;
+  }
+  .kicker {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    display: flex; flex-wrap: wrap; gap: 6px 18px;
+  }
+  .kicker b { color: var(--accent); font-weight: 500; }
+  h1 {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: clamp(30px, 4.6vw, 48px);
+    line-height: 1.06;
+    letter-spacing: -0.01em;
+    margin: 18px 0 16px;
+    text-wrap: balance;
+    max-width: 22ch;
+  }
+  .byline { font-family: var(--sans); font-size: 17px; font-weight: 500; margin: 0 0 14px; color: var(--ink); }
+  .byline a { color: var(--ink-2); font-weight: 400; }
+  .doclinks { font-family: var(--mono); font-size: 13px; display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 0 0 18px; }
+  .doclinks a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--rule); }
+  .doclinks a:hover { border-color: var(--accent); }
+  .dek {
+    font-size: 19px; line-height: 1.5; color: var(--ink-2); max-width: 60ch; margin: 0;
+  }
+
+  h2 {
+    font-family: var(--sans); font-weight: 600; font-size: 25px; line-height: 1.2;
+    margin: 56px 0 14px; text-wrap: balance; display: flex; gap: 12px; align-items: baseline;
+  }
+  h2 .n { font-family: var(--mono); font-size: 14px; font-weight: 500; color: var(--accent); min-width: 2ch; }
+  h3 {
+    font-family: var(--sans); font-weight: 600; font-size: 18.5px; line-height: 1.3;
+    margin: 32px 0 8px; text-wrap: balance;
+  }
+  h3 .n { font-family: var(--mono); font-size: 13px; color: var(--ink-3); margin-right: 8px; font-weight: 500; }
+  p { margin: 0 0 14px; }
+  a { color: var(--accent); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  em { font-style: italic; }
+  .mono, code { font-family: var(--mono); font-size: 0.86em; }
+  sup.ref { font-family: var(--mono); font-size: 0.66em; color: var(--accent); }
+
+  .abstract {
+    background: var(--tint);
+    padding: 22px 26px;
+    margin: 0 0 22px;
+  }
+  .label {
+    font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--ink-3); margin-bottom: 8px; display: block;
+  }
+  .abstract p { font-size: 16.5px; margin-bottom: 10px; }
+  .abstract p:last-child { margin-bottom: 0; }
+
+  .contents { font-family: var(--sans); font-size: 15px; color: var(--ink-2); display: flex; flex-wrap: wrap; gap: 4px 16px; margin-bottom: 8px; }
+  .contents a { color: var(--ink-2); text-decoration: none; border-bottom: 1px solid var(--rule); }
+  .contents a:hover { color: var(--accent); border-color: var(--accent); }
+
+  figure { margin: 30px auto 34px; max-width: 1060px; }
+  figure .plate { background: var(--plate); padding: 14px; border: 1px solid var(--rule); }
+  figure img, figure video { display: block; width: 100%; height: auto; max-width: 100%; }
+  figcaption {
+    font-family: var(--sans); font-size: 14.5px; line-height: 1.5; color: var(--ink-2);
+    max-width: 88ch; margin: 12px 0 0;
+  }
+  figcaption b { color: var(--ink); font-weight: 600; }
+
+  .pipeline {
+    display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0;
+    border: 1px solid var(--rule); background: var(--ground);
+  }
+  .stage { padding: 16px 14px 18px; border-right: 1px solid var(--rule); position: relative; }
+  .stage:last-child { border-right: 0; }
+  .stage .step { font-family: var(--mono); font-size: 12px; color: var(--accent); }
+  .stage .name { font-family: var(--sans); font-weight: 600; font-size: 16px; margin: 4px 0 6px; line-height: 1.2; }
+  .stage .what { font-family: var(--sans); font-size: 13.5px; line-height: 1.4; color: var(--ink-2); }
+  .stage .unit { font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); margin-top: 8px; display: block; }
+  .stage .src { display: inline-block; margin-top: 8px; font-family: var(--mono); font-size: 11px; padding: 1px 6px; border: 1px solid var(--rule); color: var(--ink-3); }
+  .stage.brain { background: var(--tint); }
+  @media (max-width: 860px) {
+    .pipeline { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .stage { border-bottom: 1px solid var(--rule); }
+    .stage:nth-child(2n) { border-right: 0; }
+  }
+  @media (max-width: 460px) { .pipeline { grid-template-columns: 1fr; } .stage { border-right: 0; } }
+
+  .tablewrap { overflow-x: auto; margin: 18px 0 26px; }
+  table { border-collapse: collapse; width: 100%; font-family: var(--sans); font-size: 14.5px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 600; color: var(--ink-2); font-size: 13px; letter-spacing: 0.02em; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; font-family: var(--mono); font-size: 13px; }
+  tr.hi td { background: var(--tint); }
+  caption { caption-side: top; text-align: left; font-family: var(--sans); font-size: 14.5px; color: var(--ink-2); padding-bottom: 8px; }
+  caption b { color: var(--ink); }
+
+  .pill { display: inline-block; font-family: var(--mono); font-size: 11.5px; padding: 1px 8px; border-radius: 99px; white-space: nowrap; }
+  .pill.pass { color: var(--pass); background: var(--pass-bg); }
+  .pill.fail { color: var(--fail); background: var(--fail-bg); }
+  .pill.part { color: var(--part); background: var(--part-bg); }
+
+  .findings { list-style: none; padding: 0; margin: 20px 0 10px; counter-reset: f; display: grid; gap: 18px; }
+  .findings li { counter-increment: f; display: grid; grid-template-columns: 2.4ch 1fr; gap: 12px; }
+  .findings li::before { content: counter(f); font-family: var(--mono); color: var(--accent); font-size: 15px; padding-top: 3px; }
+  .findings strong { font-family: var(--sans); font-weight: 600; font-size: 17.5px; display: block; line-height: 1.3; margin-bottom: 3px; }
+  .findings .ev { font-family: var(--mono); font-size: 12.5px; color: var(--ink-3); display: block; margin-top: 4px; }
+
+  .note { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 12px 0; font-family: var(--sans); font-size: 15px; color: var(--ink-2); margin: 20px 0; }
+
+  ol.refs { font-size: 14.5px; line-height: 1.5; padding-left: 2.6ch; color: var(--ink-2); }
+  ol.refs li { margin-bottom: 6px; }
+  ol.refs li::marker { font-family: var(--mono); color: var(--ink-3); font-size: 12px; }
+
+  footer { margin-top: 60px; padding-top: 18px; border-top: 1px solid var(--rule); font-family: var(--mono); font-size: 12px; color: var(--ink-3); }
+  @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+
+<div class="page">
+  <header class="masthead">
+    <div class="col">
+      <div class="kicker"><b>Preprint draft</b><span>Computational neuroscience</span><span>Simulation study</span><span>14 Sep 2026</span></div>
+      <h1>Ripe or rotting: hunger, yeast and distance decide which banana a simulated fruit fly chooses</h1>
+      <p class="byline">Charbel Kassab · <a href="mailto:charbel@kassab.org">charbel@kassab.org</a></p>
+      <p class="doclinks"><a href="ripe_or_rotting.pdf">PDF</a><a href="https://github.com/charbelkassab/ripe-or-rotting">Code and data: github.com/charbelkassab/ripe-or-rotting</a><a href="https://charbelk.com/ripe-or-rotting/">Project: charbelk.com/ripe-or-rotting</a></p>
+      <p class="dek">A connectome-constrained simulation of <i>Drosophila melanogaster</i> foraging, from fermentation chemistry and odour plume physics to receptor transduction, whole-nervous-system activity and flight.</p>
+    </div>
+  </header>
+
+  <div class="col">
+    <section class="abstract" aria-labelledby="abs">
+      <span class="label" id="abs">Abstract</span>
+      <p>Fruit flies are famously drawn to fermenting fruit, but it is unclear whether that preference reflects a stronger odour, a better taste, or the fly's internal state. We built an end-to-end simulation that computes banana composition over 14 days from ripening and yeast fermentation kinetics, the emission and turbulent transport of eleven volatiles and CO₂, receptor responses from measured odorant–receptor and taste data, and the resulting activity of the full male central nervous system connectome (MaleCNS v1.0; 165,122 neurons) in four internal states. Flies then searched a turbulent plume with a surge-and-cast flight rule and decided whether to feed from the brain's taste response.</p>
+      <p>Fermentation lowered the brain's odour detection threshold about tenfold and extended detection range roughly threefold (about 8–19 m vs 2–6 m in a 0.3 m/s breeze). Starvation doubled the range for ripe banana, so from 10 m fed flies landed first on rotting fruit (62–70%) while starved flies chose evenly. Within a few metres, smell intensity did not decide which fruit was reached. On contact, rotting pulp was less acceptable than ripe pulp, but surface yeast reversed this, most strongly in protein-deprived flies. The model reproduced four of nine behavioural and physiological checks; it failed to predict odour valence, lateralised steering and the effect of hunger on upwind flight.</p>
+    </section>
+    <nav class="contents" aria-label="Contents">
+      <a href="#intro">Introduction</a><a href="#methods">Methods</a><a href="#results">Results</a><a href="#validation">Validation</a><a href="#conclusions">Conclusions</a><a href="#limits">Limitations</a><a href="#refs">References</a>
+    </nav>
+  </div>
+
+  <div class="col">
+    <h2 id="intro"><span class="n">1</span>Introduction</h2>
+    <p>Wild <i>Drosophila melanogaster</i> feed and breed on fermenting fruit. Yeast-colonised substrates attract more flies than sterile fruit<sup class="ref">1</sup>, fermentation volatiles such as ethanol, acetic acid and 2-phenylethanol act together as attractants<sup class="ref">2</sup>, and yeast is the fly's main source of protein<sup class="ref">3</sup>. Three explanations for the preference are usually conflated: fermenting fruit is <em>louder</em> (it emits more volatiles), it <em>tastes</em> better (yeast and its products are appetitive), or the fly's <em>need</em> (energy vs protein) changes how both are valued<sup class="ref">4,5</sup>.</p>
+    <p>A connectome now exists for the entire adult male central nervous system<sup class="ref">6</sup>, and leaky integrate-and-fire (LIF) models of fly connectomes can predict sensorimotor circuit activity<sup class="ref">7</sup>. We asked whether a simulation that starts from the chemistry of real fruit, rather than from abstract "sweet" or "yeasty" stimuli, can separate these explanations, and where such a model breaks.</p>
+  </div>
+
+  <div class="col">
+    <h2 id="methods"><span class="n">2</span>Methods</h2>
+    <p>The simulation is a chain of six stages, each driven by measured parameters wherever they exist. Parameters without direct measurements are flagged as estimates in the source files and in the text below.</p>
+  </div>
+
+  <figure>
+    <div class="pipeline" role="list" aria-label="Simulation pipeline">
+      <div class="stage" role="listitem"><div class="step">stage 1</div><div class="name">Fruit chemistry</div><div class="what">Ripening, yeast growth, fermentation, acetic acid bacteria, by-products, pH</div><span class="unit">g/kg · mM · pH</span><span class="src">chemistry.py</span></div>
+      <div class="stage" role="listitem"><div class="step">stage 2</div><div class="name">Emission</div><div class="what">Henry's-law partitioning through a 2 mm boundary layer; temperature dependent</div><span class="unit">nmol/s</span><span class="src">physics.py</span></div>
+      <div class="stage" role="listitem"><div class="step">stage 3</div><div class="name">Atmosphere</div><div class="what">Turbulent filament plume: meander, eddies, puff growth</div><span class="unit">s/m³ per unit emission</span><span class="src">atmosphere.py</span></div>
+      <div class="stage" role="listitem"><div class="step">stage 4</div><div class="name">Receptors</div><div class="what">59 olfactory receptors → 52 ORN types; 6 taste neuron classes</div><span class="unit">spikes/s</span><span class="src">receptors.py</span></div>
+      <div class="stage brain" role="listitem"><div class="step">stage 5</div><div class="name">Connectome</div><div class="what">165,122-neuron LIF model with hunger or satiety state</div><span class="unit">spikes / 100 ms</span><span class="src">brain2.py</span></div>
+      <div class="stage" role="listitem"><div class="step">stage 6</div><div class="name">Reaction</div><div class="what">Surge / cast flight, landing, feeding decision</div><span class="unit">m · s · % of flies</span><span class="src">navigate.py</span></div>
+    </div>
+    <figcaption><b>Figure 1.</b> Simulation pipeline. Stage 5 is the only stage built from the connectome; stages 1–4 are physical and physiological models, and stage 6 combines brain outputs with measured flight behaviour.</figcaption>
+  </figure>
+
+  <div class="col">
+    <h3><span class="n">2.1</span>Fruit chemistry</h3>
+    <p>Pulp starts at eating-ripe composition (Cavendish: starch 25.2, sucrose 45.6, glucose 53.3, fructose 62.3 g/kg; water 753 g/kg)<sup class="ref">8</sup>. Starch hydrolysis and invertase continue ripening in both scenarios. In the <em>damaged</em> scenario, yeast (10⁵ CFU/g inoculum; μ<sub>max</sub> 0.22 h⁻¹ at 25 °C, K<sub>s</sub> 0.1 g/L, Y<sub>x/s</sub> 0.10)<sup class="ref">9</sup> converts hexose to ethanol and CO₂ (0.46 g ethanol per g sugar). Acetic acid bacteria oxidise ethanol at the surface (53% of theoretical yield, as measured for banana vinegar). By-products (ethyl acetate, acetoin, 2-phenylethanol, isoamyl alcohol, glycerol) use wine-fermentation yields. pH comes from a weak-acid charge balance on malic, citric and acetic acid and dissolved CO₂, calibrated to pH 4.9 for ripe pulp. Fruit-made esters and aldehydes are interpolated between ripe and overripe estimates. Biological rates scale with Q₁₀ = 2.</p>
+
+    <h3><span class="n">2.2</span>Emission and atmosphere</h3>
+    <p>Each volatile leaves 30 cm² of exposed pulp (an estimate for a split banana) at <span class="mono">J = (D/δ)·A·K<sub>aw</sub>(T)·C<sub>aq</sub></span>, using measured air diffusion coefficients and Henry's-law constants with their temperature dependence<sup class="ref">10,11</sup>; only undissociated acetic acid partitions to air. CO₂ combines fruit respiration (200 µL/min)<sup class="ref">12</sup> with fermentation (272 mL per g sugar).</p>
+    <p>Transport uses a filament model<sup class="ref">13</sup>: 25 puffs/s per source, a spatially uniform crosswind meander (Ornstein–Uhlenbeck, s.d. 0.5 U, τ 2 s), per-puff eddy velocities (s.d. 0.33 U, τ 0.2 s) and linear puff growth. Parameters were chosen so that, 0.1–2 m downwind, intermittency is 0.30–0.41, 95th-percentile concentration is 5.5–7× the mean, and the mean is within a factor of three of a Gaussian plume (σ = 0.1 r). Beyond 2 m this plume stays up to 3× more concentrated than the Gaussian estimate, so far-field experiments were repeated with faster puff growth that dilutes as expected.</p>
+
+    <h3><span class="n">2.3</span>Receptor transduction</h3>
+    <p>Olfactory receptor responses are DoOR 2.0 consensus values<sup class="ref">14</sup> (spontaneous rate subtracted) scaled to a 290 spikes/s maximum<sup class="ref">15</sup>, with a population Hill slope of 0.8<sup class="ref">16</sup> around the concentration used in the underlying recordings. Receptors map to connectome ORN types through their glomeruli (VC3/VC5/VM6 renaming applied). CO₂ drives the V glomerulus above a ~1,000 ppm excess. Spontaneous ORN firing is 8 spikes/s.</p>
+    <p>Taste neuron identities in the male connectome were assigned by matching each labellar type's downstream connectivity to FlyWire neurons of known modality<sup class="ref">7,17</sup> (cosine similarity 0.83–0.94): LB3b–d sugar, LB3a water, LB1a–d bitter, LB1e Ir94e, dorsal taste pegs amino acid/yeast, claw taste pegs carbonation<sup class="ref">18</sup>. Sugar neurons follow a sucrose Hill curve (EC₅₀ 60 mM, max 94 spikes/s) with weaker glucose and fructose responses; water neurons are silenced by osmolality; bitter neurons respond to tannins and K⁺ (thresholded), ethanol and acidity; yeast-peg neurons respond to yeast (EC₅₀ 2% w/v, estimate)<sup class="ref">5,19</sup>. Bitter input suppresses sugar-neuron output, <span class="mono">sugar / (1 + bitter / 15 Hz)</span>, standing in for presynaptic GABA-B inhibition, which a point-neuron connectome model cannot represent<sup class="ref">20</sup>.</p>
+
+    <h3><span class="n">2.4</span>Connectome model</h3>
+    <p>The 165,122 traced neurons and 25.6 M connections of MaleCNS v1.0<sup class="ref">6</sup> were simulated as identical LIF units<sup class="ref">7</sup> (1 ms step, 2 ms delay, synapse sign from predicted transmitter). With published parameters this dataset locks into self-sustaining activity, so we applied: spike-frequency adaptation; synapse gain 0.2 mV per contact; inhibition ×3 (a stand-in for slow GABA-B); no fast synaptic action for dopamine, serotonin or octopamine; no Kenyon cell–Kenyon cell contacts; and sensory neurons treated as pure inputs. Odour responses were still identical for every receptor class (projection-neuron pattern correlation 0.98), because 30 cholinergic antennal-lobe local neurons (lLN1_bc) formed a recurrent loop. Reducing cholinergic local-neuron chemical output tenfold, since these cells act largely through gap junctions<sup class="ref">21</sup>, made odour patterns distinct (correlation 0.00).</p>
+
+    <h3><span class="n">2.5</span>Internal states</h3>
+    <p>Four states combine literature gains at the periphery with tonic drive (15 Hz) to the connectome's own state neurons. <b>Fed</b>: drive to insulin-producing cells and Hugin neurons. <b>Starved 24 h</b>: sugar-neuron sensitivity ×2 and bitter ×0.6<sup class="ref">22</sup>; DM1 ORN output ×1.75, DM2/DM4 ×1.3, VM2/VA3 ×0.8<sup class="ref">23</sup>; DM5 ×0.25<sup class="ref">24</sup>; drive to NPF neurons. <b>Protein-deprived</b>: yeast taste-peg gain ×1.5 (estimate after ref. 5). <b>Both</b>: the union. Hunger was first implemented as an output gain; that failed the held-out feeding test (Section 4), so sugar and bitter gains now scale effective concentration (sensitivity).</p>
+
+    <h3><span class="n">2.6</span>From brain activity to behaviour</h3>
+    <p><b>Feeding.</b> Acceptance is the spike count over 400 ms in the proboscis motor neuron MN9, the feeding neuron Fdg, G2N-1 and the sugar-responsive second-order neurons<sup class="ref">7,25</sup>; aversion is the spike count in MDN and Bitter-SEL. The feeding probability on landing was calibrated so that fed flies accept 800 mM sucrose 55% of the time<sup class="ref">22</sup>. Because model acceptance saturates above ~300 mM, this logistic is steep; a saturating alternative, <span class="mono">p = A / (A + A₈₀₀)</span>, is reported alongside it.</p>
+    <p><b>Odour detection.</b> For each food and state, the whole brain was run for 100 ms at 13 plume concentrations (four repeats), and a detection was scored when projection-neuron spikes exceeded the no-odour baseline by three standard deviations. The navigation model looks up this detection probability at each fly's instantaneous plume concentration every 50 ms.</p>
+    <p><b>Flight.</b> Flies surge upwind 190 ± 75 ms after a detection and cast crosswind 450 ± 165 ms after losing the odour<sup class="ref">26</sup>, with widening reversals. Within 15 cm a surging fly flies to the visible fruit (odour-gated visual attraction)<sup class="ref">27</sup>. Flies that reject a fruit take off and ignore it for 5 s. These rules come from behaviour, not from the connectome, because the model did not steer (Section 3.3). An optional valence gate lets flies surge only if the evoked projection-neuron pattern is net attractive under literature glomerular valence<sup class="ref">28,29</sup>, counting CO₂ as attractive in flight<sup class="ref">30</sup>.</p>
+
+    <h3><span class="n">2.7</span>Experiments</h3>
+    <p>Two fruits sat 30 cm apart, 0.3 m/s wind, 25 °C, with 120 flies released 2 m downwind per run. Each of eight plume realisations was run in both fruit orientations, because a single realisation's meander can favour one side for tens of seconds (a same-fruit control split 66/34 before this correction and 50/50 after it). The spread across realisations is reported as s.d. Additional runs varied release distance (1–15 m), fruit separation (0.3–4 m), wind (0.15–0.6 m/s) and temperature (18–32 °C).</p>
+  </div>
+
+  <div class="col">
+    <h2 id="results"><span class="n">3</span>Results</h2>
+    <h3><span class="n">3.1</span>Fermentation turns a banana into a different chemical object</h3>
+    <p>Intact fruit kept ripening: sugars rose from 1,029 to ~1,320 mM in tissue water and pH stayed at 4.9. Seven days after colonisation, damaged fruit held 2.0% ethanol, 0.25% acetic acid, 1.5 g/kg dry yeast and 94 mg/kg ethyl acetate, with sugars down to 909 mM and pH 4.31. By 14 days it reached 3.0% ethanol and 0.8% acetic acid, within the 1–4.5% ethanol measured in naturally fermenting fruit<sup class="ref">31</sup>. Emission changed far more than composition: ethyl acetate rose ~180× (0.68 to 123 nmol/s) and ethanol ~64× (35 to 2,270 nmol/s), while the fruit's own esters changed less than twofold. Warmth amplified fermentation: at day 7, ethyl acetate emission was 54, 123 and 279 nmol/s at 18, 25 and 32 °C.</p>
+  </div>
+  <figure>
+    <div class="plate"><img src="fig2_chemistry.png" alt="Six panels: sugars, ethanol, acetic acid, pH and yeast over 14 days for intact and damaged banana, and emission rates of eleven volatiles for ripe and rotting fruit on a log scale" loading="lazy"></div>
+    <figcaption><b>Figure 2.</b> Banana composition from kinetics. <b>A–E</b> Intact (blue) vs yeast-colonised (orange) pulp. <b>F</b> Volatile emission from 30 cm² of pulp, ripe (day 0) vs rotting (day 7), log scale.</figcaption>
+  </figure>
+
+  <div class="col">
+    <h3><span class="n">3.2</span>The odour a fly meets is intermittent</h3>
+    <p>At any point in the plume, odour was absent most of the time and arrived as brief filaments up to 16–24× the mean (Fig. 3A–C). Within 2.8 m the brain detected either fruit with similar probability, because filaments exceeded both detection thresholds; intermittency, not concentration, limited detection at close range.</p>
+  </div>
+  <figure>
+    <div class="plate"><img src="fig3_atmosphere.png" alt="Odour field from two banana plumes, concentration time series at three distances, plume statistics bars, and detection range bars for ripe and rotting banana in fed and starved flies" loading="lazy"></div>
+    <figcaption><b>Figure 3.</b> Atmosphere. <b>A</b> Instantaneous filament field from ripe (blue) and rotting (orange) fruit. <b>B</b> Concentration relative to its mean at 0.3, 1 and 2 m. <b>C</b> Intermittency and ratio to a Gaussian plume. <b>D</b> Distance at which the plume's mean (solid) or 95th-percentile filament concentration (pale) reaches the brain's 50% detection threshold (0.3 m/s, σ = 0.1 r).</figcaption>
+  </figure>
+
+  <div class="col">
+    <h3><span class="n">3.3</span>The connectome detects fermentation at a tenth of the concentration, but does not steer</h3>
+    <p>Projection-neuron responses rose smoothly with concentration (Fig. 4A). The 50% detection threshold was 17.8 s/m³ for ripe banana and 1.78 s/m³ for rotting banana in fed flies, a tenfold difference driven by ethyl acetate, isoamyl alcohol and the esters of fermentation. Starvation lowered the ripe threshold fourfold (to 4.6 s/m³), mainly through DM1 and DM2 facilitation, and barely changed the rotting threshold (1.47 s/m³). Warmth lowered thresholds through faster fermentation and higher volatility (rotting: 5.6, 1.8 and 1.0 s/m³ at 18, 25 and 32 °C).</p>
+    <p>Activity reached projection neurons 4 ms, lateral horn neurons 6 ms and descending neurons 21 ms after ORN spiking began. Odour on one antenna did not lateralise output: the turning neurons DNa01/DNa02 stayed silent, and descending output was right-dominant whichever side was stimulated (index −0.88 to −0.93; Fig. 4C). This reflects the uneven side annotation of ORNs (1,343 right, 883 left, 409 unassigned) as much as any circuit property, and it is why the flight rule uses behavioural parameters instead of brain steering.</p>
+  </div>
+  <figure>
+    <div class="plate"><img src="fig4_brain.png" alt="Projection-neuron spikes versus plume concentration for four food and state combinations with a detection threshold line, latency bars, and left-right output index bars" loading="lazy"></div>
+    <figcaption><b>Figure 4.</b> Whole-brain olfactory response. <b>A</b> Projection-neuron spikes per 100 ms vs plume concentration per unit emission, including spontaneous ORN firing; horizontal line: detection threshold. <b>B</b> Onset latency. <b>C</b> Left − right output index for unilateral and bilateral stimulation; turning neurons were silent in all conditions.</figcaption>
+  </figure>
+
+  <div class="col">
+    <h3><span class="n">3.4</span>Rotting banana is visible to the brain from about three times farther</h3>
+    <p>Combining thresholds with plume dilution (Fig. 3D), a fed fly downwind of ripe banana first detected it 2.4 m (mean plume) to 6.0 m (filaments) away; for rotting banana the range was 7.7–19.2 m. Starvation extended the ripe range to 4.7–11.9 m. The rotting range grew from 4.3–10.8 m at 18 °C to 10.3–25.6 m at 32 °C. In a 1 m/s wind every range roughly halved.</p>
+
+    <h3><span class="n">3.5</span>On contact, pulp favours ripe fruit and surface yeast favours rotting fruit</h3>
+    <p>Ripe pulp drove sugar neurons at 57 spikes/s with little bitter input (5.8). Rotting pulp at day 7 drove them at only 27, because of less sugar, acid suppression and 24 spikes/s of bitter input from acidity and ethanol. Averaged through the fruit, rotting pulp was 2–4× less acceptable than ripe pulp in every state (Table 1). Where yeast grows on the surface (×20 local yeast, an estimate), taste pegs fired at 55 spikes/s and rotting fruit became as acceptable as ripe for fed and starved flies, and clearly more acceptable for protein-deprived flies (9.8 vs 6.2 spikes; 13.2 vs 8.3 when also starved).</p>
+    <div class="tablewrap">
+      <table>
+        <caption><b>Table 1.</b> Feeding-neuron spikes in 400 ms (mean of 6 simulations)</caption>
+        <thead><tr><th>Food</th><th class="num">Fed</th><th class="num">Starved 24 h</th><th class="num">Protein-deprived</th><th class="num">Both</th></tr></thead>
+        <tbody>
+          <tr><td>Ripe, day 0</td><td class="num">6.3</td><td class="num">9.0</td><td class="num">6.2</td><td class="num">8.3</td></tr>
+          <tr><td>Overripe, day 5</td><td class="num">6.8</td><td class="num">8.7</td><td class="num">7.2</td><td class="num">8.5</td></tr>
+          <tr><td>Rotting day 2, pulp</td><td class="num">3.5</td><td class="num">5.2</td><td class="num">2.8</td><td class="num">4.7</td></tr>
+          <tr><td>Rotting day 7, pulp</td><td class="num">1.8</td><td class="num">3.2</td><td class="num">2.2</td><td class="num">2.8</td></tr>
+          <tr class="hi"><td>Rotting day 2, surface yeast</td><td class="num">9.3</td><td class="num">11.3</td><td class="num">13.0</td><td class="num">17.5</td></tr>
+          <tr class="hi"><td>Rotting day 7, surface yeast</td><td class="num">7.3</td><td class="num">8.0</td><td class="num">9.8</td><td class="num">13.2</td></tr>
+          <tr class="hi"><td>Rotting day 14, surface yeast</td><td class="num">6.2</td><td class="num">7.5</td><td class="num">10.8</td><td class="num">9.5</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <figure>
+    <div class="plate"><img src="fig5_taste.png" alt="Sucrose dose-response in fed and starved states with calibration line, and grouped bars of feeding-neuron spikes for six foods and four states, for pulp and for surface yeast" loading="lazy"></div>
+    <figcaption><b>Figure 5.</b> Taste. <b>A</b> Feeding-neuron response to sucrose; horizontal line: 55% proboscis extension, calibrated on fed flies at 800 mM<sup class="ref">22</sup>. <b>B</b> Pulp. <b>C</b> Surface yeast colonies (rotting fruit only; ripe and overripe repeated for comparison).</figcaption>
+  </figure>
+
+  <div class="col">
+    <h3><span class="n">3.6</span>Within a few metres, flies reach whichever fruit the plume brings them to</h3>
+    <p>With a single fruit, 57–62% of flies landed within 90 s regardless of food or state, but feeding depended strongly on both: 0.5% of fed and 31% of starved flies fed on ripe banana, and 6% of fed and 14% of starved flies on rotting banana. In the two-choice arena, first landings split evenly (50–53% on rotting, s.d. across plumes 3–5%) in every state, at every release distance from 1 to 15 m in the baseline plume, at all three wind speeds and at all three temperatures.</p>
+    <p>Feeding did not split evenly. With surface yeast, protein-deprived flies fed mostly on rotting fruit (99% under the calibrated decision rule, 60% under the saturating rule), while sugar-starved flies were the least drawn to it (30% and 52%). Without surface yeast, all four states fed mostly on ripe fruit under both rules (43–46% rotting under the saturating rule; almost no rotting feeding under the calibrated rule). With the valence gate, fed and protein-deprived flies landed on rotting fruit first 78–80% of the time, but 27–28% never landed: under the literature valence code, ripe-banana odour scores as aversive at every concentration for non-starved flies, whereas dilute rotting-banana odour scores as attractive.</p>
+  </div>
+  <figure>
+    <div class="plate"><video src="foraging.mp4" poster="foraging_poster.jpg" controls muted loop playsinline preload="metadata" aria-label="Simulated flies casting and surging in two turbulent odour plumes toward ripe and rotting banana"></video></div>
+    <figcaption><b>Movie 1.</b> Sixty flies deprived of food and protein search the two plumes (2× speed). Grey: casting; green: surging after brain-detected odour; yellow: feeding.</figcaption>
+  </figure>
+  <figure>
+    <div class="plate"><img src="fig6_behaviour.png" alt="Fly trajectories in the arena, single-source landing bars, first landing and feeding shares by state for four model variants, and far-field first-landing bars for fed and starved flies" loading="lazy"></div>
+    <figcaption><b>Figure 6.</b> Stimulus → reaction. <b>A</b> Trajectories of 30 starved flies. <b>B</b> Single source: flies reaching the fruit within 90 s. <b>C</b> First landing on rotting fruit and <b>D</b> share of feeding on rotting fruit, by state, for four model variants. <b>E</b> Far-field test with a plume that dilutes as expected: first landing on rotting fruit (error bars: s.d. across plume realisations).</figcaption>
+  </figure>
+
+  <div class="col">
+    <h3><span class="n">3.7</span>Beyond the ripe fruit's detection range, hunger removes the bias toward fermentation</h3>
+    <p>Because the baseline plume stays too concentrated beyond 2 m, the long-range experiment was repeated with a plume that dilutes as expected (Fig. 6E). Released 2 m away, fed and starved flies still split evenly. Released 10 m away, beyond a fed fly's range for ripe banana, fed flies landed first on rotting fruit 62% (fruits 30 cm apart) and 70% (4 m apart) of the time. Starved flies, whose ripe-banana range extends past 10 m, split evenly (51%). This state effect appears only under the diluting plume, so its size depends on far-field turbulence, which we did not measure.</p>
+  </div>
+
+  <div class="col">
+    <h2 id="validation"><span class="n">4</span>Validation</h2>
+    <p>Each check compares a model output with an independent measurement or with a property the model must have. Calibration targets are marked as such and are not counted as validation.</p>
+    <div class="tablewrap">
+      <table>
+        <caption><b>Table 2.</b> Checks against data</caption>
+        <thead><tr><th>Check</th><th>Model</th><th>Reference</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td>Feeding neurons rise with sucrose concentration</td><td class="mono">1.6 → 11.4 spikes, 10–2,000 mM</td><td>Monotonic dose–response<sup class="ref">22</sup></td><td><span class="pill pass">pass</span></td></tr>
+          <tr><td>Starvation increases acceptance</td><td class="mono">4.0 → 5.8 at 30 mM</td><td>Increased sugar sensitivity<sup class="ref">22</sup></td><td><span class="pill pass">pass</span></td></tr>
+          <tr><td>Half-maximal proboscis extension, starved 1 day (held out)</td><td class="mono">238 mM</td><td class="mono">300 mM<sup class="ref">22</sup></td><td><span class="pill pass">pass</span></td></tr>
+          <tr><td>Bitter suppresses sugar acceptance</td><td class="mono">7.5 → 1.8</td><td>Presynaptic inhibition<sup class="ref">20</sup></td><td><span class="pill part">by construction</span></td></tr>
+          <tr><td>Distinct odours give distinct projection-neuron patterns</td><td class="mono">r = 0.98 → 0.00 after fix</td><td>Glomerular coding</td><td><span class="pill pass">pass</span></td></tr>
+          <tr><td>Plume near-field statistics (0.1–2 m)</td><td class="mono">intermittency 0.30–0.41</td><td>Filament model<sup class="ref">13</sup></td><td><span class="pill part">calibrated; far field too concentrated</span></td></tr>
+          <tr><td>Odour attraction for 108 odorants (cross-validated)</td><td class="mono">r = 0.06</td><td>Trap attraction indices<sup class="ref">28</sup></td><td><span class="pill fail">fail</span></td></tr>
+          <tr><td>Unilateral odour lateralises steering output</td><td class="mono">DNa01/02 silent</td><td>Flies turn toward the stronger antenna<sup class="ref">32</sup></td><td><span class="pill fail">fail</span></td></tr>
+          <tr><td>Starvation increases upwind success to a food odour</td><td class="mono">60% vs 62%</td><td class="mono">62% vs &lt;20%<sup class="ref">33</sup></td><td><span class="pill fail">fail</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>The odour valence failure is not specific to the brain: a readout trained directly on receptor rates did no better (r = 0.09), so single-concentration receptor profiles alone may not predict trap attraction. The upwind-flight failure shows that hunger's effect on search behaviour is not captured by sensory gains alone.</p>
+  </div>
+
+  <div class="col">
+    <h2 id="conclusions"><span class="n">5</span>Conclusions about fruit flies</h2>
+    <p>Read these as predictions of a model that passed four of its nine checks, not as established facts. Each is testable.</p>
+    <ol class="findings">
+      <li><div><strong>Fermentation mainly makes fruit easier to detect.</strong> Yeast volatiles lowered the brain's detection threshold tenfold and extended detection range about threefold, from metres to tens of metres in a light breeze, and further in warm weather.<span class="ev">17.8 vs 1.78 s/m³ · 2.4–6.0 vs 7.7–19.2 m · rotting 4.3–10.8 m at 18 °C, 10.3–25.6 m at 32 °C</span></div></li>
+      <li><div><strong>The long-range pull of rotting fruit should be strongest in fed flies.</strong> Starvation sensitises the receptors that ripe fruit engages, closing the detection gap; from 10 m, fed flies chose rotting fruit first and starved flies did not.<span class="ev">fed 62–70% · starved 51% · diluting far-field plume only</span></div></li>
+      <li><div><strong>Up close, odour intensity does not choose between fruits.</strong> Within a few metres both plumes exceed detection thresholds in every filament, and which fruit a fly reaches depends on the plume's path and on vision at landing.<span class="ev">50–53% first landings on rotting fruit across states, 1–15 m (baseline plume), wind and temperature</span></div></li>
+      <li><div><strong>Rotting fruit tastes worse; the yeast on it tastes better.</strong> Fermentation removes sugar and adds acid and ethanol, which suppress sugar neurons. Surface yeast colonies more than compensate, so the attractive part of rotting fruit is the yeast, not the rot.<span class="ev">pulp: rotting 2–4× less acceptable · surface yeast: equal or higher</span></div></li>
+      <li><div><strong>What a fly eats depends on what it lacks.</strong> Protein-deprived flies should feed on yeasty fruit; sugar-starved flies should be the least drawn to it and remain willing to eat fresh ripe fruit.<span class="ev">feeding on rotting: protein-deprived 60–99% · sugar-starved 30–52%</span></div></li>
+      <li><div><strong>The attraction of fermenting fruit is two mechanisms, not one.</strong> Far-reaching fermentation volatiles bias well-fed flies at a distance, and yeast taste biases protein-hungry flies on contact. Neither amounts to a general preference for rot.</div></li>
+    </ol>
+    <div class="note">Suggested experiment: release fed and 24 h-starved flies 10 m downwind of paired ripe and yeast-inoculated banana in a field tunnel, and score first landings separately from feeding with antennae-intact vs olfaction-deficient (Orco) flies and protein-deprived groups. The model predicts a state × distance interaction for landing and a protein-state effect for feeding.</div>
+  </div>
+
+  <div class="col">
+    <h2 id="limits"><span class="n">6</span>Limitations</h2>
+    <p><b>Connectome model.</b> Every neuron is the same point unit, synapse strength is synapse count × a constant, and six structural changes were needed to prevent runaway activity. The male connectome cannot represent the mated female, whose yeast appetite is the strongest known<sup class="ref">3,4</sup>. Brain state is reset between decisions; there is no learning or post-ingestive feedback.</p>
+    <p><b>Chemistry.</b> Per-compound banana volatile contents, rotting-fruit ethanol and acetic acid trajectories, the 30 cm² exposed area and the ×20 surface yeast enrichment are estimates. Temperature affected smell but not the taste grid, which was computed at 25 °C.</p>
+    <p><b>Atmosphere.</b> The plume is two-dimensional at fly height, meander is spatially uniform, and far-field dilution depends on an uncalibrated growth parameter that changes the long-range result.</p>
+    <p><b>Behaviour.</b> Steering, surge and cast timing come from wind-tunnel data, not from the connectome. Hunger does not change flight behaviour itself. Bitter–sugar interaction is added outside the connectome, and the two feeding decision rules disagree for sugar-starved flies.</p>
+  </div>
+
+  <div class="col">
+    <h2 id="refs"><span class="n">7</span>References</h2>
+    <ol class="refs">
+      <li>Becher PG et al. (2012) Yeast, not fruit volatiles mediate <i>Drosophila melanogaster</i> attraction, oviposition and development. <i>Funct Ecol</i> 26:822.</li>
+      <li>Zhu J, Park KC, Baker TC (2003) Identification of odors from overripe mango that attract vinegar flies. <i>J Chem Ecol</i> 29:899.</li>
+      <li>Ribeiro C, Dickson BJ (2010) Sex peptide receptor and neuronal TOR/S6K signaling modulate nutrient balancing in <i>Drosophila</i>. <i>Curr Biol</i> 20:1000.</li>
+      <li>Corrales-Carvajal VM, Faisal AA, Ribeiro C (2016) Internal states drive nutrient homeostasis by modulating exploration-exploitation trade-off. <i>eLife</i> 5:e19920.</li>
+      <li>Steck K et al. (2018) Internal amino acid state modulates yeast taste neurons to support protein homeostasis in <i>Drosophila</i>. <i>eLife</i> 7:e31625.</li>
+      <li>Google Research &amp; HHMI Janelia FlyEM (2026) MaleCNS v1.0: connectome of the adult male <i>Drosophila</i> central nervous system. <i>Cell</i>; data male-cns.janelia.org, CC-BY 4.0.</li>
+      <li>Shiu PK et al. (2024) A <i>Drosophila</i> computational brain model reveals sensorimotor processing. <i>Nature</i> 634:210.</li>
+      <li>Phillips KM et al. (2021) Sugar and starch composition of bananas by ripeness stage. <i>PLoS ONE</i> 16:e0253366.</li>
+      <li>Verduyn C et al. (1990) Physiology of <i>Saccharomyces cerevisiae</i> in anaerobic glucose-limited chemostat cultures. <i>J Gen Microbiol</i> 136:395.</li>
+      <li>Sander R (2023) Compilation of Henry's law constants (version 5.0.0) for water as solvent. <i>Atmos Chem Phys</i> 23:10901.</li>
+      <li>Tang MJ et al. (2015) Compilation and evaluation of gas phase diffusion coefficients of reactive trace gases. <i>Atmos Chem Phys</i> 15:5585.</li>
+      <li>Faucher C et al. (2006) Behavioral responses of <i>Drosophila</i> to biogenic levels of carbon dioxide depend on life-stage, sex and olfactory context. <i>J Exp Biol</i> 209:2739.</li>
+      <li>Farrell JA, Murlis J, Long X, Li W, Cardé RT (2002) Filament-based atmospheric dispersion model to achieve short time-scale structure of odor plumes. <i>Environ Fluid Mech</i> 2:143.</li>
+      <li>Münch D, Galizia CG (2016) DoOR 2.0: comprehensive mapping of <i>Drosophila melanogaster</i> odorant responses. <i>Sci Rep</i> 6:21841.</li>
+      <li>Olsen SR, Bhandawat V, Wilson RI (2010) Divisive normalization in olfactory population codes. <i>Neuron</i> 66:287.</li>
+      <li>Si G et al. (2019) Structured odorant response patterns across a complete olfactory receptor neuron population. <i>Neuron</i> 101:950.</li>
+      <li>Schlegel P et al. (2024) Whole-brain annotation and multi-connectome cell typing of <i>Drosophila</i>. <i>Nature</i> 634:139.</li>
+      <li>Fischler W, Kong P, Marella S, Scott K (2007) The detection of carbonation by the <i>Drosophila</i> gustatory system. <i>Nature</i> 448:1054.</li>
+      <li>Cameron P, Hiroi M, Ngai J, Scott K (2010) The molecular basis for water taste in <i>Drosophila</i>. <i>Nature</i> 465:91.</li>
+      <li>Chu B, Chui V, Mann K, Gordon MD (2014) Presynaptic gain control drives sweet and bitter taste integration in <i>Drosophila</i>. <i>Curr Biol</i> 24:1978.</li>
+      <li>Yaksi E, Wilson RI (2010) Electrical coupling between olfactory glomeruli. <i>Neuron</i> 67:1034.</li>
+      <li>Inagaki HK, Panse KM, Anderson DJ (2014) Independent, reciprocal neuromodulatory control of sweet and bitter taste sensitivity during starvation in <i>Drosophila</i>. <i>Neuron</i> 84:806.</li>
+      <li>Root CM, Ko KI, Jafari A, Wang JW (2011) Presynaptic facilitation by neuropeptide signaling mediates odor-driven food search. <i>Cell</i> 145:133.</li>
+      <li>Ko KI et al. (2015) Starvation promotes concerted modulation of appetitive olfactory behavior via parallel neuromodulatory circuits. <i>eLife</i> 4:e08298.</li>
+      <li>Yao Z, Scott K (2022) Serotonergic neurons translate taste detection into internal nutrient regulation. <i>Neuron</i> 110:1036.</li>
+      <li>van Breugel F, Dickinson MH (2014) Plume-tracking behavior of flying <i>Drosophila</i> emerges from a set of distinct sensory-motor reflexes. <i>Curr Biol</i> 24:274.</li>
+      <li>Frye MA, Tarsitano M, Dickinson MH (2003) Odor localization requires visual feedback during free flight in <i>Drosophila melanogaster</i>. <i>J Exp Biol</i> 206:843.</li>
+      <li>Knaden M, Strutz A, Ahsan J, Sachse S, Hansson BS (2012) Spatial representation of odorant valence in an insect brain. <i>Cell Rep</i> 1:392.</li>
+      <li>Semmelhack JL, Wang JW (2009) Select <i>Drosophila</i> glomeruli mediate innate olfactory attraction and aversion. <i>Nature</i> 459:218.</li>
+      <li>van Breugel F, Huda A, Dickinson MH (2018) Distinct activity-gated pathways mediate attraction and aversion to CO₂ in <i>Drosophila</i>. <i>Nature</i> 564:420.</li>
+      <li>Dudley R (2004) Ethanol, fruit ripening, and the historical origins of human alcoholism in primate frugivory. <i>Integr Comp Biol</i> 44:315.</li>
+      <li>Gaudry Q, Hong EJ, Kain J, de Bivort BL, Wilson RI (2013) Asymmetric neurotransmitter release enables rapid odour lateralization in <i>Drosophila</i>. <i>Nature</i> 493:424.</li>
+      <li>Becher PG, Bengtsson M, Hansson BS, Witzgall P (2010) Flying the fly: long-range flight behavior of <i>Drosophila melanogaster</i> to attractive odors. <i>J Chem Ecol</i> 36:599.</li>
+    </ol>
+  </div>
+
+  <footer class="col">
+    Simulation code, parameter sources and raw results: <a href="https://github.com/charbelkassab/ripe-or-rotting">github.com/charbelkassab/ripe-or-rotting</a> (research/*.json cite every parameter; results/*.json hold every number in this paper).
+  </footer>
+</div>

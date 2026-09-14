@@ -1,0 +1,24 @@
+{
+  "n_odorants": 108,
+  "lambda_10": {
+    "no_brain_ORN_rates": 0.031,
+    "fly_brain": 0.011,
+    "scrambled_brain": -0.004
+  },
+  "lambda_100": {
+    "no_brain_ORN_rates": 0.092,
+    "fly_brain": 0.026,
+    "scrambled_brain": 0.087
+  },
+  "lambda_1000": {
+    "no_brain_ORN_rates": 0.085,
+    "fly_brain": 0.057,
+    "scrambled_brain": 0.132
+  },
+  "lambda_10000": {
+    "no_brain_ORN_rates": -0.201,
+    "fly_brain": 0.027,
+    "scrambled_brain": -0.064
+  },
+  "chosen_lambda": 1000
+}

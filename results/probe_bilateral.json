@@ -1,0 +1,54 @@
+{
+ "latency_ms": {
+  "PN": 4,
+  "LH": 6,
+  "DN": 21
+ },
+ "bilateral": [
+  {
+   "stim": "left only",
+   "steerL": 0.0,
+   "steerR": 0.0,
+   "steer_index": 0.0,
+   "dnL": 0.8333333333333334,
+   "dnR": 22.0,
+   "dn_index": -0.9270072992294742
+  },
+  {
+   "stim": "left 2:1",
+   "steerL": 0.0,
+   "steerR": 0.0,
+   "steer_index": 0.0,
+   "dnL": 10.833333333333334,
+   "dnR": 19.5,
+   "dn_index": -0.2857142857048665
+  },
+  {
+   "stim": "both",
+   "steerL": 0.0,
+   "steerR": 0.0,
+   "steer_index": 0.0,
+   "dnL": 12.833333333333334,
+   "dnR": 14.0,
+   "dn_index": -0.04347826086794488
+  },
+  {
+   "stim": "right 2:1",
+   "steerL": 0.0,
+   "steerR": 0.0,
+   "steer_index": 0.0,
+   "dnL": 11.0,
+   "dnR": 32.5,
+   "dn_index": -0.4942528735518563
+  },
+  {
+   "stim": "right only",
+   "steerL": 0.0,
+   "steerR": 0.0,
+   "steer_index": 0.0,
+   "dnL": 1.3333333333333333,
+   "dnR": 21.333333333333332,
+   "dn_index": -0.8823529411375434
+  }
+ ]
+}

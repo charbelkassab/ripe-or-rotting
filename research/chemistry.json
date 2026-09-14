@@ -1,0 +1,350 @@
+{
+  "_meta": {
+    "title": "Banana pulp chemistry, fermentation kinetics, volatile physical constants, and fly behavioral anchors",
+    "version": "1.0",
+    "compiled": "2026-09-13",
+    "conventions": {
+      "FW": "fresh weight",
+      "mM_tissue_water": "mmol per L of pulp water (water = 0.749 L per kg FW for ripe banana, USDA). Computed by us from g/100g values.",
+      "confidence": "high = measured value verified in fetched primary/database source; medium = verified secondary summary or single study; low = rough, cross-cultivar or search-snippet only; ESTIMATE = our own estimate or derivation, not a literature measurement",
+      "temperature": "25 C unless noted"
+    },
+    "companion_doc": "chemistry.md"
+  },
+
+  "banana_pulp_time_course": {
+    "_note": "Cavendish (AAA) at room temperature (19-24 C). Day 0 = eating ripe (peel fully yellow, stage 6). Overripe ~ day 4-7 (brown-flecked to brown, stage 7-8). Unripe (green) is ~7-10 days before day 0. Sugar values from two independent sources are given; use USDA as the 'generic ripe' default and Phillips 2021 for the trajectory.",
+    "stages": {
+      "unripe_green": {"day": -8},
+      "ripe": {"day": 0},
+      "overripe": {"day": 5}
+    },
+
+    "water_g_per_100g": {
+      "ripe": 74.91, "overripe": 78.6,
+      "source": "ripe: USDA FoodData Central SR Legacy 09040 / FDC 173944 'Bananas, raw' (https://fdc.nal.usda.gov/fdc-app.html#/food-details/173944); overripe: Phillips et al. 2021 PLoS ONE 16:e0253366 doi:10.1371/journal.pone.0253366 (retail overripe 78.6; ripe 75.3)",
+      "confidence": "high"
+    },
+
+    "sugars_g_per_100g_FW": {
+      "USDA_generic_ripe": {"sucrose": 2.39, "glucose": 4.98, "fructose": 4.85, "maltose": 0.01, "total_sugars": 12.23, "starch": 5.38,
+        "source": "USDA FDC 173944 (SR Legacy 09040), stage unspecified composite", "confidence": "high"},
+      "Phillips2021_retail_trajectory": {
+        "slightly_ripe": {"starch": 4.50, "sucrose": 3.33, "fructose": 6.08, "glucose": 6.03, "total_sugars": 15.0},
+        "ripe":          {"starch": 2.52, "sucrose": 4.56, "fructose": 6.23, "glucose": 5.33, "total_sugars": 17.1},
+        "overripe":      {"starch": 0.48, "sucrose": 1.88, "fructose": 6.72, "glucose": 6.96, "total_sugars": 16.7},
+        "source": "Phillips KM et al. 2021 PLoS ONE 16:e0253366, doi:10.1371/journal.pone.0253366 (Cavendish, retail samples, table)",
+        "confidence": "high"
+      },
+      "unripe_green_starch": {"value": "20-25", "unit": "g/100g FW", "source": "secondary summaries; consistent with Moreno et al. 2020 Int J Food Sci Technol 56:1171 (Gros Michel 23.5% day 0)", "confidence": "medium"},
+      "qualitative_kinetics": "Starch hydrolysis -> sucrose (peaks ~stage 4-6) -> invertase -> glucose + fructose. By overripe: starch ~0.5%, sucrose ~2%, hexoses ~13-14%. Phillips 2021.",
+      "in_mM_tissue_water_ripe_USDA": {"glucose": 369, "fructose": 359, "sucrose": 93,
+        "derivation": "g/100g / MW / 0.0749 L. ESTIMATE of free-solution concentration (ignores cell compartments).", "confidence": "derived"},
+      "suggested_first_order_rates_ESTIMATE": {
+        "starch_to_sugar_k_per_day": 0.35,
+        "sucrose_inversion_k_per_day_after_ripe": 0.2,
+        "derivation": "fitted by eye to Phillips 2021 retail trajectory (starch 4.5 -> 2.5 -> 0.5 over ~5-7 days; sucrose 4.6 -> 1.9 over ~5 days). ESTIMATE."
+      }
+    },
+
+    "osmolality_ripe_pulp_ESTIMATE": {
+      "value_mOsm_per_kg": "~1000-1300",
+      "derivation": "sum of sugars (~820 mM) + K+ salts (~120 mM x ~2) + organic acids; ESTIMATE. Implies pulp juice silences ppk28 water GRNs (silent above ~250-300 mOsm, see receptors.json).",
+      "confidence": "ESTIMATE"
+    },
+
+    "protein_g_per_100g": {"value": 1.09, "source": "USDA FDC 173944", "confidence": "high"},
+    "fiber_g_per_100g": {"value": 2.6, "source": "USDA FDC 173944", "confidence": "high"},
+
+    "minerals_mg_per_100g": {
+      "K": 358, "Na": 1, "Mg": 27, "Ca": 5, "P": 22,
+      "K_mM_tissue_water": 122, "Na_mM_tissue_water": 0.6,
+      "source": "USDA FDC 173944; mM values derived by us (K 39.10 g/mol, Na 22.99 g/mol, 0.0749 L water/100 g)",
+      "confidence": "high (mg); derived (mM)",
+      "note": "Na is ~0.6 mM: far below the Ir56b/sweet-GRN low-salt attractive range (10-100 mM NaCl). Banana is effectively salt-free for Na-specific taste; K+ ~120 mM may weakly activate non-selective high-salt cells (Jaeger 2018 reports these are cation non-selective) -- ESTIMATE."
+    },
+
+    "free_amino_acids": {
+      "protein_bound_major_g_per_100g": {"Glu": 0.152, "Asp": 0.124, "His": 0.077, "Leu": 0.068, "Arg": 0.049, "Phe": 0.049, "Lys": 0.050, "Val": 0.047,
+        "source": "USDA FDC 173944 (total amino acids after hydrolysis, not free)", "confidence": "high"},
+      "free_total_ESTIMATE": {"value_mg_per_100g": "~50-150", "value_mM_tissue_water": "~5-15",
+        "source": "ESTIMATE. Primary data exist (Alsmairat, Engelgau & Beaudry 2018 J Am Soc Hortic Sci, 'Changes in free amino acid content in the flesh and peel of Cavendish banana...') but values are in figures we could not access. Leu, Val and Cys increase in pulp during ripening concurrent with branched-chain ester synthesis.",
+        "confidence": "low"}
+    },
+
+    "acidity": {
+      "pH": {"unripe": 5.5, "ripe": "4.5-5.2", "ripe_default": 4.9,
+        "source": "secondary review data (pH ~5.48 -> ~4.95 over ripening); Tonto banana juice starting pH 4.9 +/- 0.23 (Atwine et al. 2026 Food Sci Nutr doi:10.1002/fsn3.72071)",
+        "confidence": "medium"},
+      "malic_acid": {"value_meq_per_100g": "0.8-7.5", "trend": "rises 3-7x during ripening; main pulp acid",
+        "source": "Wyman & Palmer 1964 Plant Physiol 39:630 (PMID 16655975) via secondary summary", "confidence": "low-medium"},
+      "malic_acid_g_per_100g_ESTIMATE": {"ripe": 0.3, "range": "0.1-0.5", "note": "7.5 meq/100 g malic (diprotic, 67 g/eq) = 0.50 g/100 g; ESTIMATE default 0.3"},
+      "citric_acid_g_per_100g_ESTIMATE": {"ripe": 0.1, "range": "0.05-0.2", "confidence": "ESTIMATE (citric and oxalic are minor; oxalic declines with ripening)"},
+      "titratable_acidity_percent_as_malic_ESTIMATE": {"ripe": "0.3-0.5", "confidence": "ESTIMATE"},
+      "mechanistic_note": "Pulp pH and TA are set by malic, citric, oxalic acids and K+ (Etienne et al. 2014 Sci Hortic 162:125)."
+    },
+
+    "polyphenols_tannins": {
+      "total_phenolics_mg_GAE_per_g_FW": {"pulp_unripe": 0.55, "pulp_ripe": 0.43, "peel_unripe": 0.71, "peel_ripe": 0.54},
+      "total_tannins_mg_catechin_eq_per_g_FW": {"pulp_unripe": 0.66, "pulp_ripe": 0.02, "peel_unripe": 0.50, "peel_ripe": 0.19},
+      "source": "Bashmil YM et al. 2021 Antioxidants 10:1521 (Cavendish), https://pmc.ncbi.nlm.nih.gov/articles/PMC8532736/",
+      "confidence": "high",
+      "model_note": "Ripe pulp tannin 0.02 mg/g = 20 mg/kg (~0.03 mM as catechin-eq in tissue water, derived). Astringency/bitterness collapses ~30x from unripe to ripe pulp; peel keeps ~10x more tannin than ripe pulp. Tannin level in rotting pulp: no data (assume stays low)."
+    },
+
+    "volatiles_pulp": {
+      "_note": "Absolute concentrations for individual banana volatiles were NOT obtainable from accessible sources (Jordan et al. 2001 J Agric Food Chem 49:4813 doi:10.1021/jf010471k and Pino & Febles 2013 Food Chem 141:795 doi:10.1016/j.foodchem.2013.03.064 are paywalled; abstracts give no numbers). Values below are anchored on total ester content and on the published ranking of compounds; per-compound values are ESTIMATES meant as model defaults. Replace when better data are available.",
+      "total_esters_mg_per_kg_FW": {"value": "20.5-23.8", "cultivar": "Dwarf Cavendish, open field vs protected", "other_cultivars": "57-90",
+        "source": "Sci Hortic 2012 (ScienceDirect S0304423812001744), via search summary", "confidence": "medium"},
+      "character_compounds_ranking": "Esters dominate ripe pulp: 3-methylbutyl (isoamyl) acetate (character impact), 2-pentyl acetate, 3-methylbutyl butanoate, 2-methylpropyl (isobutyl) acetate, butyl acetate, 3-methylbutyl 3-methylbutanoate. C6 aldehydes (hexanal, E-2-hexenal) are 60-70% of volatiles at mature-green and decline; esters rise from turning to full ripe; ethanol and ketones increase late. Eugenol and elemicin present in Cavendish. Sources: Jordan 2001; Pino & Febles 2013; Zhu et al. 2018 Molecules 23:2456 doi:10.3390/molecules23102456; Facundo et al. 2012 Food Res Int 49:626.",
+      "per_compound_defaults_mg_per_kg_FW_ESTIMATE": {
+        "isoamyl_acetate":           {"unripe": 0.05, "ripe": 3.0,  "overripe": 5.0,  "range_ripe": "0.3-8"},
+        "2-pentyl_acetate":          {"unripe": 0.02, "ripe": 2.0,  "overripe": 3.0},
+        "isoamyl_butanoate":         {"unripe": 0.02, "ripe": 3.0,  "overripe": 4.0},
+        "isobutyl_acetate":          {"unripe": 0.02, "ripe": 1.0,  "overripe": 1.5},
+        "butyl_acetate":             {"unripe": 0.01, "ripe": 0.5,  "overripe": 0.8},
+        "ethyl_acetate":             {"unripe": 0.0,  "ripe": 0.5,  "overripe": 2.0, "note": "fruit-derived only; yeast adds far more (see fermentation)"},
+        "hexanal":                   {"unripe": 2.0,  "ripe": 0.5,  "overripe": 0.2},
+        "E-2-hexenal":               {"unripe": 1.5,  "ripe": 0.3,  "overripe": 0.1},
+        "2-heptanone":               {"unripe": 0.01, "ripe": 0.1,  "overripe": 0.3},
+        "eugenol":                   {"unripe": 0.05, "ripe": 0.2,  "overripe": 0.2},
+        "isoamyl_alcohol":           {"unripe": 0.05, "ripe": 1.5,  "overripe": 3.0},
+        "confidence": "ESTIMATE (order of magnitude). Built so that sum of esters ripe ~ 10-25 mg/kg matches the total-ester anchor; hexanal OAV ~1200 in 'Fenza 1' (Zeng et al. 2026 Food Chem X) supports sub-mg/kg-to-mg/kg aldehydes."
+      },
+      "ethanol_mg_per_kg": {"green": 0, "yellow_green_to_yellow_brown": "250-375", "brown": ">600",
+        "source": "search-summary of a banana ripening study (primary paper not identified; unclear whether tissue or headspace ppm)", "confidence": "low"},
+      "acetaldehyde_mg_per_kg": {"brown": ">30", "note": "peaks at brown stage", "source": "same as ethanol row", "confidence": "low"},
+      "isoamyl_acetate_reported_range_ug_per_kg": {"value": "4-344", "source": "search summary, Cavendish cultivars (method-dependent)", "confidence": "low",
+        "note": "conflicts upward with total-ester anchor 20 mg/kg if isoamyl acetate is a major ester; likely reflects extraction/SPME differences. Our default 3 mg/kg is an ESTIMATE."},
+      "precursor_note": "3-methylbutyl and 2-methylpropyl esters derive from de novo Leu/Val synthesis in ripening pulp (Engelgau & Beaudry 2026 PNAS doi:10.1073/pnas.2515301123)."
+    },
+
+    "respiration_CO2": {
+      "yellow_ripe_whole_banana_uL_per_min": 200,
+      "black_banana_after_21_days_uL_per_min": 30,
+      "resting_20_flies_uL_per_min": 0.89,
+      "source": "Faucher C, Forstreuter M, Hilker M, de Bruyne M 2006 J Exp Biol 209:2739 doi:10.1242/jeb.02297",
+      "confidence": "high",
+      "per_gram_ESTIMATE": "~200 uL/min / ~120 g pulp+peel = ~1.7 uL/g/min = ~100 uL/g/h (climacteric peak range). ESTIMATE."
+    },
+
+    "surface_area_note_ESTIMATE": "Cavendish fruit ~ 120-150 g, ~18-20 cm long, 3.5-4 cm diameter -> peel area ~ 200-250 cm^2; cut pulp face ~ 10 cm^2. ESTIMATE, for emission-flux geometry."
+  },
+
+  "fermentation": {
+    "_note": "Rotting banana = yeast (early Hanseniaspora/Pichia/Candida, later Saccharomyces/Pichia kluyveri) + acetic acid bacteria (Acetobacter/Gluconobacter) + lactic acid bacteria, colonizing damaged/split fruit. Parameters from liquid cultures are applied to a solid substrate: expect slower effective rates due to diffusion/oxygen limitation.",
+
+    "succession": {
+      "sequence": "days 0-3 Hanseniaspora & Candida dominate; then Pichia kluyveri and other yeasts; late decay: sugars exhausted, pH rises (bacterial deamination/ammonia).",
+      "source": "Morais PB et al. 1995 Appl Environ Microbiol 61:4251 doi:10.1128/aem.61.12.4251-4257.1995 (fallen tropical fruit); Onetto et al. 2025 Yeast 42:116 doi:10.1002/yea.4000 (H. uvarum dominates early fermentation)",
+      "confidence": "medium (qualitative)"
+    },
+    "initial_inoculum_CFU_per_g": {
+      "intact_fruit_surface": "1e3-1e6", "damaged_fruit": "1e5-1e7", "fallen_tropical_fruit": "~5e4",
+      "source": "search summaries of grape/fallen-fruit yeast ecology (intact grapes at harvest; damaged grapes Hanseniaspora/Metschnikowia)", "confidence": "low-medium",
+      "fly_vectoring_note": "Drosophila vector yeasts onto fruit; not quantified here."
+    },
+    "yeast_cell_dry_mass_pg_ESTIMATE": {"value": 15, "range": "10-20", "note": "haploid S. cerevisiae; 1e7 CFU/g ~ 0.15 mg dry yeast/g. ESTIMATE (textbook/BioNumbers order of magnitude)"},
+
+    "stoichiometry": {
+      "alcoholic_fermentation": "C6H12O6 -> 2 C2H5OH + 2 CO2",
+      "ethanol_yield_theoretical_g_per_g_hexose": 0.511,
+      "CO2_yield_theoretical_g_per_g_hexose": 0.489,
+      "ethanol_yield_practical_g_per_g": {"value": 0.46, "range": "0.45-0.48 (88-95% of theoretical)", "source": "textbook fermentation values", "confidence": "medium"},
+      "CO2_gas_volume_L_per_mol_glucose_25C": 48.9,
+      "sucrose": "hydrolysed by yeast invertase to glucose + fructose first (1 g sucrose -> 1.053 g hexose)",
+      "acetic_oxidation": "C2H5OH + O2 -> CH3COOH + H2O",
+      "acetic_acid_yield_theoretical_g_per_g_ethanol": 1.304,
+      "acetic_acid_yield_observed_banana_wine": {"value_percent_of_theoretical": 53.1, "productivity_g_per_L_h": 0.216, "final_g_per_L": 49.2,
+        "source": "Tanaka et al. 2016 preprint doi:10.20944/preprints201612.0007.v1 (banana pulp wine -> vinegar)", "confidence": "medium"},
+      "ethyl_acetate_formation": "ethanol + acetyl-CoA (yeast alcohol acetyltransferase / Hanseniaspora, Pichia/Wickerhamomyces esterases); also chemical esterification of ethanol + acetic acid (slow)."
+    },
+
+    "S_cerevisiae_kinetics": {
+      "mu_max_anaerobic_per_h_30C": {"value": 0.31, "source": "Verduyn C et al. 1990 J Gen Microbiol 136:395 doi:10.1099/00221287-136-3-395", "confidence": "high"},
+      "mu_max_aerobic_per_h_30C": {"value": "0.40-0.45", "source": "textbook value", "confidence": "medium"},
+      "mu_max_25C_ESTIMATE": {"anaerobic": 0.22, "aerobic": 0.3, "derivation": "Q10 ~2 from 30 C values. ESTIMATE"},
+      "Ks_glucose": {"value_g_per_L": 0.099, "value_mM": 0.55, "source": "Verduyn 1990 (anaerobic glucose-limited chemostat)", "confidence": "high"},
+      "Yxs_anaerobic_g_per_g": {"value": 0.10, "source": "Verduyn 1990 (max at D=0.10/h; decreases at higher growth rates and with weak acids e.g. acetate)", "confidence": "high"},
+      "Yxs_aerobic_respiratory_g_per_g": {"value": 0.50, "source": "Postma E et al. 1989 Appl Environ Microbiol 55:468 doi:10.1128/aem.55.2.468-477.1989", "confidence": "high"},
+      "Yxs_aerobic_Crabtree_high_sugar_g_per_g": {"value": 0.16, "note": "above critical D ~0.3/h, or at the high sugar levels in fruit (~150 g/L) respiration is repressed -> fermentative even with O2", "source": "Postma 1989", "confidence": "high"},
+      "glycerol_yield_g_per_g_sugar": {"value": "0.04-0.10", "typical_wine_g_per_L": "5-10", "source": "textbook wine microbiology", "confidence": "medium"},
+      "ethanol_growth_inhibition_ESTIMATE": {"growth_stops_percent_v_v": "8-12", "note": "never reached in solid fruit (sugar ~15% FW -> max ~7-8% w/w ethanol if fully fermented)", "confidence": "ESTIMATE"}
+    },
+
+    "Hanseniaspora_uvarum_kinetics": {
+      "mu_max_per_h_ESTIMATE": {"value": 0.4, "range": "0.3-0.5", "note": "grows faster than S. cerevisiae early (Onetto 2025), numeric value not found", "confidence": "ESTIMATE"},
+      "ethanol_tolerance_percent_v_v_ESTIMATE": {"value": "4-6", "confidence": "ESTIMATE (common wine-ecology statement)"},
+      "ethyl_acetate_mg_per_L": {"in_wine_ferments": "30-118", "plate_headspace_strain_MP1861": "344-430",
+        "source": "Cus et al. 2026 Appl Microbiol Biotechnol (PMC13009034); Front Microbiol 2022 (PMC9399722)", "confidence": "medium"},
+      "other_products": "more glycerol and 2-phenylethyl acetate (H. opuntiae) than S. cerevisiae; acetic acid production relatively high"
+    },
+
+    "acetic_acid_bacteria_kinetics": {
+      "mu_max_per_h_ESTIMATE": {"value": 0.1, "range": "0.05-0.2", "confidence": "ESTIMATE"},
+      "Ks_ethanol_ESTIMATE_g_per_L": {"value": 1, "confidence": "ESTIMATE"},
+      "O2_requirement": "obligately aerobic: acetic acid forms at the fruit surface/air interface, not deep in pulp",
+      "yield": "see stoichiometry (theoretical 1.304 g acetic/g ethanol; banana vinegar observed 53% of theoretical)"
+    },
+
+    "lactic_acid_ESTIMATE": {"rotting_fruit_g_per_L": "0.5-5", "note": "lactic acid bacteria co-occur; no banana-specific rotting data found", "confidence": "ESTIMATE"},
+
+    "product_concentrations_reference": {
+      "ethanol_in_natural_fruit": [
+        {"system": "Astrocaryum palm pulp, ripe", "percent": 0.9, "source": "Dudley R 2004 Integr Comp Biol 44:315 doi:10.1093/icb/44.4.315", "confidence": "high"},
+        {"system": "Astrocaryum palm pulp, overripe", "percent": 4.5, "source": "Dudley 2004", "confidence": "high"},
+        {"system": "Spondias mombin, fallen ripe (spider monkey food)", "percent": "1.84-1.91", "brix": 13.1, "source": "Campbell CJ et al. 2022 R Soc Open Sci 9:211729 doi:10.1098/rsos.211729", "confidence": "high"},
+        {"system": "Spondias mombin, regression", "equation": "% ethanol = -0.178 + 0.118 * Brix", "source": "Campbell 2022", "confidence": "high"},
+        {"system": "ripe fruit pulp, 20 chimpanzee diet species", "percent_w_w": "0.31 +/- 0.21", "source": "Maro A et al. 2025 Sci Adv doi:10.1126/sciadv.adw1665", "confidence": "high"},
+        {"system": "Bertam palm nectar (fermenting)", "percent": "mean 0.6, median 0.5, max 3.8", "source": "Wiens F et al. 2008 PNAS 105:10426 doi:10.1073/pnas.0801628105", "confidence": "high"},
+        {"system": "fruits yielding D. melanogaster (Australia survey)", "percent": "~60% of fruits little/no ethanol; ~20% at 1-2%; most of rest 2-4%; wineries rarely >4%", "source": "McKechnie SW & Morgan P 1982 Aust J Biol Sci (via search summary)", "confidence": "medium"},
+        {"system": "spontaneously fermented banana juice (Tonto), 60 h", "percent_v_v": "0 -> 4.73", "brix": "15.0 -> 5.15", "pH": "4.9 -> 3.58", "TA_percent": "0.21 -> 0.77", "source": "Atwine et al. 2026 Food Sci Nutr doi:10.1002/fsn3.72071", "confidence": "high"},
+        {"system": "banana pulp wine (inoculated)", "percent_v_v": "5.7-6.8 final; max reached at 29 h (agitated) / 47 h (static)", "source": "Tanaka et al. 2016 preprint doi:10.20944/preprints201612.0007.v1", "confidence": "medium"}
+      ],
+      "ethanol_rotting_banana_model_default_ESTIMATE": {"day0": 0.03, "day3": 0.5, "day7": 2.0, "day14": 3.0, "unit": "% w/w", "note": "damaged, yeast-colonized banana at ~25 C; bounded by Tonto (4.7% in 60 h in liquid) and fruit field data 1-4.5%. ESTIMATE"},
+      "acetic_acid": {
+        "vinegar_percent": "4-6 (5% = Joseph et al. 2009 oviposition assay)",
+        "banana_peel_vinegar_percent": {"value": 4.30, "pH": "5.82 -> 3.92 over 60 days", "source": "Samussone et al. 2026 preprint", "confidence": "medium"},
+        "rotting_fruit_model_default_ESTIMATE": {"day0": 0.0, "day3": 0.05, "day7": 0.3, "day14": 1.0, "unit": "% w/w", "confidence": "ESTIMATE; no direct measurement in rotting banana found"},
+        "oviposition_relevant_range_percent": {"value": "0.34-3.4", "source": "review PMC5685952 (via summary)", "confidence": "low"}
+      },
+      "ethyl_acetate_mg_per_L": {"S_cerevisiae_wine_typical_ESTIMATE": "20-80", "Hanseniaspora": "30-118 (up to ~400 in headspace plates)", "Wickerhamomyces_anomalus": ">150", "confidence": "medium (Hanseniaspora), ESTIMATE (S. cerevisiae)"},
+      "acetoin_mg_per_L": {"mid_fermentation_peak": "25-100", "finished_wine": "2-32 (mean ~10)", "note": "later reduced to 2,3-butanediol", "source": "Am J Enol Vitic 16:85 and wine literature via summary", "confidence": "medium"},
+      "2-phenylethanol_mg_per_L": {"typical_yeast": "10-100", "optimized_max": "~170 (strawberry wine)", "source": "wine literature via summary", "confidence": "medium"},
+      "isoamyl_alcohol_mg_per_L_ESTIMATE": {"value": "90-300", "note": "fusel alcohol from Leu (Ehrlich pathway); typical wine range", "confidence": "ESTIMATE"},
+      "glycerol_g_per_L": {"value": "5-10 (wine)", "confidence": "medium"},
+      "methanol_mg_per_L": {"value": "0-950 (pectin demethylation; Tonto banana beverage)", "source": "Atwine 2026", "confidence": "high"}
+    },
+
+    "pH_trajectory": {
+      "banana_juice_spontaneous": {"t0": 4.9, "t60h": 3.58, "source": "Atwine 2026"},
+      "model_default_ESTIMATE": {"day0": 4.9, "day3": 4.3, "day7": 3.8, "day14": 3.6, "late_decay_after_sugar_exhaustion": "rises toward 5-7 (bacterial deamination/ammonia; Morais 1995 qualitative)"},
+      "acetic_acid_pKa": 4.76,
+      "undissociated_fraction_formula": "f = 1/(1+10^(pH-4.76)); f=0.85 at pH 4.0, 0.36 at pH 5.0. Only the undissociated acid partitions to air."
+    },
+
+    "yeast_biomass_nutrition": {
+      "protein_percent_dry_weight": {"value": "40-50", "source": "Lange HC & Heijnen JJ 2001 Biotechnol Bioeng 75:334 doi:10.1002/bit.10054 (composition study; exact % not verified)", "confidence": "medium"},
+      "derived_example_ESTIMATE": "Fermenting 12 g sugar/100 g pulp anaerobically at Yxs 0.10 gives ~1.2 g dry yeast/100 g = ~0.5 g yeast protein/100 g, i.e. ~+50% over the pulp's own 1.09 g protein. Yeast is the fly's main protein/sterol/B-vitamin source on fruit."
+    },
+
+    "CO2_emission_from_fermentation_ESTIMATE": {
+      "per_g_sugar_fermented_mL_CO2_25C": 272,
+      "example": "100 g banana, 12 g sugar fully fermented over ~3 days -> ~3.3 L CO2 -> ~0.75 mL/min mean, i.e. ~4x the ripe-fruit respiration (200 uL/min). ESTIMATE from stoichiometry.",
+      "confidence": "derived"
+    },
+
+    "suggested_kinetic_model_ESTIMATE": {
+      "state_variables": ["S_starch", "S_sucrose", "S_hexose", "X_yeast", "E_ethanol", "A_acetic", "EA_ethylacetate", "ACN_acetoin", "PE_2phenylethanol", "IAA_isoamylacetate", "pH"],
+      "equations": [
+        "dS_starch/dt = -k_starch*S_starch",
+        "dS_sucrose/dt = +k_starch*S_starch*(0.5) - k_inv*S_sucrose",
+        "mu = mu_max * S_hexose/(Ks + S_hexose) * max(0, 1 - E/E_max)",
+        "dX/dt = mu*X*(1 - X/X_max)",
+        "dS_hexose/dt = +k_inv*1.053*S_sucrose + k_starch*S_starch*0.5 - (mu/Yxs + q_E/0.511)*X",
+        "dE/dt = Y_E/S * (mu/Yxs)*X*frac_ferment - r_AAB",
+        "r_AAB = mu_AAB * Z * E/(K_E + E)  (Z = acetic acid bacteria at surface)",
+        "dA/dt = 1.304*eta_AAB*r_AAB   (eta ~0.5-0.9)",
+        "dEA/dt = k_EA*X*E  (yeast AATase-driven; k_EA tuned so EA reaches 30-120 mg/kg at E ~2%)",
+        "d[volatile]/dt includes loss = -h_m*A_surf*(Kaw*C_aq - C_air)/V_fruit (air-side mass transfer; h_m ~ D/delta, delta ~1-3 mm boundary layer)"
+      ],
+      "default_parameters": {"k_starch_per_day": 0.35, "k_inv_per_day": 0.2, "mu_max_per_h": 0.25, "Ks_g_per_L": 0.1, "Yxs": 0.1, "Y_E_per_S": 0.46, "E_max_percent": 10, "X_max_CFU_per_g": 1e8, "mu_AAB_per_h": 0.1, "K_E_g_per_L": 1},
+      "confidence": "ESTIMATE; structure standard Monod/Luedeking-Piret; defaults from rows above"
+    }
+  },
+
+  "volatile_physical_constants": {
+    "_note": "Kaw = dimensionless gas/aqueous concentration ratio = 1/(Hscp * R * T). Hscp values from Sander 2023 compilation (preferred literature-review or measured values). D_air_best = measured (Tang 2015) where available, otherwise Fuller-method estimate corrected by measured analogs. Vapor pressures from DoOR.data odor.csv (VP.25) cross-checked against standard values. Temperature dependence: Hscp(T) = Hscp(298.15)*exp(dlnH/d(1/T) * (1/T - 1/298.15)); D(T) ~ T^1.75.",
+    "sources": {
+      "Sander2023": "Sander R. 2023 Compilation of Henry's law constants (v5.0.0) for water as solvent. Atmos Chem Phys 23:10901-12440, doi:10.5194/acp-23-10901-2023, https://www.henrys-law.org",
+      "Tang2015": "Tang MJ, Shiraiwa M, Poschl U, Cox RA, Kalberer M 2015 Atmos Chem Phys 15:5585, doi:10.5194/acp-15-5585-2015 (preferred D in Torr cm2/s at 298 K; divide by 760 for cm2/s at 1 atm)",
+      "Fuller1966": "Fuller EN, Schettler PD, Giddings JC 1966 Ind Eng Chem 58:18 (atomic diffusion volumes; computed by us). Tang 2015 reports Fuller typically within <10% of measurements; overestimates by ~10-20% for C5-C6 acids.",
+      "DoOR_odor_table": "https://raw.githubusercontent.com/ropensci/DoOR.data/master/data/odor.csv (MW, BP, VP.25 mmHg, HLC atm m3/mol)"
+    },
+    "compounds": {
+      "isoamyl_acetate": {"CAS": "123-92-2", "MW": 130.19, "BP_C": 142.5, "VP_25C_mmHg": 5.6, "VP_25C_Pa": 746.6, "sat_vapor_g_m3": 39.2, "sat_ppmv": 7368,
+        "Hscp_mol_m3_Pa": 2.1e-2, "dlnH_d1overT_K": 6700, "Kaw": 0.0192, "Henry_src": "Sander2023: Brockbank 2013 (L); measured 2.0e-2 Plyasunov 2004, 2.2e-2 Ammari & Schroen 2019",
+        "D_air_cm2_s_best": 0.0605, "D_air_Fuller": 0.0681, "D_src": "analog n-pentyl acetate measured 46 Torr cm2/s (Tang 2015) = 0.0605", "confidence": "Kaw high; D medium (+/-10%)"},
+      "isobutyl_acetate": {"CAS": "110-19-0", "MW": 116.16, "BP_C": 115, "VP_25C_mmHg": 17.8, "VP_25C_Pa": 2373.1, "sat_vapor_g_m3": 111.2, "sat_ppmv": 23421,
+        "Hscp_mol_m3_Pa": 2.6e-2, "dlnH_d1overT_K": 6000, "Kaw": 0.0155, "Henry_src": "Sander2023: Brockbank 2013 (L)",
+        "D_air_cm2_s_best": 0.0684, "D_air_Fuller": 0.0733, "D_src": "Tang 2015 measured 2-methylpropyl acetate 52 Torr cm2/s", "confidence": "high"},
+      "butyl_acetate": {"CAS": "123-86-4", "MW": 116.16, "BP_C": 124, "VP_25C_mmHg": 11.5, "VP_25C_Pa": 1533.2, "sat_vapor_g_m3": 71.9, "sat_ppmv": 15132,
+        "Hscp_mol_m3_Pa": 3.5e-2, "dlnH_d1overT_K": 6300, "Kaw": 0.0115, "Henry_src": "Sander2023: Plyasunov 2004 (L); Brockbank 2013 3.8e-2; measured 1.3e-2 to 3.5e-2",
+        "D_air_cm2_s_best": 0.0671, "D_air_Fuller": 0.0733, "D_src": "Tang 2015 n-butyl acetate 51 Torr cm2/s", "confidence": "high"},
+      "ethyl_acetate": {"CAS": "141-78-6", "MW": 88.11, "BP_C": 76.5, "VP_25C_mmHg": 93.2, "VP_25C_Pa": 12425.6, "sat_vapor_g_m3": 441.7, "sat_ppmv": 122632,
+        "Hscp_mol_m3_Pa": 5.9e-2, "dlnH_d1overT_K": 5900, "Kaw": 0.00684, "Henry_src": "Sander2023: Sander 2011 / Burkholder 2015 (L); Burkholder 2019 6.5e-2",
+        "D_air_cm2_s_best": 0.0882, "D_air_Fuller": 0.0882, "D_src": "Tang 2015 ethyl acetate 67 +/- 6 Torr cm2/s", "confidence": "high"},
+      "ethanol": {"CAS": "64-17-5", "MW": 46.07, "BP_C": 78, "VP_25C_mmHg": 59.3, "VP_25C_Pa": 7906.0, "sat_vapor_g_m3": 146.9, "sat_ppmv": 78026,
+        "Hscp_mol_m3_Pa": 1.9, "dlnH_d1overT_K": 6400, "Kaw": 0.000212, "Henry_src": "Sander2023: Sander 2011 / Burkholder 2019 (L); measured 1.8-2.2",
+        "D_air_cm2_s_best": 0.1289, "D_air_Fuller": 0.1244, "D_src": "Tang 2015 ethanol 98 +/- 7 Torr cm2/s", "confidence": "high"},
+      "acetic_acid": {"CAS": "64-19-7", "MW": 60.05, "BP_C": 117, "VP_25C_mmHg": 15.7, "VP_25C_Pa": 2093.2, "sat_vapor_g_m3": 50.7, "sat_ppmv": 20658, "pKa": 4.76,
+        "Hscp_mol_m3_Pa": 40, "Kaw": 1.01e-5, "Henry_src": "Sander2023: Sander 2011 / Burkholder 2019 (L) 4.0e1, for undissociated acid. Effective Kaw at pH p = Kaw * 1/(1+10^(p-4.76)). DoOR's HLC (1e-7 atm m3/mol -> Kaw 4e-6) is ~2.5x lower; Sander preferred.",
+        "D_air_cm2_s_best": 0.1237, "D_air_Fuller": 0.1174, "D_src": "Tang 2015 acetic acid 94 +/- 5 Torr cm2/s (Lugg 1968)", "confidence": "high",
+        "note": "gas-phase acetic acid partly dimerizes at high concentrations; negligible at ppm levels"},
+      "acetoin": {"CAS": "513-86-0", "MW": 88.11, "BP_C": 148, "VP_25C_mmHg": 2.69, "VP_25C_Pa": 358.6, "sat_vapor_g_m3": 12.8, "sat_ppmv": 3539,
+        "Hscp_mol_m3_Pa": 1.8, "Kaw": 2.2e-4, "Henry_src": "ESTIMATE between measured 0.57 (Straver & de Loos 2005) and 2.3-4.0 (Wu et al. 2022) in Sander2023; uncertain x3 (Kaw 1.3e-4 to 7e-4)",
+        "D_air_cm2_s_best": 0.079, "D_air_Fuller": 0.0882, "D_src": "ESTIMATE: Fuller -10% (analog 4-hydroxy-4-methyl-2-pentanone measured 49 Torr cm2/s vs Fuller ~12% higher)", "confidence": "Kaw low-medium; D medium"},
+      "2-phenylethanol": {"CAS": "60-12-8", "MW": 122.17, "BP_C": 218.2, "VP_25C_mmHg": 0.087, "VP_25C_Pa": 11.6, "sat_vapor_g_m3": 0.57, "sat_ppmv": 115,
+        "Hscp_mol_m3_Pa": 25, "dlnH_d1overT_K": 7200, "Kaw": 1.6e-5, "Henry_src": "Sander2023: Brockbank 2013 (L) 17; Altschuh 1999 (M) >37; Abraham 1994 39; midpoint 25 (range Kaw 1.0e-5 to 2.4e-5)",
+        "D_air_cm2_s_best": 0.0665, "D_air_Fuller": 0.0723, "D_src": "ESTIMATE: Fuller -8% (aromatic analog benzyl acetate measured 46 Torr cm2/s)", "confidence": "Kaw medium; D medium"},
+      "hexanal": {"CAS": "66-25-1", "MW": 100.16, "BP_C": 130, "VP_25C_mmHg": 11.3, "VP_25C_Pa": 1506.5, "sat_vapor_g_m3": 60.9, "sat_ppmv": 14868,
+        "Hscp_mol_m3_Pa": 3.0e-2, "dlnH_d1overT_K": 6400, "Kaw": 0.0134, "Henry_src": "Sander2023: measured range 1.6e-2 to 4.9e-2 (van Ruth 2001-2002, Zhou & Mopper 1990, Karl 2003); Brockbank 2013 (L) 4.5e-2; median ~3e-2",
+        "D_air_cm2_s_best": 0.0684, "D_air_Fuller": 0.076, "D_src": "ESTIMATE: Fuller -10% (C5-C6 oxygenates overestimated; methyl n-propyl ketone 60, 1-hexanol 47 Torr cm2/s measured)", "confidence": "Kaw medium; D medium"},
+      "isoamyl_alcohol": {"CAS": "123-51-3", "MW": 88.15, "BP_C": 130, "VP_25C_mmHg": 2.37, "VP_25C_Pa": 316.0, "sat_vapor_g_m3": 11.2, "sat_ppmv": 3118,
+        "Hscp_mol_m3_Pa": 0.82, "dlnH_d1overT_K": 8000, "Kaw": 4.9e-4, "Henry_src": "Sander2023: Brockbank 2013 (L); Fenclova 2010 (M) 0.82; Plyasunov & Shock 2000 0.70",
+        "D_air_cm2_s_best": 0.0711, "D_air_Fuller": 0.0816, "D_src": "analog 1-pentanol measured 54 +/- 8 Torr cm2/s (Tang 2015)", "confidence": "Kaw high; D medium"},
+      "2-heptanone": {"CAS": "110-43-0", "MW": 114.19, "BP_C": 149, "VP_25C_mmHg": 3.86, "VP_25C_Pa": 514.6, "sat_vapor_g_m3": 23.7, "sat_ppmv": 5079,
+        "Hscp_mol_m3_Pa": 6.8e-2, "dlnH_d1overT_K": 6800, "Kaw": 0.00593, "Henry_src": "Sander2023: Brockbank 2013 (L); Plyasunov & Shock 2001 7.2e-2",
+        "D_air_cm2_s_best": 0.0632, "D_air_Fuller": 0.0702, "D_src": "ESTIMATE: Fuller -10%", "confidence": "Kaw high; D medium"},
+      "carbon_dioxide": {"CAS": "124-38-9", "MW": 44.01, "Hscp_mol_m3_Pa": 3.3e-4, "dlnH_d1overT_K": 2400, "Kaw": 1.22,
+        "Henry_src": "Sander2023: Sander 2011 (L) 3.3e-4; Burkholder 2019 3.4e-4. Bicarbonate negligible at fruit pH 4-5 (pKa1 6.35).",
+        "D_air_cm2_s_best": 0.16, "D_air_Fuller": 0.160, "D_src": "Fuller estimate; consistent with measured CO2-air ~0.16 cm2/s at 298 K (Marrero & Mason 1972 J Phys Chem Ref Data 1:3)", "confidence": "high",
+        "ambient_ppm": "~420 (2024-2026 global mean, NOAA)"},
+      "extra_compounds_Fuller_and_DoOR_only": {
+        "_note": "D = Fuller estimate (x0.9 recommended for C>=5); Kaw from DoOR HLC (EPI-Suite-type values, lower confidence than Sander).",
+        "eugenol": {"MW": 164.2, "BP_C": 254, "VP_25C_mmHg_ESTIMATE": 0.01, "Kaw_DoOR": 2.0e-6, "D_air_Fuller": 0.0626},
+        "ethyl_butyrate": {"MW": 116.16, "VP_25C_mmHg": 12.8, "Kaw_DoOR": 0.0163, "D_air_measured": 0.0671, "D_src": "Tang 2015 ethyl n-butyrate 51 Torr cm2/s"},
+        "ethyl_hexanoate": {"MW": 144.21, "VP_25C_mmHg": 1.56, "Kaw_DoOR": 0.0296, "D_air_Fuller": 0.0639},
+        "acetaldehyde": {"MW": 44.05, "VP_25C_mmHg": 902, "Kaw_DoOR": 0.0027, "D_air_Fuller": 0.130},
+        "diacetyl_2,3-butanedione": {"MW": 86.09, "VP_25C_mmHg": 56.8, "Kaw_DoOR": 5.4e-4, "D_air_Fuller": 0.0904},
+        "2-phenylethyl_acetate": {"MW": 164.2, "BP_C": 238, "Kaw_DoOR": 7.7e-4, "D_air_Fuller": 0.0626},
+        "methanol": {"MW": 32.04, "VP_25C_mmHg": 127, "Kaw_DoOR": 1.9e-4, "D_air_measured": 0.166, "D_src": "Tang 2015 methanol 126 Torr cm2/s"},
+        "lactic_acid": {"MW": 90.08, "VP_25C_mmHg": 0.08, "Kaw_DoOR": 4.6e-6, "D_air_Fuller": 0.0943, "note": "practically non-volatile; a taste stimulus"},
+        "glycerol": {"MW": 92.09, "VP_25C_mmHg": "~0.0002", "Kaw_DoOR": 7.1e-7, "note": "non-volatile; taste only"}
+      }
+    },
+    "derived_equilibrium_headspace_examples_ESTIMATE": {
+      "_formula": "C_air = Kaw * C_aq (undissociated); ppmv = C_air[mg/m3] * 24.45 / MW. Upper bound over a cut pulp surface (matrix binding and depletion lower it).",
+      "isoamyl_acetate_ripe_3mg_per_kg": {"C_aq_mg_L": 4.0, "C_air_mg_m3": 77, "ppmv": 14},
+      "ethanol_ripe_300mg_per_kg": {"C_aq_mg_L": 400, "C_air_mg_m3": 85, "ppmv": 45},
+      "ethanol_rotting_2pct": {"C_aq_g_L": 27, "C_air_mg_m3": 5700, "ppmv": 3000},
+      "acetic_acid_rotting_0.3pct_pH3.8": {"C_aq_g_L": 4.0, "undissociated_fraction": 0.90, "C_air_mg_m3": 36, "ppmv": 15},
+      "ethyl_acetate_rotting_100mg_per_kg": {"C_aq_mg_L": 133, "C_air_mg_m3": 910, "ppmv": 250},
+      "note": "Concentrations fall steeply with distance (plume dilution typically 1e-2 to 1e-4 within tens of cm to a few m). Compare fly thresholds: vinegar attraction at ~3 ppm PID-equivalent (Semmelhack & Wang 2009), sensitive ORNs respond at 1e-7-1e-6 dilutions (Si 2019, Kreher 2008)."
+    }
+  },
+
+  "fly_behavioral_anchors": {
+    "_note": "Short list for validating the chemistry-driven smell/taste model. Full quantitative set in behavior.json and receptors.json.",
+    "items": [
+      {"anchor": "Yeast, not fruit, drives attraction/oviposition: S. cerevisiae alone sufficient; synthetic 5-component yeast blend (ethanol, acetic acid, acetoin, 2-phenylethanol, 3-methyl-1-butanol) as attractive as fermenting grape juice; unfermented juice less attractive", "source": "Becher PG et al. 2012 Funct Ecol 26:822 doi:10.1111/j.1365-2435.2012.02006.x", "confidence": "high (qualitative; % paywalled)"},
+      {"anchor": "Wind tunnel: vinegar headspace attracts 62% of starved flies within 15 min vs <20% satiated; acetic acid attractive alone; 2-phenylethanol and acetoin synergize with acetic acid; geosmin reduces attraction", "source": "Becher PG, Bengtsson M, Hansson BS, Witzgall P 2010 J Chem Ecol 36:599 doi:10.1007/s10886-010-9794-2", "confidence": "medium (62% via search snippet)"},
+      {"anchor": "Overripe mango: ethanol:acetic acid:2-phenylethanol 1:22:5 blend caught 6x more flies than any single compound and 4x more than overripe mango in cages (weaker in field)", "source": "Zhu J, Park KC, Baker TC 2003 J Chem Ecol 29:899 doi:10.1023/A:1022931816351", "confidence": "high"},
+      {"anchor": "Acetic acid: females lay ~91% of eggs on 5% acetic acid food (oviposition index +0.82) while positionally avoiding it (position index -0.33); taste-driven egg preference, olfactory avoidance", "source": "Joseph RM, Devineni AV, King IF, Heberlein U 2009 PNAS 106:11352 doi:10.1073/pnas.0901419106", "confidence": "high"},
+      {"anchor": "Cider vinegar: PI 75% at 3 ppm, slightly higher at 12 ppm, drops to 9% at 32 ppm (DM5/Or85a recruitment); Or42b (DM1) silencing abolishes attraction", "source": "Semmelhack JL & Wang JW 2009 Nature 459:218 doi:10.1038/nature07983", "confidence": "high"},
+      {"anchor": "Ethanol: oviposition preference significant from 3%, strongest at 5% (5% > 1, 3, 10%; 5% ~ 7.5%)", "source": "Azanchi R, Kaun KR, Heberlein U 2013 PNAS 110:21153 doi:10.1073/pnas.1320208110", "confidence": "high"},
+      {"anchor": "Ethanol: odor attractive, taste aversive (no PER at 0.1-40%), yet flies prefer to drink 15% ethanol food over days", "source": "Devineni AV & Heberlein U 2009 Curr Biol 19:2126 doi:10.1016/j.cub.2009.10.070", "confidence": "high"},
+      {"anchor": "CO2: resting/walking flies avoid +0.1-1% CO2 (none at +0.02%); a yellow banana emits ~200 uL CO2/min; active/flying flies are attracted to CO2 (IR25a-dependent), 5% strongest", "source": "Suh GS et al. 2004 Nature 431:854; Faucher 2006 J Exp Biol 209:2739; van Breugel F, Huda A, Dickinson MH 2018 Nature 564:420 doi:10.1038/s41586-018-0732-8", "confidence": "high"},
+      {"anchor": "Geosmin (mold/Streptomyces, spoiled fruit): single-receptor (Or56a, DA2) aversion overriding attraction, oviposition and feeding", "source": "Stensmyr MC et al. 2012 Cell 151:1345 doi:10.1016/j.cell.2012.09.046", "confidence": "high"},
+      {"anchor": "Detection distance: no direct measurement. Released flies disperse up to ~12 km in one flight (~1 m/s groundspeed) and are recaptured by fermenting-bait traps at 250 m-1 km; wind-tunnel surge upwind 190 ms after plume contact", "source": "Leitch KJ et al. 2021 PNAS 118:e2013342118; van Breugel F & Dickinson MH 2014 Curr Biol 24:274", "confidence": "high (dispersal); gap (odor detection range)"}
+    ]
+  },
+
+  "biggest_gaps": [
+    "No verified absolute concentrations (mg/kg) or emission rates (ng/g/h) for individual banana esters, hexanal, 2-heptanone, eugenol, isoamyl alcohol -> per-compound defaults are estimates anchored to total esters ~20-24 mg/kg.",
+    "No direct measurements of ethanol, acetic acid, ethyl acetate in naturally rotting banana (only other fruits, banana juice/wine/vinegar).",
+    "Free amino acid totals in banana pulp; malic/citric g/100g for Cavendish.",
+    "Numeric mu_max for Hanseniaspora uvarum and Acetobacter on fruit; solid-substrate diffusion limitation.",
+    "Acetoin Henry's constant uncertain ~3x."
+  ]
+}

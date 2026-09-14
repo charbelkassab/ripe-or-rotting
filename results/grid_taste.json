@@ -1,0 +1,642 @@
+[
+ {
+  "food": "ripe (day 0)",
+  "yeast_enrichment": 1.0,
+  "state": "fed",
+  "accept": 6.333333333333333,
+  "aversion": 0.0,
+  "score": 6.333333333333333,
+  "grn_rates": {
+   "sugar": 57.0,
+   "water": 0.0,
+   "bitter": 5.8,
+   "ir94e": 2.5,
+   "yeast_peg": 2.9,
+   "carbonation_peg": 5.0
+  }
+ },
+ {
+  "food": "ripe (day 0)",
+  "yeast_enrichment": 1.0,
+  "state": "starved_24h",
+  "accept": 9.0,
+  "aversion": 0.0,
+  "score": 9.0,
+  "grn_rates": {
+   "sugar": 71.8,
+   "water": 0.0,
+   "bitter": 2.6,
+   "ir94e": 2.5,
+   "yeast_peg": 2.9,
+   "carbonation_peg": 5.0
+  }
+ },
+ {
+  "food": "ripe (day 0)",
+  "yeast_enrichment": 1.0,
+  "state": "protein_deprived",
+  "accept": 6.166666666666667,
+  "aversion": 0.0,
+  "score": 6.166666666666667,
+  "grn_rates": {
+   "sugar": 57.0,
+   "water": 0.0,
+   "bitter": 5.8,
+   "ir94e": 2.5,
+   "yeast_peg": 4.4,
+   "carbonation_peg": 5.0
+  }
+ },
+ {
+  "food": "ripe (day 0)",
+  "yeast_enrichment": 1.0,
+  "state": "starved_and_protein_deprived",
+  "accept": 8.333333333333334,
+  "aversion": 0.0,
+  "score": 8.333333333333334,
+  "grn_rates": {
+   "sugar": 71.8,
+   "water": 0.0,
+   "bitter": 2.6,
+   "ir94e": 2.5,
+   "yeast_peg": 4.4,
+   "carbonation_peg": 5.0
+  }
+ },
+ {
+  "food": "overripe (day 5)",
+  "yeast_enrichment": 1.0,
+  "state": "fed",
+  "accept": 6.833333333333333,
+  "aversion": 0.0,
+  "score": 6.833333333333333,
+  "grn_rates": {
+   "sugar": 61.2,
+   "water": 0.0,
+   "bitter": 4.6,
+   "ir94e": 2.5,
+   "yeast_peg": 2.8,
+   "carbonation_peg": 5.0
+  }
+ },
+ {
+  "food": "overripe (day 5)",
+  "yeast_enrichment": 1.0,
+  "state": "starved_24h",
+  "accept": 8.666666666666666,
+  "aversion": 0.0,
+  "score": 8.666666666666666,
+  "grn_rates": {
+   "sugar": 75.4,
+   "water": 0.0,
+   "bitter": 1.9,
+   "ir94e": 2.5,
+   "yeast_peg": 2.8,
+   "carbonation_peg": 5.0
+  }
+ },
+ {
+  "food": "overripe (day 5)",
+  "yeast_enrichment": 1.0,
+  "state": "protein_deprived",
+  "accept": 7.166666666666666,
+  "aversion": 0.0,
+  "score": 7.166666666666666,
+  "grn_rates": {
+   "sugar": 61.2,
+   "water": 0.0,
+   "bitter": 4.6,
+   "ir94e": 2.5,
+   "yeast_peg": 4.2,
+   "carbonation_peg": 5.0
+  }
+ },
+ {
+  "food": "overripe (day 5)",
+  "yeast_enrichment": 1.0,
+  "state": "starved_and_protein_deprived",
+  "accept": 8.5,
+  "aversion": 0.0,
+  "score": 8.5,
+  "grn_rates": {
+   "sugar": 75.4,
+   "water": 0.0,
+   "bitter": 1.9,
+   "ir94e": 2.5,
+   "yeast_peg": 4.2,
+   "carbonation_peg": 5.0
+  }
+ },
+ {
+  "food": "rotting day 2",
+  "yeast_enrichment": 1.0,
+  "state": "fed",
+  "accept": 3.5,
+  "aversion": 0.0,
+  "score": 3.5,
+  "grn_rates": {
+   "sugar": 41.0,
+   "water": 0.0,
+   "bitter": 13.7,
+   "ir94e": 2.6,
+   "yeast_peg": 9.8,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 2",
+  "yeast_enrichment": 1.0,
+  "state": "starved_24h",
+  "accept": 5.166666666666667,
+  "aversion": 0.16666666666666666,
+  "score": 5.0,
+  "grn_rates": {
+   "sugar": 55.1,
+   "water": 0.0,
+   "bitter": 7.8,
+   "ir94e": 2.6,
+   "yeast_peg": 9.8,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 2",
+  "yeast_enrichment": 1.0,
+  "state": "protein_deprived",
+  "accept": 2.833333333333333,
+  "aversion": 0.0,
+  "score": 2.833333333333333,
+  "grn_rates": {
+   "sugar": 41.0,
+   "water": 0.0,
+   "bitter": 13.7,
+   "ir94e": 2.6,
+   "yeast_peg": 14.8,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 2",
+  "yeast_enrichment": 1.0,
+  "state": "starved_and_protein_deprived",
+  "accept": 4.666666666666666,
+  "aversion": 0.0,
+  "score": 4.666666666666666,
+  "grn_rates": {
+   "sugar": 55.1,
+   "water": 0.0,
+   "bitter": 7.8,
+   "ir94e": 2.6,
+   "yeast_peg": 14.8,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 2",
+  "yeast_enrichment": 20.0,
+  "state": "fed",
+  "accept": 9.333333333333334,
+  "aversion": 0.0,
+  "score": 9.333333333333334,
+  "grn_rates": {
+   "sugar": 41.0,
+   "water": 0.0,
+   "bitter": 13.7,
+   "ir94e": 2.6,
+   "yeast_peg": 55.2,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 2",
+  "yeast_enrichment": 20.0,
+  "state": "starved_24h",
+  "accept": 11.333333333333334,
+  "aversion": 0.0,
+  "score": 11.333333333333334,
+  "grn_rates": {
+   "sugar": 55.1,
+   "water": 0.0,
+   "bitter": 7.8,
+   "ir94e": 2.6,
+   "yeast_peg": 55.2,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 2",
+  "yeast_enrichment": 20.0,
+  "state": "protein_deprived",
+  "accept": 12.999999999999998,
+  "aversion": 0.0,
+  "score": 12.999999999999998,
+  "grn_rates": {
+   "sugar": 41.0,
+   "water": 0.0,
+   "bitter": 13.7,
+   "ir94e": 2.6,
+   "yeast_peg": 82.9,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 2",
+  "yeast_enrichment": 20.0,
+  "state": "starved_and_protein_deprived",
+  "accept": 17.5,
+  "aversion": 0.0,
+  "score": 17.5,
+  "grn_rates": {
+   "sugar": 55.1,
+   "water": 0.0,
+   "bitter": 7.8,
+   "ir94e": 2.6,
+   "yeast_peg": 82.9,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 4",
+  "yeast_enrichment": 1.0,
+  "state": "fed",
+  "accept": 2.5,
+  "aversion": 0.0,
+  "score": 2.5,
+  "grn_rates": {
+   "sugar": 34.8,
+   "water": 0.0,
+   "bitter": 18.0,
+   "ir94e": 2.5,
+   "yeast_peg": 9.9,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 4",
+  "yeast_enrichment": 1.0,
+  "state": "starved_24h",
+  "accept": 3.0,
+  "aversion": 0.0,
+  "score": 3.0,
+  "grn_rates": {
+   "sugar": 47.6,
+   "water": 0.0,
+   "bitter": 11.0,
+   "ir94e": 2.5,
+   "yeast_peg": 9.9,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 4",
+  "yeast_enrichment": 1.0,
+  "state": "protein_deprived",
+  "accept": 3.0,
+  "aversion": 0.0,
+  "score": 3.0,
+  "grn_rates": {
+   "sugar": 34.8,
+   "water": 0.0,
+   "bitter": 18.0,
+   "ir94e": 2.5,
+   "yeast_peg": 14.9,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 4",
+  "yeast_enrichment": 1.0,
+  "state": "starved_and_protein_deprived",
+  "accept": 3.5,
+  "aversion": 0.0,
+  "score": 3.5,
+  "grn_rates": {
+   "sugar": 47.6,
+   "water": 0.0,
+   "bitter": 11.0,
+   "ir94e": 2.5,
+   "yeast_peg": 14.9,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 4",
+  "yeast_enrichment": 20.0,
+  "state": "fed",
+  "accept": 7.833333333333334,
+  "aversion": 0.0,
+  "score": 7.833333333333334,
+  "grn_rates": {
+   "sugar": 34.8,
+   "water": 0.0,
+   "bitter": 18.0,
+   "ir94e": 2.5,
+   "yeast_peg": 55.5,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 4",
+  "yeast_enrichment": 20.0,
+  "state": "starved_24h",
+  "accept": 9.333333333333332,
+  "aversion": 0.0,
+  "score": 9.333333333333332,
+  "grn_rates": {
+   "sugar": 47.6,
+   "water": 0.0,
+   "bitter": 11.0,
+   "ir94e": 2.5,
+   "yeast_peg": 55.5,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 4",
+  "yeast_enrichment": 20.0,
+  "state": "protein_deprived",
+  "accept": 12.666666666666666,
+  "aversion": 0.0,
+  "score": 12.666666666666666,
+  "grn_rates": {
+   "sugar": 34.8,
+   "water": 0.0,
+   "bitter": 18.0,
+   "ir94e": 2.5,
+   "yeast_peg": 83.3,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 4",
+  "yeast_enrichment": 20.0,
+  "state": "starved_and_protein_deprived",
+  "accept": 14.166666666666668,
+  "aversion": 0.0,
+  "score": 14.166666666666668,
+  "grn_rates": {
+   "sugar": 47.6,
+   "water": 0.0,
+   "bitter": 11.0,
+   "ir94e": 2.5,
+   "yeast_peg": 83.3,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 7",
+  "yeast_enrichment": 1.0,
+  "state": "fed",
+  "accept": 1.8333333333333333,
+  "aversion": 0.0,
+  "score": 1.8333333333333333,
+  "grn_rates": {
+   "sugar": 26.5,
+   "water": 0.0,
+   "bitter": 23.8,
+   "ir94e": 2.5,
+   "yeast_peg": 9.8,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 7",
+  "yeast_enrichment": 1.0,
+  "state": "starved_24h",
+  "accept": 3.1666666666666665,
+  "aversion": 0.0,
+  "score": 3.1666666666666665,
+  "grn_rates": {
+   "sugar": 36.5,
+   "water": 0.0,
+   "bitter": 15.5,
+   "ir94e": 2.5,
+   "yeast_peg": 9.8,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 7",
+  "yeast_enrichment": 1.0,
+  "state": "protein_deprived",
+  "accept": 2.1666666666666665,
+  "aversion": 0.0,
+  "score": 2.1666666666666665,
+  "grn_rates": {
+   "sugar": 26.5,
+   "water": 0.0,
+   "bitter": 23.8,
+   "ir94e": 2.5,
+   "yeast_peg": 14.8,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 7",
+  "yeast_enrichment": 1.0,
+  "state": "starved_and_protein_deprived",
+  "accept": 2.833333333333333,
+  "aversion": 0.0,
+  "score": 2.833333333333333,
+  "grn_rates": {
+   "sugar": 36.5,
+   "water": 0.0,
+   "bitter": 15.5,
+   "ir94e": 2.5,
+   "yeast_peg": 14.8,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 7",
+  "yeast_enrichment": 20.0,
+  "state": "fed",
+  "accept": 7.333333333333334,
+  "aversion": 0.0,
+  "score": 7.333333333333334,
+  "grn_rates": {
+   "sugar": 26.5,
+   "water": 0.0,
+   "bitter": 23.8,
+   "ir94e": 2.5,
+   "yeast_peg": 55.4,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 7",
+  "yeast_enrichment": 20.0,
+  "state": "starved_24h",
+  "accept": 7.999999999999999,
+  "aversion": 0.0,
+  "score": 7.999999999999999,
+  "grn_rates": {
+   "sugar": 36.5,
+   "water": 0.0,
+   "bitter": 15.5,
+   "ir94e": 2.5,
+   "yeast_peg": 55.4,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 7",
+  "yeast_enrichment": 20.0,
+  "state": "protein_deprived",
+  "accept": 9.833333333333334,
+  "aversion": 0.0,
+  "score": 9.833333333333334,
+  "grn_rates": {
+   "sugar": 26.5,
+   "water": 0.0,
+   "bitter": 23.8,
+   "ir94e": 2.5,
+   "yeast_peg": 83.1,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 7",
+  "yeast_enrichment": 20.0,
+  "state": "starved_and_protein_deprived",
+  "accept": 13.166666666666666,
+  "aversion": 0.0,
+  "score": 13.166666666666666,
+  "grn_rates": {
+   "sugar": 36.5,
+   "water": 0.0,
+   "bitter": 15.5,
+   "ir94e": 2.5,
+   "yeast_peg": 83.1,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 14",
+  "yeast_enrichment": 1.0,
+  "state": "fed",
+  "accept": 1.0,
+  "aversion": 0.0,
+  "score": 1.0,
+  "grn_rates": {
+   "sugar": 18.2,
+   "water": 0.0,
+   "bitter": 29.1,
+   "ir94e": 2.5,
+   "yeast_peg": 9.8,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 14",
+  "yeast_enrichment": 1.0,
+  "state": "starved_24h",
+  "accept": 1.833333333333333,
+  "aversion": 0.0,
+  "score": 1.833333333333333,
+  "grn_rates": {
+   "sugar": 25.6,
+   "water": 0.0,
+   "bitter": 20.1,
+   "ir94e": 2.5,
+   "yeast_peg": 9.8,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 14",
+  "yeast_enrichment": 1.0,
+  "state": "protein_deprived",
+  "accept": 1.1666666666666665,
+  "aversion": 0.0,
+  "score": 1.1666666666666665,
+  "grn_rates": {
+   "sugar": 18.2,
+   "water": 0.0,
+   "bitter": 29.1,
+   "ir94e": 2.5,
+   "yeast_peg": 14.8,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 14",
+  "yeast_enrichment": 1.0,
+  "state": "starved_and_protein_deprived",
+  "accept": 1.8333333333333333,
+  "aversion": 0.0,
+  "score": 1.8333333333333333,
+  "grn_rates": {
+   "sugar": 25.6,
+   "water": 0.0,
+   "bitter": 20.1,
+   "ir94e": 2.5,
+   "yeast_peg": 14.8,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 14",
+  "yeast_enrichment": 20.0,
+  "state": "fed",
+  "accept": 6.166666666666667,
+  "aversion": 0.0,
+  "score": 6.166666666666667,
+  "grn_rates": {
+   "sugar": 18.2,
+   "water": 0.0,
+   "bitter": 29.1,
+   "ir94e": 2.5,
+   "yeast_peg": 55.4,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 14",
+  "yeast_enrichment": 20.0,
+  "state": "starved_24h",
+  "accept": 7.5,
+  "aversion": 0.0,
+  "score": 7.5,
+  "grn_rates": {
+   "sugar": 25.6,
+   "water": 0.0,
+   "bitter": 20.1,
+   "ir94e": 2.5,
+   "yeast_peg": 55.4,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 14",
+  "yeast_enrichment": 20.0,
+  "state": "protein_deprived",
+  "accept": 10.833333333333334,
+  "aversion": 1.0,
+  "score": 9.833333333333334,
+  "grn_rates": {
+   "sugar": 18.2,
+   "water": 0.0,
+   "bitter": 29.1,
+   "ir94e": 2.5,
+   "yeast_peg": 83.1,
+   "carbonation_peg": 55.2
+  }
+ },
+ {
+  "food": "rotting day 14",
+  "yeast_enrichment": 20.0,
+  "state": "starved_and_protein_deprived",
+  "accept": 9.5,
+  "aversion": 0.0,
+  "score": 9.5,
+  "grn_rates": {
+   "sugar": 25.6,
+   "water": 0.0,
+   "bitter": 20.1,
+   "ir94e": 2.5,
+   "yeast_peg": 83.1,
+   "carbonation_peg": 55.2
+  }
+ }
+]

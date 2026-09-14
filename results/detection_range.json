@@ -1,0 +1,645 @@
+{
+ "peak_factor_p95": 6.211164204736299,
+ "rows": [
+  {
+   "food": "ripe",
+   "temp": 25,
+   "state": "fed",
+   "c_star": 17.78279410038923,
+   "wind": 0.3,
+   "spread": 0.1,
+   "basis": "mean",
+   "range_m": 2.39266796227528
+  },
+  {
+   "food": "ripe",
+   "temp": 25,
+   "state": "fed",
+   "c_star": 17.78279410038923,
+   "wind": 0.3,
+   "spread": 0.1,
+   "basis": "filament_p95",
+   "range_m": 6.0376677505618535
+  },
+  {
+   "food": "ripe",
+   "temp": 25,
+   "state": "fed",
+   "c_star": 17.78279410038923,
+   "wind": 0.3,
+   "spread": 0.2,
+   "basis": "mean",
+   "range_m": 1.19633398113764
+  },
+  {
+   "food": "ripe",
+   "temp": 25,
+   "state": "fed",
+   "c_star": 17.78279410038923,
+   "wind": 0.3,
+   "spread": 0.2,
+   "basis": "filament_p95",
+   "range_m": 3.0188338752809267
+  },
+  {
+   "food": "ripe",
+   "temp": 25,
+   "state": "fed",
+   "c_star": 17.78279410038923,
+   "wind": 1.0,
+   "spread": 0.1,
+   "basis": "mean",
+   "range_m": 1.2879043434333488
+  },
+  {
+   "food": "ripe",
+   "temp": 25,
+   "state": "fed",
+   "c_star": 17.78279410038923,
+   "wind": 1.0,
+   "spread": 0.1,
+   "basis": "filament_p95",
+   "range_m": 3.2843529495794597
+  },
+  {
+   "food": "ripe",
+   "temp": 25,
+   "state": "fed",
+   "c_star": 17.78279410038923,
+   "wind": 1.0,
+   "spread": 0.2,
+   "basis": "mean",
+   "range_m": 0.6439521717166744
+  },
+  {
+   "food": "ripe",
+   "temp": 25,
+   "state": "fed",
+   "c_star": 17.78279410038923,
+   "wind": 1.0,
+   "spread": 0.2,
+   "basis": "filament_p95",
+   "range_m": 1.6421764747897298
+  },
+  {
+   "food": "ripe",
+   "temp": 25,
+   "state": "starved_24h",
+   "c_star": 4.641588833612778,
+   "wind": 0.3,
+   "spread": 0.1,
+   "basis": "mean",
+   "range_m": 4.731136060862728
+  },
+  {
+   "food": "ripe",
+   "temp": 25,
+   "state": "starved_24h",
+   "c_star": 4.641588833612778,
+   "wind": 0.3,
+   "spread": 0.1,
+   "basis": "filament_p95",
+   "range_m": 11.865646439989716
+  },
+  {
+   "food": "ripe",
+   "temp": 25,
+   "state": "starved_24h",
+   "c_star": 4.641588833612778,
+   "wind": 0.3,
+   "spread": 0.2,
+   "basis": "mean",
+   "range_m": 2.365568030431364
+  },
+  {
+   "food": "ripe",
+   "temp": 25,
+   "state": "starved_24h",
+   "c_star": 4.641588833612778,
+   "wind": 0.3,
+   "spread": 0.2,
+   "basis": "filament_p95",
+   "range_m": 5.932823219994858
+  },
+  {
+   "food": "ripe",
+   "temp": 25,
+   "state": "starved_24h",
+   "c_star": 4.641588833612778,
+   "wind": 1.0,
+   "spread": 0.1,
+   "basis": "mean",
+   "range_m": 2.5687360710359095
+  },
+  {
+   "food": "ripe",
+   "temp": 25,
+   "state": "starved_24h",
+   "c_star": 4.641588833612778,
+   "wind": 1.0,
+   "spread": 0.1,
+   "basis": "filament_p95",
+   "range_m": 6.476468342438495
+  },
+  {
+   "food": "ripe",
+   "temp": 25,
+   "state": "starved_24h",
+   "c_star": 4.641588833612778,
+   "wind": 1.0,
+   "spread": 0.2,
+   "basis": "mean",
+   "range_m": 1.2843680355179548
+  },
+  {
+   "food": "ripe",
+   "temp": 25,
+   "state": "starved_24h",
+   "c_star": 4.641588833612778,
+   "wind": 1.0,
+   "spread": 0.2,
+   "basis": "filament_p95",
+   "range_m": 3.2382341712192475
+  },
+  {
+   "food": "rotting",
+   "temp": 25,
+   "state": "fed",
+   "c_star": 1.7782794100389228,
+   "wind": 0.3,
+   "spread": 0.1,
+   "basis": "mean",
+   "range_m": 7.674394328312135
+  },
+  {
+   "food": "rotting",
+   "temp": 25,
+   "state": "fed",
+   "c_star": 1.7782794100389228,
+   "wind": 0.3,
+   "spread": 0.1,
+   "basis": "filament_p95",
+   "range_m": 19.20089573012924
+  },
+  {
+   "food": "rotting",
+   "temp": 25,
+   "state": "fed",
+   "c_star": 1.7782794100389228,
+   "wind": 0.3,
+   "spread": 0.2,
+   "basis": "mean",
+   "range_m": 3.8371971641560676
+  },
+  {
+   "food": "rotting",
+   "temp": 25,
+   "state": "fed",
+   "c_star": 1.7782794100389228,
+   "wind": 0.3,
+   "spread": 0.2,
+   "basis": "filament_p95",
+   "range_m": 9.60044786506462
+  },
+  {
+   "food": "rotting",
+   "temp": 25,
+   "state": "fed",
+   "c_star": 1.7782794100389228,
+   "wind": 1.0,
+   "spread": 0.1,
+   "basis": "mean",
+   "range_m": 4.1808250166815215
+  },
+  {
+   "food": "rotting",
+   "temp": 25,
+   "state": "fed",
+   "c_star": 1.7782794100389228,
+   "wind": 1.0,
+   "spread": 0.1,
+   "basis": "filament_p95",
+   "range_m": 10.49414984357167
+  },
+  {
+   "food": "rotting",
+   "temp": 25,
+   "state": "fed",
+   "c_star": 1.7782794100389228,
+   "wind": 1.0,
+   "spread": 0.2,
+   "basis": "mean",
+   "range_m": 2.0904125083407608
+  },
+  {
+   "food": "rotting",
+   "temp": 25,
+   "state": "fed",
+   "c_star": 1.7782794100389228,
+   "wind": 1.0,
+   "spread": 0.2,
+   "basis": "filament_p95",
+   "range_m": 5.247074921785835
+  },
+  {
+   "food": "rotting",
+   "temp": 25,
+   "state": "starved_24h",
+   "c_star": 1.4677992676220695,
+   "wind": 0.3,
+   "spread": 0.1,
+   "basis": "mean",
+   "range_m": 8.452195813626794
+  },
+  {
+   "food": "rotting",
+   "temp": 25,
+   "state": "starved_24h",
+   "c_star": 1.4677992676220695,
+   "wind": 0.3,
+   "spread": 0.1,
+   "basis": "filament_p95",
+   "range_m": 21.139348721537303
+  },
+  {
+   "food": "rotting",
+   "temp": 25,
+   "state": "starved_24h",
+   "c_star": 1.4677992676220695,
+   "wind": 0.3,
+   "spread": 0.2,
+   "basis": "mean",
+   "range_m": 4.226097906813397
+  },
+  {
+   "food": "rotting",
+   "temp": 25,
+   "state": "starved_24h",
+   "c_star": 1.4677992676220695,
+   "wind": 0.3,
+   "spread": 0.2,
+   "basis": "filament_p95",
+   "range_m": 10.569674360768651
+  },
+  {
+   "food": "rotting",
+   "temp": 25,
+   "state": "starved_24h",
+   "c_star": 1.4677992676220695,
+   "wind": 1.0,
+   "spread": 0.1,
+   "basis": "mean",
+   "range_m": 4.606844435449384
+  },
+  {
+   "food": "rotting",
+   "temp": 25,
+   "state": "starved_24h",
+   "c_star": 1.4677992676220695,
+   "wind": 1.0,
+   "spread": 0.1,
+   "basis": "filament_p95",
+   "range_m": 11.555884273629232
+  },
+  {
+   "food": "rotting",
+   "temp": 25,
+   "state": "starved_24h",
+   "c_star": 1.4677992676220695,
+   "wind": 1.0,
+   "spread": 0.2,
+   "basis": "mean",
+   "range_m": 2.303422217724692
+  },
+  {
+   "food": "rotting",
+   "temp": 25,
+   "state": "starved_24h",
+   "c_star": 1.4677992676220695,
+   "wind": 1.0,
+   "spread": 0.2,
+   "basis": "filament_p95",
+   "range_m": 5.777942136814616
+  },
+  {
+   "food": "ripe",
+   "temp": 18,
+   "state": "fed",
+   "c_star": 17.78279410038923,
+   "wind": 0.3,
+   "spread": 0.1,
+   "basis": "mean",
+   "range_m": 2.39266796227528
+  },
+  {
+   "food": "ripe",
+   "temp": 18,
+   "state": "fed",
+   "c_star": 17.78279410038923,
+   "wind": 0.3,
+   "spread": 0.1,
+   "basis": "filament_p95",
+   "range_m": 6.0376677505618535
+  },
+  {
+   "food": "ripe",
+   "temp": 18,
+   "state": "fed",
+   "c_star": 17.78279410038923,
+   "wind": 0.3,
+   "spread": 0.2,
+   "basis": "mean",
+   "range_m": 1.19633398113764
+  },
+  {
+   "food": "ripe",
+   "temp": 18,
+   "state": "fed",
+   "c_star": 17.78279410038923,
+   "wind": 0.3,
+   "spread": 0.2,
+   "basis": "filament_p95",
+   "range_m": 3.0188338752809267
+  },
+  {
+   "food": "ripe",
+   "temp": 18,
+   "state": "fed",
+   "c_star": 17.78279410038923,
+   "wind": 1.0,
+   "spread": 0.1,
+   "basis": "mean",
+   "range_m": 1.2879043434333488
+  },
+  {
+   "food": "ripe",
+   "temp": 18,
+   "state": "fed",
+   "c_star": 17.78279410038923,
+   "wind": 1.0,
+   "spread": 0.1,
+   "basis": "filament_p95",
+   "range_m": 3.2843529495794597
+  },
+  {
+   "food": "ripe",
+   "temp": 18,
+   "state": "fed",
+   "c_star": 17.78279410038923,
+   "wind": 1.0,
+   "spread": 0.2,
+   "basis": "mean",
+   "range_m": 0.6439521717166744
+  },
+  {
+   "food": "ripe",
+   "temp": 18,
+   "state": "fed",
+   "c_star": 17.78279410038923,
+   "wind": 1.0,
+   "spread": 0.2,
+   "basis": "filament_p95",
+   "range_m": 1.6421764747897298
+  },
+  {
+   "food": "rotting",
+   "temp": 18,
+   "state": "fed",
+   "c_star": 5.623413251903491,
+   "wind": 0.3,
+   "spread": 0.1,
+   "basis": "mean",
+   "range_m": 4.293746142875862
+  },
+  {
+   "food": "rotting",
+   "temp": 18,
+   "state": "fed",
+   "c_star": 5.623413251903491,
+   "wind": 0.3,
+   "spread": 0.1,
+   "basis": "filament_p95",
+   "range_m": 10.775574215982108
+  },
+  {
+   "food": "rotting",
+   "temp": 18,
+   "state": "fed",
+   "c_star": 5.623413251903491,
+   "wind": 0.3,
+   "spread": 0.2,
+   "basis": "mean",
+   "range_m": 2.146873071437931
+  },
+  {
+   "food": "rotting",
+   "temp": 18,
+   "state": "fed",
+   "c_star": 5.623413251903491,
+   "wind": 0.3,
+   "spread": 0.2,
+   "basis": "filament_p95",
+   "range_m": 5.387787107991054
+  },
+  {
+   "food": "rotting",
+   "temp": 18,
+   "state": "fed",
+   "c_star": 5.623413251903491,
+   "wind": 1.0,
+   "spread": 0.1,
+   "basis": "mean",
+   "range_m": 2.329167746529168
+  },
+  {
+   "food": "rotting",
+   "temp": 18,
+   "state": "fed",
+   "c_star": 5.623413251903491,
+   "wind": 1.0,
+   "spread": 0.1,
+   "basis": "filament_p95",
+   "range_m": 5.879411196039703
+  },
+  {
+   "food": "rotting",
+   "temp": 18,
+   "state": "fed",
+   "c_star": 5.623413251903491,
+   "wind": 1.0,
+   "spread": 0.2,
+   "basis": "mean",
+   "range_m": 1.164583873264584
+  },
+  {
+   "food": "rotting",
+   "temp": 18,
+   "state": "fed",
+   "c_star": 5.623413251903491,
+   "wind": 1.0,
+   "spread": 0.2,
+   "basis": "filament_p95",
+   "range_m": 2.9397055980198514
+  },
+  {
+   "food": "ripe",
+   "temp": 32,
+   "state": "fed",
+   "c_star": 10.0,
+   "wind": 0.3,
+   "spread": 0.1,
+   "basis": "mean",
+   "range_m": 3.2073500793528
+  },
+  {
+   "food": "ripe",
+   "temp": 32,
+   "state": "fed",
+   "c_star": 10.0,
+   "wind": 0.3,
+   "spread": 0.1,
+   "basis": "filament_p95",
+   "range_m": 8.068035417263722
+  },
+  {
+   "food": "ripe",
+   "temp": 32,
+   "state": "fed",
+   "c_star": 10.0,
+   "wind": 0.3,
+   "spread": 0.2,
+   "basis": "mean",
+   "range_m": 1.6036750396764
+  },
+  {
+   "food": "ripe",
+   "temp": 32,
+   "state": "fed",
+   "c_star": 10.0,
+   "wind": 0.3,
+   "spread": 0.2,
+   "basis": "filament_p95",
+   "range_m": 4.034017708631861
+  },
+  {
+   "food": "ripe",
+   "temp": 32,
+   "state": "fed",
+   "c_star": 10.0,
+   "wind": 1.0,
+   "spread": 0.1,
+   "basis": "mean",
+   "range_m": 1.734124116152771
+  },
+  {
+   "food": "ripe",
+   "temp": 32,
+   "state": "fed",
+   "c_star": 10.0,
+   "wind": 1.0,
+   "spread": 0.1,
+   "basis": "filament_p95",
+   "range_m": 4.396431120661204
+  },
+  {
+   "food": "ripe",
+   "temp": 32,
+   "state": "fed",
+   "c_star": 10.0,
+   "wind": 1.0,
+   "spread": 0.2,
+   "basis": "mean",
+   "range_m": 0.8670620580763855
+  },
+  {
+   "food": "ripe",
+   "temp": 32,
+   "state": "fed",
+   "c_star": 10.0,
+   "wind": 1.0,
+   "spread": 0.2,
+   "basis": "filament_p95",
+   "range_m": 2.198215560330602
+  },
+  {
+   "food": "rotting",
+   "temp": 32,
+   "state": "fed",
+   "c_star": 1.0,
+   "wind": 0.3,
+   "spread": 0.1,
+   "basis": "mean",
+   "range_m": 10.250645387285054
+  },
+  {
+   "food": "rotting",
+   "temp": 32,
+   "state": "fed",
+   "c_star": 1.0,
+   "wind": 0.3,
+   "spread": 0.1,
+   "basis": "filament_p95",
+   "range_m": 25.621482044468763
+  },
+  {
+   "food": "rotting",
+   "temp": 32,
+   "state": "fed",
+   "c_star": 1.0,
+   "wind": 0.3,
+   "spread": 0.2,
+   "basis": "mean",
+   "range_m": 5.125322693642527
+  },
+  {
+   "food": "rotting",
+   "temp": 32,
+   "state": "fed",
+   "c_star": 1.0,
+   "wind": 0.3,
+   "spread": 0.2,
+   "basis": "filament_p95",
+   "range_m": 12.810741022234382
+  },
+  {
+   "food": "rotting",
+   "temp": 32,
+   "state": "fed",
+   "c_star": 1.0,
+   "wind": 1.0,
+   "spread": 0.1,
+   "basis": "mean",
+   "range_m": 5.591895835477563
+  },
+  {
+   "food": "rotting",
+   "temp": 32,
+   "state": "fed",
+   "c_star": 1.0,
+   "wind": 1.0,
+   "spread": 0.1,
+   "basis": "filament_p95",
+   "range_m": 14.010849800344381
+  },
+  {
+   "food": "rotting",
+   "temp": 32,
+   "state": "fed",
+   "c_star": 1.0,
+   "wind": 1.0,
+   "spread": 0.2,
+   "basis": "mean",
+   "range_m": 2.7959479177387814
+  },
+  {
+   "food": "rotting",
+   "temp": 32,
+   "state": "fed",
+   "c_star": 1.0,
+   "wind": 1.0,
+   "spread": 0.2,
+   "basis": "filament_p95",
+   "range_m": 7.005424900172191
+  }
+ ]
+}

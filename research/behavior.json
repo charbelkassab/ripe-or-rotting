@@ -1,0 +1,1574 @@
+{
+ "_meta": {
+  "title": "Drosophila melanogaster behavioral validation targets for a smell/taste foraging model",
+  "version": "1.0",
+  "compiled": "2026-09-13",
+  "companion_doc": "behavior.md",
+  "confidence_scale": "VERIFIED = number read in fetched full text/abstract/supplement; SUMMARIZER = via a page summary; FIGURE-ONLY = value exists only in a figure (not given here); ESTIMATE = ours"
+ },
+ "knaden2012_valence": {
+  "citation": "Knaden M, Strutz A, Ahsan J, Sachse S, Hansson BS 2012 Cell Reports 1:392-399, doi:10.1016/j.celrep.2012.03.002",
+  "supplement_urls": {
+   "record": "https://pure.mpg.de/rest/items/item_1449055",
+   "TableS1_valence_and_Hallem2006_spikes_xlsx": "https://pure.mpg.de/rest/items/item_1449055_9/component/file_1525217/content",
+   "TableS2_glomerular_dFF_xls": "https://pure.mpg.de/rest/items/item_1449055_9/component/file_1525216/content",
+   "main_pdf": "https://pure.mpg.de/rest/items/item_1449055_9/component/file_1452577/content"
+  },
+  "assay": {
+   "type": "two-trap choice assay (NOT T-maze): odor trap vs solvent trap, 24 h, 25 C, 70% RH",
+   "flies": "50 flies/replicate, ~1:1 sex, 4-5 d old, starved 24 h",
+   "replicates": 10,
+   "statistic": "median AI, Wilcoxon signed-rank vs 0",
+   "AI_formula": "AI = (O - C)/50, O/C = flies in odor/control trap; flies in neither trap reduce |AI|",
+   "dilution": "2 uL odorant in 200 uL water + 0.2 uL Triton X-100 on filter paper (1:100) -- mu symbols garbled in PDF text; 1:100 is our reading (UNVERIFIED)",
+   "stability": "trap-entrance concentration decreased <10x over 24 h, little in first 4 h (Fig S1)",
+   "confidence": "VERIFIED (except dilution)"
+  },
+  "summary": {
+   "n_odorants": 110,
+   "attractive": 60,
+   "neutral": 44,
+   "aversive": 6,
+   "most_attractive": "gamma-butyrolactone AI 0.72",
+   "most_aversive": "benzaldehyde AI -0.53",
+   "aversive_set": "benzaldehyde -0.53, linalool -0.42, 2-methylphenol -0.40, acetophenone -0.30, 1-octanol -0.28, 1-octen-3-ol -0.28"
+  },
+  "glomerular_valence": {
+   "PN_level_attractive_bias": [
+    "DM4",
+    "DM5",
+    "DM2"
+   ],
+   "PN_level_aversive_bias": [
+    "D",
+    "DA4",
+    "DC3",
+    "DL1",
+    "DL4",
+    "DL5"
+   ],
+   "OSN_level_discriminating": [
+    "DA4",
+    "DC2",
+    "DC3"
+   ],
+   "aversive_specific_both_levels": [
+    "DA4",
+    "DC3"
+   ],
+   "imaging": "odors 1e-1 or 1e-3 in mineral oil, further 1:10 in air stream",
+   "caveat": "DM5 attractive here conflicts with Semmelhack & Wang 2009 (DM5 reduces vinegar attraction); authors attribute to 24 h still-air trap vs acute olfactometer assay",
+   "confidence": "VERIFIED"
+  },
+  "key_odorants_for_banana_model": {
+   "ethyl acetate": {
+    "AI_median": 0.18,
+    "p": 0.06,
+    "class": "neutral",
+    "name_in_table": "Ethylacetate"
+   },
+   "isoamyl acetate": {
+    "AI_median": -0.11,
+    "p": 0.07,
+    "class": "neutral",
+    "name_in_table": "Isopentylacetate"
+   },
+   "isobutyl acetate": {
+    "AI_median": 0.16,
+    "p": 0.2,
+    "class": "neutral",
+    "name_in_table": "Isobutylacetat"
+   },
+   "butyl acetate": {
+    "AI_median": -0.1,
+    "p": 0.5,
+    "class": "neutral",
+    "name_in_table": "Butylacetate"
+   },
+   "ethanol": {
+    "AI_median": 0.05,
+    "p": 0.7,
+    "class": "neutral",
+    "name_in_table": "Ethanol"
+   },
+   "acetic acid": {
+    "AI_median": 0.24,
+    "p": 0.01,
+    "class": "attractive",
+    "name_in_table": "Acetic acid"
+   },
+   "2-phenylethanol": {
+    "AI_median": 0.44,
+    "p": 0.002,
+    "class": "attractive",
+    "name_in_table": "Phenylethyl alcohol"
+   },
+   "2-phenylethyl acetate": {
+    "AI_median": 0.54,
+    "p": 0.0001,
+    "class": "attractive",
+    "name_in_table": "Phenylethylacetat"
+   },
+   "hexanal": {
+    "AI_median": 0.26,
+    "p": 0.004,
+    "class": "attractive",
+    "name_in_table": "Hexanal"
+   },
+   "isoamyl alcohol": {
+    "AI_median": 0.31,
+    "p": 0.006,
+    "class": "attractive",
+    "name_in_table": "3 Methylbutanol"
+   },
+   "2-heptanone": {
+    "AI_median": 0.07,
+    "p": 0.1,
+    "class": "neutral",
+    "name_in_table": "2-Heptanon"
+   },
+   "ethyl butyrate": {
+    "AI_median": 0.08,
+    "p": 0.3,
+    "class": "neutral",
+    "name_in_table": "Ethylbutyrate"
+   },
+   "ethyl hexanoate": {
+    "AI_median": 0.02,
+    "p": 0.4,
+    "class": "neutral",
+    "name_in_table": "Ethylhexanoate"
+   },
+   "methyl acetate": {
+    "AI_median": 0.24,
+    "p": 0.003,
+    "class": "attractive",
+    "name_in_table": "Methylacetat"
+   },
+   "propyl acetate": {
+    "AI_median": 0.24,
+    "p": 0.004,
+    "class": "attractive",
+    "name_in_table": "Propylacetate"
+   },
+   "ethyl propionate": {
+    "AI_median": 0.45,
+    "p": 0.002,
+    "class": "attractive",
+    "name_in_table": "Ethylpropionate"
+   },
+   "ethyl 3-hydroxybutyrate": {
+    "AI_median": 0.37,
+    "p": 0.002,
+    "class": "attractive",
+    "name_in_table": "Ethyl-3-hydroxybutyrate"
+   },
+   "pentyl acetate": {
+    "AI_median": 0.15,
+    "p": 0.006,
+    "class": "attractive",
+    "name_in_table": "Pentylacetat"
+   },
+   "hexyl acetate": {
+    "AI_median": 0.32,
+    "p": 0.004,
+    "class": "attractive",
+    "name_in_table": "Hexylacetat"
+   },
+   "diacetyl (2,3-butanedione)": {
+    "AI_median": 0.62,
+    "p": 0.002,
+    "class": "attractive",
+    "name_in_table": "2,3 Butanedione"
+   },
+   "2,3-butanediol": {
+    "AI_median": 0.3,
+    "p": 0.006,
+    "class": "attractive",
+    "name_in_table": "2,3-butanediole"
+   },
+   "benzaldehyde": {
+    "AI_median": -0.53,
+    "p": 0.002,
+    "class": "aversive",
+    "name_in_table": "Benzaldehyd"
+   },
+   "1-hexanol": {
+    "AI_median": 0.17,
+    "p": 0.2,
+    "class": "neutral",
+    "name_in_table": "1-Hexanol"
+   },
+   "1-octen-3-ol": {
+    "AI_median": -0.28,
+    "p": 0.01,
+    "class": "aversive",
+    "name_in_table": "1-Octen-3-ol"
+   },
+   "linalool": {
+    "AI_median": -0.42,
+    "p": 0.02,
+    "class": "aversive",
+    "name_in_table": "Linalool"
+   },
+   "E2-hexenal": {
+    "AI_median": 0.02,
+    "p": 0.6,
+    "class": "neutral",
+    "name_in_table": "E2Hexenal"
+   },
+   "eugenol": {
+    "AI_median": 0.33,
+    "p": 0.002,
+    "class": "attractive",
+    "name_in_table": "Eugenol"
+   },
+   "acetaldehyde": {
+    "AI_median": 0.0,
+    "p": 0.23,
+    "class": "neutral",
+    "name_in_table": "Acetaldehyde"
+   },
+   "methanol": {
+    "AI_median": 0.21,
+    "p": 0.02,
+    "class": "attractive",
+    "name_in_table": "Methanol"
+   },
+   "acetone": {
+    "AI_median": 0.4,
+    "p": 0.002,
+    "class": "attractive",
+    "name_in_table": "Aceton"
+   },
+   "glycerol": {
+    "AI_median": 0.0,
+    "p": 0.9,
+    "class": "neutral",
+    "name_in_table": "Glycerol"
+   },
+   "ammonium hydroxide (ammonia)": {
+    "AI_median": 0.06,
+    "p": 0.8,
+    "class": "neutral",
+    "name_in_table": "Ammonium hydroxide"
+   },
+   "propionic acid": {
+    "AI_median": 0.59,
+    "p": 0.002,
+    "class": "attractive",
+    "name_in_table": "Propionic acid"
+   },
+   "butyric acid": {
+    "AI_median": 0.1,
+    "p": 0.03,
+    "class": "attractive",
+    "name_in_table": "Butyric acid"
+   },
+   "lactic acid": {
+    "AI_median": 0.16,
+    "p": 0.008,
+    "class": "attractive",
+    "name_in_table": "Lactic acid"
+   },
+   "formic acid": {
+    "AI_median": 0.62,
+    "p": 0.002,
+    "class": "attractive",
+    "name_in_table": "Methanoic acid"
+   },
+   "ethyl lactate": {
+    "AI_median": 0.1,
+    "p": 0.07,
+    "class": "neutral",
+    "name_in_table": "(-) Ethyl L lactate"
+   },
+   "putrescine (1,4-diaminobutane)": {
+    "AI_median": 0.3,
+    "p": 0.002,
+    "class": "attractive",
+    "name_in_table": "1,4 diaminobutane"
+   },
+   "cadaverine": {
+    "AI_median": 0.32,
+    "p": 0.002,
+    "class": "attractive",
+    "name_in_table": "Cadaverine"
+   },
+   "gamma-butyrolactone": {
+    "AI_median": 0.72,
+    "p": 0.002,
+    "class": "attractive",
+    "name_in_table": "Butyrolacton"
+   },
+   "furfural": {
+    "AI_median": 0.25,
+    "p": 0.02,
+    "class": "attractive",
+    "name_in_table": "Furfural"
+   },
+   "pyruvic acid": {
+    "AI_median": 0.4,
+    "p": 0.002,
+    "class": "attractive",
+    "name_in_table": "Pyruvic acid"
+   },
+   "2-pentanone": {
+    "AI_median": 0.28,
+    "p": 0.02,
+    "class": "attractive",
+    "name_in_table": "2-pentanone"
+   },
+   "1-butanol": {
+    "AI_median": 0.28,
+    "p": 0.004,
+    "class": "attractive",
+    "name_in_table": "1-Butanol"
+   },
+   "1-propanol": {
+    "AI_median": 0.49,
+    "p": 0.002,
+    "class": "attractive",
+    "name_in_table": "1-Propanol"
+   },
+   "4-ethylguaiacol": {
+    "AI_median": 0.7,
+    "p": 0.004,
+    "class": "attractive",
+    "name_in_table": "4-ethylguaiacol"
+   },
+   "dimethyl sulfide": {
+    "AI_median": 0.16,
+    "p": 0.06,
+    "class": "neutral",
+    "name_in_table": "dimethyl sulfide"
+   },
+   "hexanoic acid": {
+    "AI_median": 0.62,
+    "p": 0.002,
+    "class": "attractive",
+    "name_in_table": "Hexanoic acid"
+   }
+  },
+  "not_in_panel": [
+   "acetoin",
+   "geosmin",
+   "CO2",
+   "isoamyl butanoate",
+   "2-pentyl acetate"
+  ],
+  "all_110_odorants": [
+   {
+    "odorant": "Butyrolacton",
+    "CAS": "96-48-0",
+    "AI_median": 0.72,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "4-ethylguaiacol",
+    "CAS": "2785-89-9",
+    "AI_median": 0.7,
+    "p": 0.004,
+    "class": "attractive"
+   },
+   {
+    "odorant": "2,3 Butanedione",
+    "CAS": "431-03-8",
+    "AI_median": 0.62,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Hexanoic acid",
+    "CAS": "142-62-1",
+    "AI_median": 0.62,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Methanoic acid",
+    "CAS": "64-18-6",
+    "AI_median": 0.62,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Propionic acid",
+    "CAS": "79-09-4",
+    "AI_median": 0.59,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Alpha Terpineol",
+    "CAS": "10482-56-1",
+    "AI_median": 0.55,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Phenylethylacetat",
+    "CAS": "103-45-7",
+    "AI_median": 0.54,
+    "p": 0.0001,
+    "class": "attractive"
+   },
+   {
+    "odorant": "3- Methylthiol-1-Propanol",
+    "CAS": "505-10-2",
+    "AI_median": 0.52,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Pentanoic acid",
+    "CAS": "109-52-4",
+    "AI_median": 0.52,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Isopentanoic acid",
+    "CAS": "503-74-2",
+    "AI_median": 0.5,
+    "p": 0.0001,
+    "class": "attractive"
+   },
+   {
+    "odorant": "1-Propanol",
+    "CAS": "71-23-8",
+    "AI_median": 0.49,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "2-Pentanol",
+    "CAS": "6032-29-7",
+    "AI_median": 0.47,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Isobutyric acid",
+    "CAS": "79-31-2",
+    "AI_median": 0.47,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Ethylbenzoate",
+    "CAS": "93-89-0",
+    "AI_median": 0.47,
+    "p": 0.004,
+    "class": "attractive"
+   },
+   {
+    "odorant": "b-pinene",
+    "CAS": "NA",
+    "AI_median": 0.465,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "benzyl alcohol",
+    "CAS": "100-51-6",
+    "AI_median": 0.46,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Ethylpropionate",
+    "CAS": "105-37-3",
+    "AI_median": 0.45,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Diethylsuccinate",
+    "CAS": "123-25-1",
+    "AI_median": 0.45,
+    "p": 0.004,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Phenylethyl alcohol",
+    "CAS": "60-12-8",
+    "AI_median": 0.44,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "cis-2-hexen-1-ol",
+    "CAS": "928-94-9",
+    "AI_median": 0.44,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Hexylbutyrate",
+    "CAS": "2639-63-6",
+    "AI_median": 0.41,
+    "p": 0.005,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Methylbenzoat",
+    "CAS": "93-58-3",
+    "AI_median": 0.4,
+    "p": 0.07,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Aceton",
+    "CAS": "67-64-1",
+    "AI_median": 0.4,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Pyruvic acid",
+    "CAS": "127-17-3",
+    "AI_median": 0.4,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "1-penten-3-ol",
+    "CAS": "616-25-1",
+    "AI_median": 0.38,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Ethyl-3-hydroxybutyrate",
+    "CAS": "5405-41-4",
+    "AI_median": 0.37,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "gamma-hexalactone",
+    "CAS": "695-06-7",
+    "AI_median": 0.37,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Linalool oxide",
+    "CAS": "60047-17-8",
+    "AI_median": 0.35,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Ethyl formate",
+    "CAS": "109-94-4",
+    "AI_median": 0.35,
+    "p": 0.006,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Gamma Decalactone",
+    "CAS": "706-14-9",
+    "AI_median": 0.35,
+    "p": 0.02,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Eugenol",
+    "CAS": "97-53-0",
+    "AI_median": 0.33,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Cadaverine",
+    "CAS": "462-94-2",
+    "AI_median": 0.32,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Alpha Pinene",
+    "CAS": "80-56-8",
+    "AI_median": 0.32,
+    "p": 0.004,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Hexylacetat",
+    "CAS": "142-92-7",
+    "AI_median": 0.32,
+    "p": 0.004,
+    "class": "attractive"
+   },
+   {
+    "odorant": "3 Methylbutanol",
+    "CAS": "123-51-3",
+    "AI_median": 0.31,
+    "p": 0.006,
+    "class": "attractive"
+   },
+   {
+    "odorant": "1,4 diaminobutane",
+    "CAS": "110-60-1",
+    "AI_median": 0.3,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "2,3-butanediole",
+    "CAS": "513-85-9",
+    "AI_median": 0.3,
+    "p": 0.006,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Ethylhexanoic acid",
+    "CAS": "149-57-5",
+    "AI_median": 0.3,
+    "p": 0.02,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Phenylacetaldehyd",
+    "CAS": "122-78-1",
+    "AI_median": 0.3,
+    "p": 0.02,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Butanal",
+    "CAS": "123-72-8",
+    "AI_median": 0.3,
+    "p": 0.03,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Alpha Humulene",
+    "CAS": "6753-98-6",
+    "AI_median": 0.3,
+    "p": 0.04,
+    "class": "attractive"
+   },
+   {
+    "odorant": "1-Butanol",
+    "CAS": "71-36-3",
+    "AI_median": 0.28,
+    "p": 0.004,
+    "class": "attractive"
+   },
+   {
+    "odorant": "2-pentanone",
+    "CAS": "107-87-9",
+    "AI_median": 0.28,
+    "p": 0.02,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Methylhexanoate",
+    "CAS": "106-70-7",
+    "AI_median": 0.27,
+    "p": 0.2,
+    "class": "neutral"
+   },
+   {
+    "odorant": "3-Methyl-2-buten-1-ol",
+    "CAS": "556-82-1",
+    "AI_median": 0.27,
+    "p": 0.045,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Geraniol",
+    "CAS": "106-24-1",
+    "AI_median": 0.26,
+    "p": 0.3,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Geranylacetat",
+    "CAS": "105-87-3",
+    "AI_median": 0.26,
+    "p": 0.002,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Hexanal",
+    "CAS": "66-25-1",
+    "AI_median": 0.26,
+    "p": 0.004,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Furfural",
+    "CAS": "98-01-1",
+    "AI_median": 0.25,
+    "p": 0.02,
+    "class": "attractive"
+   },
+   {
+    "odorant": "1-pentanol",
+    "CAS": "71-41-0",
+    "AI_median": 0.25,
+    "p": 0.03,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Methylacetat",
+    "CAS": "79-20-9",
+    "AI_median": 0.24,
+    "p": 0.003,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Propylacetate",
+    "CAS": "109-60-4",
+    "AI_median": 0.24,
+    "p": 0.004,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Acetic acid",
+    "CAS": "64-19-7",
+    "AI_median": 0.24,
+    "p": 0.01,
+    "class": "attractive"
+   },
+   {
+    "odorant": "octanoic acid",
+    "CAS": "124-07-2",
+    "AI_median": 0.23,
+    "p": 0.02,
+    "class": "attractive"
+   },
+   {
+    "odorant": "hexyl hexanoate",
+    "CAS": "6378-65-0",
+    "AI_median": 0.225,
+    "p": 0.008,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Methanol",
+    "CAS": "67-56-1",
+    "AI_median": 0.21,
+    "p": 0.02,
+    "class": "attractive"
+   },
+   {
+    "odorant": "2-butanone",
+    "CAS": "78-93-3",
+    "AI_median": 0.2,
+    "p": 0.09,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Ethyl-decanoate",
+    "CAS": "110-38-3",
+    "AI_median": 0.2,
+    "p": 0.2,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Ethylacetate",
+    "CAS": "141-78-6",
+    "AI_median": 0.18,
+    "p": 0.06,
+    "class": "neutral"
+   },
+   {
+    "odorant": "1-Hexanol",
+    "CAS": "111-27-3",
+    "AI_median": 0.17,
+    "p": 0.2,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Ethyl cinnamate",
+    "CAS": "103-36-6",
+    "AI_median": 0.17,
+    "p": 0.03,
+    "class": "attractive"
+   },
+   {
+    "odorant": "dimethyl sulfide",
+    "CAS": "75-18-3",
+    "AI_median": 0.16,
+    "p": 0.06,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Isobutylacetat",
+    "CAS": "110-19-0",
+    "AI_median": 0.16,
+    "p": 0.2,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Lactic acid",
+    "CAS": "50-21-5",
+    "AI_median": 0.16,
+    "p": 0.008,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Z3-Hexenol",
+    "CAS": "928-96-1",
+    "AI_median": 0.15,
+    "p": 0.4,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Pentylacetat",
+    "CAS": "628-63-7",
+    "AI_median": 0.15,
+    "p": 0.006,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Heptanoic acid",
+    "CAS": "111-14-8",
+    "AI_median": 0.14,
+    "p": 0.1,
+    "class": "neutral"
+   },
+   {
+    "odorant": "p-Cymene",
+    "CAS": "99-87-6",
+    "AI_median": 0.12,
+    "p": 0.06,
+    "class": "neutral"
+   },
+   {
+    "odorant": "(1S)-(+)-3-carene",
+    "CAS": "498-15-7",
+    "AI_median": 0.12,
+    "p": 0.12,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Ethylcrotonate",
+    "CAS": "623-70-1",
+    "AI_median": 0.12,
+    "p": 0.2,
+    "class": "neutral"
+   },
+   {
+    "odorant": "beta myrcene",
+    "CAS": "123-35-3",
+    "AI_median": 0.11,
+    "p": 0.13,
+    "class": "neutral"
+   },
+   {
+    "odorant": "(-) Ethyl L lactate",
+    "CAS": "97-64-3",
+    "AI_median": 0.1,
+    "p": 0.07,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Methyloctanoate",
+    "CAS": "111-11-5",
+    "AI_median": 0.1,
+    "p": 0.2,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Nerol",
+    "CAS": "106-25-2",
+    "AI_median": 0.1,
+    "p": 0.8,
+    "class": "neutral"
+   },
+   {
+    "odorant": "delta-Decalactone",
+    "CAS": "705-86-2",
+    "AI_median": 0.1,
+    "p": 0.02,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Butyric acid",
+    "CAS": "107-92-6",
+    "AI_median": 0.1,
+    "p": 0.03,
+    "class": "attractive"
+   },
+   {
+    "odorant": "Ethylbutyrate",
+    "CAS": "105-54-4",
+    "AI_median": 0.08,
+    "p": 0.3,
+    "class": "neutral"
+   },
+   {
+    "odorant": "2-Heptanon",
+    "CAS": "110-43-0",
+    "AI_median": 0.07,
+    "p": 0.1,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Propionaldehyde",
+    "CAS": "123-38-6",
+    "AI_median": 0.07,
+    "p": 0.1,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Valeraldehyde",
+    "CAS": "110-62-3",
+    "AI_median": 0.07,
+    "p": 0.3,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Methylbutyrate",
+    "CAS": "623-42-7",
+    "AI_median": 0.06,
+    "p": 0.2,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Ammonium hydroxide",
+    "CAS": "NA",
+    "AI_median": 0.06,
+    "p": 0.8,
+    "class": "neutral"
+   },
+   {
+    "odorant": "ethyl octanoate",
+    "CAS": "106-32-1",
+    "AI_median": 0.05,
+    "p": 0.2,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Ethanol",
+    "CAS": "64-17-5",
+    "AI_median": 0.05,
+    "p": 0.7,
+    "class": "neutral"
+   },
+   {
+    "odorant": "E2 Hexenol",
+    "CAS": "928-95-0",
+    "AI_median": 0.04,
+    "p": 0.7,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Terpinolen",
+    "CAS": "586-62-9",
+    "AI_median": 0.04,
+    "p": 0.9,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Methylsalicylat",
+    "CAS": "119-36-8",
+    "AI_median": 0.03,
+    "p": 0.4,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Ethylhexanoate",
+    "CAS": "123-66-0",
+    "AI_median": 0.02,
+    "p": 0.4,
+    "class": "neutral"
+   },
+   {
+    "odorant": "E2Hexenal",
+    "CAS": "6728-26-3",
+    "AI_median": 0.02,
+    "p": 0.6,
+    "class": "neutral"
+   },
+   {
+    "odorant": "(-)-trans-caryophyllene",
+    "CAS": "87-44-5",
+    "AI_median": 0.02,
+    "p": 0.9,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Acrolein",
+    "CAS": "107-02-8",
+    "AI_median": 0.01,
+    "p": 0.34,
+    "class": "neutral"
+   },
+   {
+    "odorant": "beta-Citrollenol",
+    "CAS": "106-22-9",
+    "AI_median": 0.01,
+    "p": 0.57,
+    "class": "neutral"
+   },
+   {
+    "odorant": "linoleic acid (linolensäure)",
+    "CAS": "60-33-3",
+    "AI_median": 0.01,
+    "p": 0.7,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Acetaldehyde",
+    "CAS": "75-07-0",
+    "AI_median": 0.0,
+    "p": 0.23,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Gammaoctalacton",
+    "CAS": "104-50-7",
+    "AI_median": 0.0,
+    "p": 0.4,
+    "class": "neutral"
+   },
+   {
+    "odorant": "nonanoic acid",
+    "CAS": "112-05-0",
+    "AI_median": 0.0,
+    "p": 0.7,
+    "class": "neutral"
+   },
+   {
+    "odorant": "E3 Hexanol",
+    "CAS": "623-37-0",
+    "AI_median": 0.0,
+    "p": 0.9,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Glycerol",
+    "CAS": "56-81-5",
+    "AI_median": 0.0,
+    "p": 0.9,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Limonene",
+    "CAS": "5989-27-5",
+    "AI_median": -0.05,
+    "p": 0.15,
+    "class": "neutral"
+   },
+   {
+    "odorant": "E2 Hexenylacetate",
+    "CAS": "2497-18-9",
+    "AI_median": -0.09,
+    "p": 0.3,
+    "class": "neutral"
+   },
+   {
+    "odorant": "6-Methyl-5-hepten-2-on",
+    "CAS": "110-93-0",
+    "AI_median": -0.1,
+    "p": 0.5,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Butylacetate",
+    "CAS": "123-86-4",
+    "AI_median": -0.1,
+    "p": 0.5,
+    "class": "neutral"
+   },
+   {
+    "odorant": "Isopentylacetate",
+    "CAS": "123-92-2",
+    "AI_median": -0.11,
+    "p": 0.07,
+    "class": "neutral"
+   },
+   {
+    "odorant": "1-Octanol",
+    "CAS": "111-87-5",
+    "AI_median": -0.28,
+    "p": 0.002,
+    "class": "aversive"
+   },
+   {
+    "odorant": "1-Octen-3-ol",
+    "CAS": "3391-86-4",
+    "AI_median": -0.28,
+    "p": 0.01,
+    "class": "aversive"
+   },
+   {
+    "odorant": "Acetophenon",
+    "CAS": "98-86-2",
+    "AI_median": -0.3,
+    "p": 0.03,
+    "class": "aversive"
+   },
+   {
+    "odorant": "2-Methylphenol",
+    "CAS": "95-48-7",
+    "AI_median": -0.4,
+    "p": 0.002,
+    "class": "aversive"
+   },
+   {
+    "odorant": "Linalool",
+    "CAS": "78-70-6",
+    "AI_median": -0.42,
+    "p": 0.02,
+    "class": "aversive"
+   },
+   {
+    "odorant": "Benzaldehyd",
+    "CAS": "100-52-7",
+    "AI_median": -0.53,
+    "p": 0.002,
+    "class": "aversive"
+   }
+  ],
+  "caveats": [
+   "single concentration for all odorants -> AIs are not dose-independent valences",
+   "Hallem 2006 odor set (hence no acetoin/geosmin)",
+   "starved flies, 24 h integration -> reflects trap entry, not plume tracking"
+  ]
+ },
+ "other_valence_datasets": [
+  {
+   "paper": "Badel L, Ohta K, Tsuchimoto Y, Kazama H 2016 Neuron 90:994 doi:10.1016/j.neuron.2016.05.022",
+   "finding": "preference predicted by summing normalized glomerular (PN) responses; context can switch preference",
+   "numbers": "not accessible (paywalled)"
+  },
+  {
+   "paper": "Mohamed AAM et al. 2019 Nat Commun (PMC6416470)",
+   "finding": "ethyl acetate 1e-2 (attractive; DM1-DM4) vs benzaldehyde 1e-1 (aversive; DL1, DL5); benzaldehyde or geosmin in mixture suppress DM1-DM4 (lateral inhibition)",
+   "confidence": "VERIFIED qualitative"
+  },
+  {
+   "paper": "Stensmyr MC et al. 2012 Cell 151:1345",
+   "finding": "geosmin (Or56a/DA2) aversion overrides attraction to vinegar, oviposition and feeding",
+   "confidence": "VERIFIED qualitative"
+  }
+ ],
+ "concentration_dependence": {
+  "apple_cider_vinegar": {
+   "Semmelhack_Wang_2009": {
+    "citation": "Semmelhack JL & Wang JW 2009 Nature 459:218 doi:10.1038/nature07983 (PMC2702439)",
+    "assay": "single fly, four-quadrant arena; PI = time in odor quadrant (-100..+100%); concentration by PID (ppm isobutylene equivalents)",
+    "points": [
+     {
+      "ppm": 3,
+      "PI_percent": 75,
+      "source_prep": "40 uL of 1:2 vinegar"
+     },
+     {
+      "ppm": 12,
+      "PI_percent": "slightly >75 (FIGURE-ONLY)",
+      "source_prep": "80 uL vinegar"
+     },
+     {
+      "ppm": 32,
+      "PI_percent": 9,
+      "source_prep": "1 mL vinegar"
+     },
+     {
+      "ppm": 32,
+      "condition": "DM5 (Or85a) silenced",
+      "PI_percent": 87
+     },
+     {
+      "ppm": 3,
+      "condition": "DM1 (Or42b) silenced",
+      "PI_percent": -4,
+      "control_permissive": 69
+     },
+     {
+      "ppm": 3,
+      "condition": "Or42b mutant",
+      "PI_percent": -18
+     },
+     {
+      "ppm": 3,
+      "condition": "VA2 (Or92a) silenced",
+      "PI_percent": 50
+     },
+     {
+      "condition": "antenna-less",
+      "PI_percent": -6.7
+     }
+    ],
+    "ethyl_butyrate_7ppm": {
+     "only_DM1_functional_PI": 65,
+     "only_DM5_functional_PI": -34
+    },
+    "glomeruli_active": {
+     "3ppm": [
+      "DM1",
+      "DM4",
+      "DP1m",
+      "DM2",
+      "VA2",
+      "VM2"
+     ],
+     "12ppm_adds": [
+      "DM3"
+     ],
+     "32ppm_adds": [
+      "DM5"
+     ]
+    },
+    "confidence": "VERIFIED"
+   },
+   "Ko_2015_starved_vs_fed": {
+    "citation": "Ko KI et al. 2015 eLife 4:e08298 (PMC4531282)",
+    "assay": "% single flies reaching source within 10 min",
+    "starved": "23 -> 60 from 0.5% to 25% vinegar, declining at higher concentrations",
+    "fed": "below starved at all concentrations 0.5-100% (FIGURE-ONLY)",
+    "n_per_condition": "55-124",
+    "sNPFR_knockdown": "abolishes hunger effect at 0.5-1%",
+    "DTKR_knockdown": "reduces starved attraction at 5-25%",
+    "confidence": "VERIFIED"
+   },
+   "Root_2011": {
+    "citation": "Root CM, Ko KI, Jafari A, Wang JW 2011 Cell 145:133 (PMC3073827)",
+    "finding": "17-24 h starvation: vinegar responses up in DM1, DM4, DM2, down in VM2, VA3; max sensitivity within 4 h; food search assay 1% vinegar, 10 min window; latencies FIGURE-ONLY",
+    "confidence": "VERIFIED qualitative"
+   },
+   "Alvarez_Salvado_2018_walking_plume": {
+    "citation": "Alvarez-Salvado E et al. 2018 eLife 7:e37815 (PMC6103744)",
+    "wind_cm_s": 11.9,
+    "upwind_velocity_hill": {
+     "Kd_percent_ACV": 0.072,
+     "n": 1.03
+    },
+    "OFF_turn_probability_hill": {
+     "Kd_percent_ACV": 0.127,
+     "n": 1.06
+    },
+    "saturation": "between 1% and 10% ACV",
+    "model_time_constants_s": {
+     "tau_ON": 0.72,
+     "tau_A": 9.8,
+     "tau_OFF1": 0.62,
+     "tau_OFF2": 4.84,
+     "tau_A_OFF": 10.08
+    },
+    "navigation": {
+     "v0_mm_s": 6,
+     "baseline_turn_P0": 0.12,
+     "turn_sd_deg_s": 20,
+     "success_turbulent_plume": {
+      "flies": 0.56,
+      "model": 0.66
+     }
+    },
+    "confidence": "VERIFIED"
+   },
+   "Becher_2010_wind_tunnel": {
+    "citation": "Becher PG et al. 2010 J Chem Ecol 36:599 doi:10.1007/s10886-010-9794-2",
+    "starved_attracted_percent_15min": 62,
+    "satiated_percent": "<20",
+    "confidence": "SUMMARIZER (snippet)"
+   }
+  },
+  "acetic_acid": {
+   "Joseph_2009_oviposition_vs_position": {
+    "citation": "Joseph RM, Devineni AV, King IF, Heberlein U 2009 PNAS 106:11352 doi:10.1073/pnas.0901419106 (PMC2698888)",
+    "assay": "3 h, mated females; OI = (eggs AA - eggs control)/total; PI = position index",
+    "points": [
+     {
+      "acetic_acid_percent": 5,
+      "OI": 0.82,
+      "PI": -0.33,
+      "note": "~91% of eggs on AA food; pH ~3.5 food"
+     },
+     {
+      "acetic_acid_percent": 0.25,
+      "OI": 0.34,
+      "PI": -0.03
+     },
+     {
+      "acetic_acid_percent": 0.25,
+      "condition": "antennae removed",
+      "OI": 0.55,
+      "PI": 0.1
+     }
+    ],
+    "feeding": "no feeding preference for 5% AA (dye ingestion)",
+    "low_pH": "below ~pH 2-3 AA food becomes aversive for oviposition too (Table S2, FIGURE-ONLY)",
+    "mechanism": "egg-laying preference = taste; positional avoidance = olfaction",
+    "confidence": "VERIFIED"
+   },
+   "Ai_2010_smell": {
+    "citation": "Ai M et al. 2010 Nature 468:691 (PMC3105465)",
+    "finding": "T-maze (10 uL 10% AA) avoidance via Ir64a/DC4; Ir64a mutants residual avoidance index 20-25%; high-concentration cider vinegar (pH 2.5) avoided but same dilution neutralized to pH 7.5 attractive; 25% vinegar attractive while acetic acid of the same acidity is not",
+    "confidence": "VERIFIED"
+   },
+   "Knaden_2012_trap": {
+    "AI": 0.24,
+    "p": 0.01,
+    "class": "attractive (~1:100 in water, 24 h trap)"
+   },
+   "Devineni_2019_taste_hunger": {
+    "fed": "1-10% AA PER ~ water; 10% AA reduces PER to 300 mM sucrose 79% -> 44%",
+    "starved_2d": "86% PER to 10% AA; AA no longer suppresses sugar PER (5-300 mM) and enhances PER to 5-10 mM sucrose; 7/10 starved flies ingested 5% AA via legs",
+    "pH": {
+     "5%": 2.41,
+     "10%": 2.23
+    },
+    "confidence": "VERIFIED"
+   },
+   "Rimal_2019_two_choice_taste": {
+    "citation": "Rimal S et al. 2019 Cell Rep doi:10.1016/j.celrep.2019.01.042",
+    "vs_2mM_sucrose": {
+     "<=0.5%": "indifferent",
+     "1%": "mild preference",
+     "5%": "strong avoidance (Ir7a)",
+     "10%": "strong avoidance"
+    },
+    "confidence": "VERIFIED"
+   },
+   "Chen_Amrein_2017_oviposition": {
+    "citation": "Chen Y & Amrein H 2017 Curr Biol 27:2741",
+    "substrate": "100 mM sucrose agar + acetic acid 10/100/500 mM (or citric/tartaric 1-100 mM)",
+    "finding": "tarsal Ir25a/Ir76b sour GRNs drive oviposition preference; OI FIGURE-ONLY",
+    "confidence": "SUMMARIZER"
+   }
+  },
+  "ethanol": {
+   "Ogueta_2010": {
+    "citation": "Ogueta M, Cibik O, Eltrop R, Schneider A, Scholz H 2010 Chem Senses 35:813",
+    "finding": "prefer food with up to 5% ethanol over no ethanol; avoid 23% ethanol",
+    "confidence": "VERIFIED abstract"
+   },
+   "Schneider_2012": {
+    "citation": "Schneider A et al. 2012 PLoS One 7:e52007 (PMC3527413)",
+    "assay": "16 h two-trap, 5% ethanol",
+    "food_odor_vs_ethanol_PI": 0.69,
+    "sem": 0.04,
+    "food_plus_ethanol_vs_ethanol_PI": 0.87,
+    "sem2": 0.03,
+    "confidence": "VERIFIED"
+   },
+   "Azanchi_2013_oviposition": {
+    "citation": "Azanchi R, Kaun KR, Heberlein U 2013 PNAS 110:21153 (PMC3876210)",
+    "findings": "preference significant from 3% (P=0.04); 5% preferred over 1, 3 and 10%; 5% vs 7.5% n.s.; 3% > 1%; total eggs reduced when choice includes 7.5 or 10%; cites rotting fruit <=5% ethanol",
+    "confidence": "VERIFIED"
+   },
+   "Knaden_2012_trap": {
+    "AI": 0.05,
+    "p": 0.7,
+    "class": "neutral (~1:100 in water)"
+   },
+   "van_Breugel_2018": {
+    "finding": "ethanol attractive in all activity states; flies spend ~2x longer searching near ethanol than CO2 or vinegar; ethanol + CO2 approached most",
+    "confidence": "VERIFIED"
+   },
+   "model_curve_ESTIMATE": {
+    "odor_attraction_source_percent": {
+     "0": 0,
+     "1": 0.3,
+     "3": 0.6,
+     "5": 1.0,
+     "10": 0.7,
+     "15": 0.5,
+     "23": -0.3
+    },
+    "unit": "relative attraction (1 = max); combines Ogueta 2010, Azanchi 2013, Devineni 2009 (15% attractive in traps). ESTIMATE"
+   }
+  },
+  "CO2": {
+   "Suh_2004": {
+    "citation": "Suh GS et al. 2004 Nature 431:854 doi:10.1038/nature02980",
+    "finding": "avoidance at levels as low as 0.1% via V glomerulus",
+    "confidence": "VERIFIED abstract"
+   },
+   "Faucher_2006": {
+    "finding": "avoid +0.1-1% above ambient; no response to +0.02%; +0.02% CO2 does not reduce vinegar attraction (except against vinegar background in females)",
+    "citation": "J Exp Biol 209:2739",
+    "confidence": "VERIFIED abstract"
+   },
+   "Faucher_2013": {
+    "citation": "Faucher CP, Hilker M, de Bruyne M 2013 PLoS One 8:e56361",
+    "findings": {
+     "1pct_CO2_trap_catch": "~40% -> ~15%",
+     "0.02pct": "no effect",
+     "0.1pct_added_to_vinegar": "increased female trap catch",
+     "ab1C_rate_at_ambient_spikes_s": 20
+    },
+    "confidence": "SUMMARIZER (medium-low)"
+   },
+   "Braecker_2013": {
+    "finding": "strong avoidance >0.02% above atmospheric; starved flies partly suppress avoidance in presence of vinegar (fed flies do not); starved-state avoidance needs MB and biVPN; indices FIGURE-ONLY",
+    "confidence": "VERIFIED abstract"
+   },
+   "Ai_2010": {
+    "finding": "Gr21a/Gr63a-silenced flies still avoid CO2 above ~5% via DC4 (carbonic acid)"
+   },
+   "Wasserman_2013": {
+    "citation": "Wasserman S, Salomon A, Frye MA 2013 Curr Biol 23:301 (PMC3810385)",
+    "finding": "tethered flying flies track a narrow plume from 100% CO2 source (plume ~+/-45 deg at half max; delivered concentration not stated); requires Orco and octopamine, not Gr21a/Gr63a",
+    "confidence": "VERIFIED"
+   },
+   "van_Breugel_2018": {
+    "citation": "Nature 564:420 (PMC6314688)",
+    "findings": "walking flies avoid 5% CO2 after 10 min acclimation but attracted after 2 h; attraction only in active/high-speed state (dusk, starved); starved slow (~1.5 mm/s) flies averse to 5% CO2 but attracted to ethanol; attraction requires Ir25a (not Gr63a, Ir64a); 5% most effective of 1.7/5/15%; 2-day apple-juice ferment preferred over 7-12-day ferments (indices FIGURE-ONLY); wind 40 cm/s",
+    "confidence": "VERIFIED"
+   },
+   "Ucpunar_Grunwald_Kadow_2021": {
+    "citation": "Front Physiol 12:646401",
+    "finding": "30 h food-deprived flies avoid ambient air (~400 ppm) in favor of CO2-free air; Gr63a mutants no preference 1% vs ambient",
+    "confidence": "SUMMARIZER"
+   },
+   "banana_context": "yellow banana emits ~200 uL CO2/min (~+0.1% in 145 mL/min flow), black banana ~30 uL/min (Faucher 2006) -> near the avoidance threshold for resting flies in enclosed space; fermenting fruit emits more (chemistry.json)"
+  },
+  "starvation_shift_summary": {
+   "vinegar": "starved > fed at all concentrations (Ko 2015); DM1/DM2/DM4 up, VM2/VA3 down (Root 2011); DM5 threshold 4x higher (Ko 2015) -> high-concentration aversion weakened; wind tunnel 62% vs <20% (Becher 2010)",
+   "CO2": "hunger + food odor suppress CO2 avoidance (Braecker 2013, Lewis 2015); activity/flight flips CO2 to attractive (van Breugel 2018)",
+   "acetic_acid_taste": "aversive in fed -> appetitive in 1-2 d starved (Devineni 2019)",
+   "sugar_bitter_taste": "sugar sensitivity x4.6, bitter sensitivity /4.8 at 2 d starvation (Inagaki 2014)"
+  }
+ },
+ "contact_feeding_preferences": {
+  "ethanol_food": [
+   {
+    "citation": "Devineni AV & Heberlein U 2009 Curr Biol 19:2126 (PMC2805771)",
+    "assay": "CAFE, 15% ethanol in 5% sucrose + 5% yeast extract vs same without ethanol",
+    "finding": "preference positive day 1, increases, stable by days 4-5; dose dependence 5-25% emerges days 4-5; PER: 0.1-40% ethanol no PER, dose-dependently reduces sucrose PER; internal ethanol ~5.2 mM (continuous), 26-45 mM after starve-refeed",
+    "PI_values": "FIGURE-ONLY",
+    "confidence": "SUMMARIZER + VERIFIED abstract"
+   },
+   {
+    "citation": "Pohl JB et al. 2012 Alcohol Clin Exp Res 36:1903 (PMC3414655)",
+    "assay": "CAFE, 5% sucrose + 5% yeast extract base",
+    "finding": "no preference at 1% ethanol; preference at 5, 10, 15%; vs calorie-matched alternative usually no preference for 10% (can reverse); internal ethanol <=4 mM (3.08 mM measured)",
+    "confidence": "VERIFIED abstract, SUMMARIZER detail"
+   }
+  ],
+  "yeast_vs_sucrose": [
+   {
+    "citation": "Vargas MA et al. 2010 Curr Biol 20:1006 (PMC2885474)",
+    "assay": "radiolabel choice 4% yeast extract vs 5% sucrose",
+    "finding": "mated females eat significantly more yeast than virgins; females more than males",
+    "magnitude": "FIGURE-ONLY",
+    "confidence": "VERIFIED"
+   },
+   {
+    "citation": "Ribeiro C & Dickson BJ 2010 Curr Biol 20:1000",
+    "finding": "protein-deprived flies prefer yeast; mating increases yeast preference via SPR in ppk+ neurons, neuronal TOR/S6K",
+    "magnitude": "FIGURE-ONLY (paywalled)",
+    "confidence": "VERIFIED abstract"
+   },
+   {
+    "citation": "Corrales-Carvajal VM, Faisal AA, Ribeiro C 2016 eLife 5:e19920 (PMC5108593)",
+    "assay": "180 g/L yeast and 180 g/L sucrose patches (flyPAD/video); 3 d pre-feeding on holidic diets (AA-rich, suboptimal, AA-free)",
+    "findings": {
+     "virgin_females": "more total feeding time on sucrose than yeast",
+     "mated_females": "more on yeast; mating adds long (>=20 s) yeast bouts",
+     "AA_deprivation_yeast_feeding_fold_vs_suboptimal": 1.6,
+     "latency_first_long_yeast_visit_min": {
+      "AA_deprived": 4.38,
+      "suboptimal": 12.37
+     },
+     "Orco_mutant_latency_min": 25.6,
+     "control_latency_min": "5-8",
+     "rich_diet_distant_patch_transitions": 0.75,
+     "micromovement_feeding_validation": {
+      "yeast": 0.922,
+      "sucrose": 0.706
+     }
+    },
+    "confidence": "VERIFIED"
+   },
+   {
+    "citation": "Walker SJ, Corrales-Carvajal VM, Ribeiro C 2015 Curr Biol 25:2621",
+    "finding": "mating induces sex-peptide-dependent sodium appetite (independent of need; SAG neuron silencing)",
+    "magnitude": "FIGURE-ONLY",
+    "confidence": "VERIFIED abstract"
+   },
+   {
+    "citation": "Lee KP et al. 2008 PNAS 105:2498 (PMC2268165)",
+    "findings": {
+     "lifespan_max_P_to_C": "1:16",
+     "egg_laying_rate_max_P_to_C": "1:2",
+     "lifetime_eggs_max_P_to_C": "1:4",
+     "self_selected_P_to_C_mated_females": "~1:4 (yeast vs sucrose 45-180 g/L)"
+    },
+    "confidence": "VERIFIED"
+   },
+   {
+    "citation": "Toshima N & Tanimura T 2012 J Exp Biol 215:2827",
+    "finding": "flies raised without amino acids strongly prefer 10 mM amino-acid solution; CAFE intake >7x controls (females), ~3x (males) at 6 h",
+    "confidence": "SUMMARIZER"
+   }
+  ],
+  "sugar": [
+   {
+    "citation": "Dus M, Min S, Keene AC, Lee GY, Suh GSB 2011 PNAS 108:11819 (PMC3136275)",
+    "finding": "100 mM sucrose vs plain agar; sugar-blind Gr5a;Gr64a mutants do not eat after 5 h starvation but prefer sucrose after 22 h; prefer metabolizable over non-metabolizable sugars (post-ingestive sensing)",
+    "confidence": "VERIFIED"
+   },
+   {
+    "PER_dose_response": "see receptors.json gustatory.PER_behavior_sucrose (Inagaki 2014: 50-60% PER at 800 mM fed, 300 mM 1 d, 200 mM 2 d starved)"
+   },
+   {
+    "gap": "clean two-choice sucrose concentration-preference curve (e.g. Tanimura 1982) not obtained"
+   }
+  ],
+  "acetic_acid_food": "see concentration_dependence.acetic_acid (Joseph 2009 no feeding preference at 5%; Devineni 2019 hunger switch; Rimal 2019 two-choice curve)",
+  "polyamines": {
+   "citation": "Hussain A et al. 2016 PLoS Biol 14:e1002455",
+   "finding": "mated females prefer 1 mM putrescine/cadaverine; virgins only lowest levels",
+   "confidence": "VERIFIED"
+  }
+ },
+ "navigation_anchors": {
+  "flight_plume_tracking": {
+   "surge_latency_ms": "190 +/- 75",
+   "cast_latency_after_loss_ms": "450 +/- 165",
+   "citation": "van Breugel F & Dickinson MH 2014 Curr Biol 24:274 doi:10.1016/j.cub.2013.12.023",
+   "confidence": "VERIFIED abstract"
+  },
+  "walking_complex_plume": {
+   "citation": "Demir M et al. 2020 eLife 9:e57524 (PMC7609052)",
+   "flow_mm_s": 150,
+   "encounter_duration_ms": 200,
+   "encounter_rate_Hz": 4,
+   "saccade_deg": 30,
+   "heading_vs_encounter_rate": "88.6 deg from upwind at 0 Hz, slope -21.6 deg/Hz; bias decays to ~4.5 deg/Hz within 5 s w/o encounters; encounter frequency filtered tau = 2 s",
+   "confidence": "VERIFIED"
+  },
+  "dispersal": {
+   "citation": "Leitch KJ, Ponce FV, Dickson WB, van Breugel F, Dickinson MH 2021 PNAS 118:e2013342118 (PMC8092610)",
+   "single_flight_km": "up to ~12 (still air)",
+   "preferred_groundspeed_m_s": "1.0-1.25",
+   "recapture_at_250m": "~2%",
+   "bait": "fermenting juice (CO2 + ethanol)",
+   "confidence": "VERIFIED"
+  },
+  "budick_dickinson_2006": {
+   "citation": "J Exp Biol 209:3001 doi:10.1242/jeb.02305",
+   "finding": "hungry flies fly upwind by default; plume contact reduces crosswind and speeds upwind flight; plume loss triggers casting",
+   "confidence": "VERIFIED qualitative"
+  },
+  "odor_detection_distance": "GAP: no direct measurement. Derive from plume dilution + ORN thresholds (receptors.json) and source strength (chemistry.json)."
+ },
+ "suggested_validation_tests_ESTIMATE": [
+  "Ripe vs rotting (yeast-colonized) banana two-choice: expect rotting preferred by starved flies (Becher 2012 yeast > fruit; ethanol+acetic+2-phenylethanol synergy Zhu 2003, Becher 2010).",
+  "Vinegar-like dose sweep: attraction rising 0.5-12 ppm, falling at >=32 ppm via DM5 (Semmelhack 2009); hunger removes much of the drop (Ko 2015).",
+  "Silencing ORN_DM1 should abolish low-concentration vinegar/ethyl acetate attraction (Semmelhack 2009).",
+  "Adding geosmin (DA2) should override attraction (Stensmyr 2012).",
+  "Ethanol oviposition/odor preference peaking ~5% (Azanchi 2013; Ogueta 2010), aversive by ~23%.",
+  "Resting fly near fruit with CO2 +0.1-1% should show avoidance, suppressed by food odor when starved (Faucher 2006; Braecker 2013).",
+  "Mated protein-deprived female should shift contact feeding to yeast (1.6x feeding, ~3x shorter latency; Corrales-Carvajal 2016).",
+  "Starved fly should accept 1-10% acetic acid on proboscis (86% PER at 10%) whereas fed fly rejects (Devineni 2019)."
+ ],
+ "biggest_gaps": [
+  "Knaden AIs are single-concentration trap indices; no acetoin, geosmin or CO2 in the panel",
+  "Many fed/starved and virgin/mated magnitudes are figure-only (Root 2011, Braecker 2013, Lewis 2015, Ribeiro & Dickson 2010, Walker 2015, Badel 2016)",
+  "Knaden odor dilution (1:100) inferred from garbled PDF",
+  "No measured odor detection distance for banana/ferment sources"
+ ]
+}
